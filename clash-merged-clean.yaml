@@ -3,73 +3,64 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 伊拉克+V2CROSS.COM_P
-  type: vless
-  server: 178.17.53.177
-  port: 34150
-  uuid: e80398bb-aecb-4686-a75c-dfe4cd8ce242
-  network: tcp
-- name: 美国+V2CROSS.COM_P
-  type: vless
-  server: www.true.th
-  port: 80
-  uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
-  network: ws
-  ws-opts:
-    path: /#美国 V2CROSS.COM
-    headers:
-      Host: d2pwbkmfr5lxa4.cloudfront.net
-- name: 美国+麻省理工学院_P
-  type: vless
-  server: 18.239.134.69
-  port: 80
-  uuid: f55ce6cc-3f6b-40fc-9e3b-abe26db17009
-  network: ws
-  ws-opts:
-    path: /#美国 麻省理工学院
-    headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
-- name: 美国+V2CROSS.COM_P_1
-  type: vless
-  server: 45.155.52.231
-  port: 443
-  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
-  network: tcp
 - name: 美国+CloudFlare节点_P
   type: vless
-  server: 162.159.60.231
+  server: icook.hk
   port: 443
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  uuid: 29ca503d-e6b8-4509-b666-48133f450857
   network: ws
   tls: true
-  sni: hhlfy.twiladaphne.ndjp.net
+  sni: learn00.evany.de5.net#美国 CloudFlare节点
   ws-opts:
-    path: /fp=chrome
+    path: /fdip
     headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+      Host: learn00.evany.de5.net
 - name: 美国+CloudFlare节点_P_1
   type: vless
-  server: 104.26.0.195
-  port: 8080
-  uuid: 59eefc04-b831-45cf-8d68-63ca23381171
+  server: 104.25.244.217
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
   network: ws
+  tls: true
+  sni: support.zoom.us.yxls.eu.cc
   ws-opts:
-    path: /ws-hTopcF3L
+    path: /sg-melbi
     headers:
-      Host: premium-us-az-01-hostinger.efgwf.online
-- name: 丹麦+V2CROSS.COM_P
+      Host: support.zoom.us.yxls.eu.cc
+- name: 英国+Technicolor+SA_P
+  type: trojan
+  server: oplosgru-c.catcat321.com
+  port: 20004
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: hk.catxstar.com#英国 Technicolor SA
+- name: 美国+CloudFlare节点_P_2
   type: vless
-  server: 193.162.143.154
+  server: cf.9999669.xyz
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  network: ws#美国 CloudFlare节点
+  tls: true
+  sni: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 伊朗 V2CROSS.COM_P
+  type: vmess
+  server: tun1.wizardx1.com
+  port: 2078
+  uuid: 8c207682-e007-4a0d-88a3-68b8638b3d10
+  alterId: 0
+  cipher: auto
+- name: 美国+CloudFlare节点_P_3
+  type: trojan
+  server: 104.16.174.12
   port: 443
-  uuid: 94c7a844-cd1e-493a-a0c6-346916a87875
-  network: grpc#丹麦 V2CROSS.COM
-- name: 南非+V2CROSS.COM_P
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 希腊+V2CROSS.COM_P
   type: vless
-  server: 154.193.55.183
-  port: 443
-  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+  server: 88.218.44.4
+  port: 993
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
   network: tcp
-- name: 美国+V2CROSS.COM_P_2
+- name: 美国+V2CROSS.COM_P
   type: vless
   server: 199.232.78.159
   port: 443
@@ -81,39 +72,36 @@ proxies:
     path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
     headers:
       Host: pan11.global.ssl.fastly.net
-- name: 美国+CloudFlare节点_P_2
+- name: 美国+V2CROSS.COM_P_1
   type: vless
-  server: 162.159.38.78
+  server: jdwabxe.cvewfjg.shop
   port: 443
-  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
+  network: tcp
+- name: 美国+CloudFlare节点_P_4
+  type: vless
+  server: ad-013.orbitqgr7v.info
+  port: 8443
+  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
   network: ws
   tls: true
-  sni: learn00.evany.de5.net#美国 CloudFlare节点
+  sni: ad-013.orbitqgr7v.info
   ws-opts:
-    path: /fdip
+    path: /#美国 CloudFlare节点
     headers:
-      Host: learn00.evany.de5.net
-- name: 美国+CloudFlare节点_P_3
+      Host: ad-013.orbitqgr7v.info
+- name: US - zhuhai.uk
   type: vless
-  server: po.fastbrokencompony.com
-  port: 2053
-  uuid: e7961655-9674-4cbd-a36f-ec0d5d7d660c
-  network: ws#美国 CloudFlare节点
+  server: 154.193.55.183
+  port: 443
+  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+  flow: xtls-rprx-vision
   tls: true
-  sni: ''
-- name: 伊拉克+V2CROSS.COM_P_1
-  type: vless
-  server: 178.17.53.177
-  port: 34151
-  uuid: e80398bb-aecb-4686-a75c-dfe4cd8ce242
-  network: tcp
-- name: 伊朗 V2CROSS.COM_P
-  type: vmess
-  server: tun1.wizardx1.com
-  port: 2078
-  uuid: 8c207682-e007-4a0d-88a3-68b8638b3d10
-  alterId: 0
-  cipher: auto
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
+    short-id: c76ba2c2fb172e8b
 - name: RO - zhuhai.uk
   type: http
   server: 84.239.49.183
@@ -309,14 +297,6 @@ proxies:
   username: a95e9198-0671-11f0-9426-f23c932f2c32
   password: a95e9198-0671-11f0-9426-f23c932f2c32
   tls: true
-- name: JP - zhuhai.uk 46
-  type: trojan
-  server: oplosgru-c.catcat321.com
-  port: 20004
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  udp: true
-  sni: hk.catxstar.com
-  skip-cert-verify: true
 - name: IN - zhuhai.uk 02
   type: trojan
   server: oplosgru-c.catcat321.com
@@ -1140,6 +1120,19 @@ proxies:
   network: ws
   ws-opts:
     path: /0zNW56sF
+  udp: true
+- name: 美國丨yoyapai.com_3
+  type: vless
+  server: 45.155.52.231
+  port: 443
+  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
+  servername: ru2.skydrgn-online.online
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
+    short-id: 0b
+  skip-cert-verify: true
   udp: true
 - name: 美國丨yoyapai.com_4
   type: vless
@@ -5082,19 +5075,17 @@ proxy-groups:
   proxies:
   - AUTO
   - DIRECT
-  - 伊拉克+V2CROSS.COM_P
-  - 美国+V2CROSS.COM_P
-  - 美国+麻省理工学院_P
-  - 美国+V2CROSS.COM_P_1
   - 美国+CloudFlare节点_P
   - 美国+CloudFlare节点_P_1
-  - 丹麦+V2CROSS.COM_P
-  - 南非+V2CROSS.COM_P
-  - 美国+V2CROSS.COM_P_2
+  - 英国+Technicolor+SA_P
   - 美国+CloudFlare节点_P_2
-  - 美国+CloudFlare节点_P_3
-  - 伊拉克+V2CROSS.COM_P_1
   - 伊朗 V2CROSS.COM_P
+  - 美国+CloudFlare节点_P_3
+  - 希腊+V2CROSS.COM_P
+  - 美国+V2CROSS.COM_P
+  - 美国+V2CROSS.COM_P_1
+  - 美国+CloudFlare节点_P_4
+  - US - zhuhai.uk
   - RO - zhuhai.uk
   - US - zhuhai.uk 05
   - US - zhuhai.uk 06
@@ -5124,7 +5115,6 @@ proxy-groups:
   - GB - zhuhai.uk 05
   - NL - zhuhai.uk 04
   - GB - zhuhai.uk 03
-  - JP - zhuhai.uk 46
   - IN - zhuhai.uk 02
   - 🇮🇷 伊朗伊朗丨yoyapai.com
   - 美國麻省理工學院丨yoyapai.com
@@ -5142,25 +5132,26 @@ proxy-groups:
   - CA加拿大丨yoyapai.com_3
   - CA加拿大丨yoyapai.com_4
   - CA加拿大丨yoyapai.com_5
+  - FR法國丨yoyapai.com_3
+  - 美國丨yoyapai.com
+  - 加拿大丨yoyapai.com
 - name: AUTO
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 伊拉克+V2CROSS.COM_P
-  - 美国+V2CROSS.COM_P
-  - 美国+麻省理工学院_P
-  - 美国+V2CROSS.COM_P_1
   - 美国+CloudFlare节点_P
   - 美国+CloudFlare节点_P_1
-  - 丹麦+V2CROSS.COM_P
-  - 南非+V2CROSS.COM_P
-  - 美国+V2CROSS.COM_P_2
+  - 英国+Technicolor+SA_P
   - 美国+CloudFlare节点_P_2
-  - 美国+CloudFlare节点_P_3
-  - 伊拉克+V2CROSS.COM_P_1
   - 伊朗 V2CROSS.COM_P
+  - 美国+CloudFlare节点_P_3
+  - 希腊+V2CROSS.COM_P
+  - 美国+V2CROSS.COM_P
+  - 美国+V2CROSS.COM_P_1
+  - 美国+CloudFlare节点_P_4
+  - US - zhuhai.uk
   - RO - zhuhai.uk
   - US - zhuhai.uk 05
   - US - zhuhai.uk 06
@@ -5190,7 +5181,6 @@ proxy-groups:
   - GB - zhuhai.uk 05
   - NL - zhuhai.uk 04
   - GB - zhuhai.uk 03
-  - JP - zhuhai.uk 46
   - IN - zhuhai.uk 02
   - 🇮🇷 伊朗伊朗丨yoyapai.com
   - 美國麻省理工學院丨yoyapai.com
@@ -5248,6 +5238,7 @@ proxy-groups:
   - 🇺🇸US美國丨yoyapai.com_10
   - 🇺🇸US美國丨yoyapai.com_12
   - 🇸🇬 SG新加坡
+  - 美國丨yoyapai.com_3
   - 美國丨yoyapai.com_4
   - 美國丨yoyapai.com_5
   - 新加坡丨yoyapai.com
