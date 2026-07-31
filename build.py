@@ -13,7 +13,6 @@ SOURCES = {
         "https://cdn.jsdelivr.net/gh/xiaoji235/airport-free/clash/clashnodecc.txt",
         "https://raw.githubusercontent.com/xiaoji235/airport-free/main/clash/clashnodecc.txt",
     ],
-    "mahdibland": "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge.txt",
     "auto_proxy": "https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num",
     "au1rxx": "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/clash.yaml",
 }
@@ -220,12 +219,16 @@ def validate_nodes(nodes):
 
 
 names = {}
+used = set()
 for p in proxies:
-    if p["name"] in names:
-        names[p["name"]] += 1
-        p["name"] = f"{p['name']}_{names[p['name']]}"
-    else:
-        names[p["name"]] = 0
+    base = p["name"]
+    name = base
+    i = 1
+    while name in used:
+        name = f"{base}_{i}"
+        i += 1
+    used.add(name)
+    p["name"] = name
 
 proxies = validate_nodes(proxies)
 print(f"reality 过滤后: {len(proxies)}")
