@@ -3,7 +3,7 @@ import base64, json, urllib.request, urllib.parse, re, yaml
 SOURCES = {
     "pawdroid": "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub",
     "zhuhaiuk": "https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/clash_config.yaml",
-    "yoyapai": "https://raw.githubusercontent.com/xiaoji235/airport-free/clash/clashnodecc.txt",
+    "yoyapai": "https://raw.githubusercontent.com/xiaoji235/airport-free/main/clash/clashnodecc.txt",
 }
 
 
