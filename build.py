@@ -14,7 +14,6 @@ SOURCES = {
         "https://raw.githubusercontent.com/xiaoji235/airport-free/main/clash/clashnodecc.txt",
     ],
     "auto_proxy": "https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num",
-    "au1rxx": "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/clash.yaml",
 }
 
 
