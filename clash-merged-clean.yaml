@@ -4,68 +4,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 美国+CloudFlare节点_P
-  type: vless
-  server: 104.26.1.195
-  port: 8080
-  uuid: 4e0f4e59-3613-4f0c-b824-7348413d20e6
-  network: ws
-  ws-opts:
-    path: /ws-6Tta3kYF
-    headers:
-      Host: premium-us-ca-01-gthost.efgwf.online
-- name: 美国+CloudFlare节点_P_1
-  type: vless
-  server: skk.moe
-  port: 8880
-  uuid: 91c7ea79-9187-4f07-ab97-68c584186843
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: nameless-dust-1a36.207-b50.workers.dev
-- name: 美国+CloudFlare节点_P_2
-  type: vless
-  server: vpn.renshengxuanze.ccwu.cc
+  type: trojan
+  server: 172.64.146.75
   port: 443
-  uuid: 9a3de3e0-2a6e-4bb2-81bd-1a4e51dfa110
-  network: ws
-  tls: true
-  sni: ''
-  ws-opts:
-    path: ''
-- name: 伊朗+V2CROSS.COM_P
-  type: vless
-  server: ddc-akn.astralweb.tech
-  port: 443
-  uuid: 04b9e828-43ed-4faf-8952-41069ec08355
-  network: tcp
-  tls: true
-  sni: ''
-- name: 美国+Amazon+EC2服务器_P
-  type: vless
-  server: 3.170.185.91
-  port: 80
-  uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
+  password: 87961f9d-bee1-4377-826b-e169e7891c4f
+  sni: yks-dd9.pages.dev
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: d2pwbkmfr5lxa4.cloudfront.net
-- name: 美国+CloudFlare节点_P_3
+- name: 美国+CloudFlare节点_P_1
   type: vless
-  server: 108.162.195.58
+  server: 104.21.90.146
   port: 443
-  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  uuid: e35a5ad5-0175-4cd6-b654-1eb220ff28f0
   network: ws
   tls: true
-  sni: learn00.evany.de5.net
+  sni: node-dispatch-c8-2.e20260720.kdns.fr
   ws-opts:
-    path: /fdip=tw.william.us.ci!txt
+    path: /Wvf67jc5MgASmsb9Qsr0
     headers:
-      Host: learn00.evany.de5.net
-- name: 美国+CloudFlare节点_P_4
+      Host: node-dispatch-c8-2.e20260720.kdns.fr
+- name: 美国+CloudFlare节点_P_2
   type: vless
-  server: 162.159.141.83
+  server: 104.20.39.109
   port: 443
   uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
   network: ws
@@ -75,238 +36,287 @@ proxies:
     path: /sg-melbi
     headers:
       Host: support.zoom.us.yxls.eu.cc
-- name: 美国+CloudFlare节点_P_5
+- name: 美国+CloudFlare节点_P_3
   type: vless
-  server: 104.16.72.41
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckfangbinxing.pusytroller.gq
-- name: 俄罗斯+V2CROSS.COM_P
-  type: ss
-  server: 195.133.23.200
-  port: 10991
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
-- name: 美国+V2CROSS.COM_P_1
-  type: vless
-  server: vip.pro2.website
-  port: 17870
-  uuid: a6a065c6-60f4-4bde-b8b9-3f5072b3ca0b
-  network: httpupgrade
-- name: 美国+CloudFlare节点_P_6
-  type: vless
-  server: deepl.com
-  port: 8880
-  uuid: 6d73dc1e-1627-4b16-b471-53e63aa16c78
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: sweet-truth-ccdb.134-7e9.workers.dev
-- name: 美国+CloudFlare节点_P_7
-  type: vless
-  server: 104.16.72.251
-  port: 443
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  server: 162.159.3.186
+  port: 8443
+  uuid: 29ca503d-e6b8-4509-b666-48133f450857
   network: ws
   tls: true
-  sni: hhlfy.twiladaphne.ndjp.net
+  sni: learn00.evany.de5.net
   ws-opts:
-    path: /
+    path: /fdip=tw.william.us.ci!txt?ed=2560fp=random
     headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+      Host: learn00.evany.de5.net
 - name: 英国+Technicolor+SA_P
+  type: trojan
+  server: hkdcrtc-e.catcat321.com
+  port: 20066
+  password: 41c406e2-12b5-41f2-a329-d0621052d675
+  sni: hk.catxstar.com
+- name: 美国+Digital+Ocean_P
+  type: vless
+  server: freenet.sahanwickramasinghevip.shop
+  port: 443
+  uuid: 5e107642-469d-4904-b00d-4f899526e964
+  network: tcp
+  tls: true
+  sni: ''
+- name: 英国+Technicolor+SA_P_1
   type: trojan
   server: oplosgru-c.catcat321.com
   port: 20004
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   sni: hk.catxstar.com
-- name: RO - zhuhai.uk
-  type: http
-  server: 84.239.14.156
-  port: 9002
-  tls: true
-  skip-cert-verify: true
-- name: RO - zhuhai.uk 02
-  type: http
-  server: 84.239.49.168
-  port: 9002
-  tls: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: GB - zhuhai.uk
-  type: http
-  server: 3051f36a-t9zts0-tr9h64-1f1f1.uk.oshuawei.com
+- name: 美国+CloudFlare节点_P_4
+  type: vless
+  server: 172.67.143.139
+  port: 8080
+  uuid: 18907dc3-7e4c-476f-9ed8-b360db563bf9
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiN3FOeFprWFkiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iXX0=
+    headers:
+      Host: server8.faway91418.workers.dev
+- name: 美国+CloudFlare节点_P_5
+  type: vless
+  server: 104.17.181.19
+  port: 8880
+  uuid: b8cd08fd-a19a-4ad0-b8ae-b664b89791da
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: sweet-scene-bffd.312-860.workers.dev
+- name: 美国+得克萨斯州达拉斯Cloudflare+Warp节点_P
+  type: vless
+  server: 8.6.112.0
   port: 443
-  username: 61c4be90-6235-11ec-a8bf-f23c91cfbbc9
-  password: 61c4be90-6235-11ec-a8bf-f23c91cfbbc9
+  uuid: 427d85cd-a2a8-4668-8118-0d43d2d57f77
+  network: ws
   tls: true
-  sni: 3051f36a-t9zts0-tr9h64-1f1f1.uk.oshuawei.com
-- name: GB - zhuhai.uk 02
-  type: http
-  server: d299fec1-ta1og0-taxf6m-ieln.uk.oshuawei.com
+  sni: asmaos.uk
+  ws-opts:
+    path: /
+    headers:
+      Host: asmaos.uk
+- name: 美国+CloudFlare节点_P_6
+  type: vless
+  server: 162.159.0.3
   port: 443
-  username: f5c0eda2-4b97-11ed-bd7c-f23c913c8d2b
-  password: f5c0eda2-4b97-11ed-bd7c-f23c913c8d2b
+  uuid: dd321f25-8f90-4e7c-a1fa-01883a8988a7
+  network: ws
   tls: true
-  sni: d299fec1-ta1og0-taxf6m-ieln.uk.oshuawei.com
-- name: GB - zhuhai.uk 04
-  type: http
-  server: 07b7ddcf-tcxds0-tifnix-1ro8s.uk.oshuawei.com
+  sni: soucuovls.pages.dev
+  ws-opts:
+    path: /pyip=proxyip.cmliussss.netfp=random
+    headers:
+      Host: soucuovls.pages.dev
+- name: 希腊+V2CROSS.COM_P
+  type: vless
+  server: 92.119.90.67
+  port: 2053
+  uuid: c7e9c591-2764-423a-afca-efbd010fd396
+  network: ws
+  tls: true
+  sni: forfreeuse.sub-flow.online
+  ws-opts:
+    path: /
+    headers:
+      Host: forfreeuse.sub-flow.online
+- name: 伊朗+V2CROSS.COM_P
+  type: vless
+  server: 217.60.193.1
   port: 443
-  username: a18ef18e-293a-11ef-b76e-f23c91cfbbc9
-  password: a18ef18e-293a-11ef-b76e-f23c91cfbbc9
+  uuid: 5c192fd7-ef98-4112-a20c-129108fcd7e9
+  network: tcp
   tls: true
-  sni: 07b7ddcf-tcxds0-tifnix-1ro8s.uk.oshuawei.com
+  sni: ddc-akn.astralweb.tech
+- name: 美国+CloudFlare节点_P_7
+  type: vless
+  server: 104.26.0.195
+  port: 8080
+  uuid: 59eefc04-b831-45cf-8d68-63ca23381171
+  network: ws
+  ws-opts:
+    path: /ws-hTopcF3L
+    headers:
+      Host: premium-us-az-01-hostinger.efgwf.online
+- name: 美国 Akamai科技公司CDN网络节点_P
+  type: vmess
+  server: deapp.jisuyun.top
+  port: 2053
+  uuid: 9a1a05d9-69be-45d3-e326-c6621edf7b31
+  alterId: 0
+  cipher: auto
+  tls: true
+  sni: deapp.jisuyun.top
+  network: ws
+  ws-opts:
+    path: /devm
+    headers:
+      Host: deapp.jisuyun.top
 - name: US - zhuhai.uk
   type: http
-  server: 156.146.59.27
+  server: 138.199.35.214
   port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: RO - zhuhai.uk
+  type: http
+  server: 84.239.49.182
+  port: 9002
+  username: 'null'
+  password: None
   tls: true
   skip-cert-verify: true
 - name: US - zhuhai.uk 02
   type: http
-  server: 156.146.59.5
+  server: 156.146.59.15
   port: 9002
   tls: true
   skip-cert-verify: true
 - name: US - zhuhai.uk 03
   type: http
-  server: 138.199.35.219
+  server: 138.199.35.217
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: DE - zhuhai.uk
+  type: trojan
+  server: large-baboon.rooster465.autos
+  port: 443
+  password: ND91608427
+  tls: true
+  sni: large-baboon.rooster465.autos
+  skip-cert-verify: true
+- name: TH - zhuhai.uk
+  type: socks5
+  server: 43.164.3.124
+  port: 1080
+- name: RO - zhuhai.uk 02
+  type: http
+  server: 84.239.49.214
   port: 9002
   tls: true
   skip-cert-verify: true
 - name: US - zhuhai.uk 04
   type: http
-  server: 138.199.35.195
+  server: 156.146.59.9
   port: 9002
-  username: 'null'
-  password: None
   tls: true
   skip-cert-verify: true
-- name: US - zhuhai.uk 05
-  type: http
-  server: 138.199.35.198
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 06
-  type: http
-  server: 138.199.35.214
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
+- name: HK - zhuhai.uk
+  type: socks5
+  server: 59.38.113.185
+  port: 20000
 - name: RO - zhuhai.uk 03
   type: http
-  server: 84.239.49.200
+  server: 84.239.49.53
   port: 9002
   tls: true
-  sni: www.bing.com
   skip-cert-verify: true
 - name: RO - zhuhai.uk 04
   type: http
-  server: 84.239.49.208
+  server: 84.239.49.184
   port: 9002
-  username: 'null'
-  password: None
   tls: true
   skip-cert-verify: true
 - name: RO - zhuhai.uk 05
   type: http
-  server: 84.239.49.157
+  server: 84.239.49.191
   port: 9002
-  username: 'null'
-  password: 'null'
   tls: true
   skip-cert-verify: true
 - name: RO - zhuhai.uk 06
   type: http
-  server: 84.239.14.153
+  server: 84.239.49.160
   port: 9002
   tls: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: NL - zhuhai.uk
-  type: http
-  server: 84.17.47.125
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-- name: KR - zhuhai.uk
-  type: socks5
-  server: 121.169.46.116
-  port: 1090
 - name: RO - zhuhai.uk 07
   type: http
-  server: 84.239.49.189
+  server: 84.239.49.154
   port: 9002
   tls: true
   sni: www.bing.com
-  skip-cert-verify: true
-- name: GB - zhuhai.uk 05
-  type: http
-  server: 650f31b8-t9zts0-tkka1f-1k25p.uk.oshuawei.com
-  port: 443
-  username: 6e8482fb-1f9b-11ed-af5f-f23c91cfbbc9
-  password: 6e8482fb-1f9b-11ed-af5f-f23c91cfbbc9
-  tls: true
-  sni: 650f31b8-t9zts0-tkka1f-1k25p.uk.oshuawei.com
-- name: US - zhuhai.uk 07
-  type: http
-  server: 156.146.59.16
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
   skip-cert-verify: true
 - name: RO - zhuhai.uk 08
   type: http
-  server: 84.239.49.175
+  server: 84.239.49.163
   port: 9002
   tls: true
   sni: www.bing.com
   skip-cert-verify: true
 - name: RO - zhuhai.uk 09
   type: http
-  server: 84.239.49.249
+  server: 84.239.14.154
   port: 9002
-  username: 'null'
-  password: 'null'
   tls: true
   skip-cert-verify: true
+- name: GB - zhuhai.uk 03
+  type: trojan
+  server: Hkdcrtc-e.catcat321.com
+  port: 20041
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  tls: true
+  sni: de.catxstar.com
+  skip-cert-verify: true
+- name: NL - zhuhai.uk
+  type: vless
+  server: 158.101.223.70
+  port: 62145
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
 - name: RO - zhuhai.uk 10
   type: http
-  server: 193.176.84.36
+  server: 84.239.49.187
   port: 9002
-  username: 'null'
-  password: 'null'
   tls: true
   skip-cert-verify: true
 - name: RO - zhuhai.uk 11
   type: http
-  server: 84.239.14.158
+  server: 84.239.14.149
   port: 9002
-  username: 'null'
-  password: 'null'
   tls: true
   skip-cert-verify: true
+- name: GB - zhuhai.uk 04
+  type: http
+  server: 686ce217-t9zts0-ta5nd4-e06r.uk.oshuawei.com
+  port: 443
+  username: 861726bb-c61a-b0e0-99fa-5ddfdcf21902
+  password: 861726bb-c61a-b0e0-99fa-5ddfdcf21902
+  tls: true
+  sni: 686ce217-t9zts0-ta5nd4-e06r.uk.oshuawei.com
 - name: RO - zhuhai.uk 12
   type: http
-  server: 84.239.49.214
+  server: 84.239.49.253
   port: 9002
   tls: true
   sni: www.bing.com
   skip-cert-verify: true
+- name: RO - zhuhai.uk 13
+  type: http
+  server: 84.239.14.159
+  port: 9002
+  tls: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: PT - zhuhai.uk
+  type: vless
+  server: 93.119.168.215
+  port: 60771
+  uuid: 060a5db6-7ff9-4a64-87c1-8a27be4f11ab
+- name: TH - zhuhai.uk 02
+  type: vless
+  server: www.true.th
+  port: 80
+  uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d2pwbkmfr5lxa4.cloudfront.net
 - name: DE - zhuhai.uk 07
   type: trojan
   server: hkdcrtc-e.catcat321.com
@@ -315,6 +325,13 @@ proxies:
   udp: true
   sni: de.catxstar.com
   skip-cert-verify: true
+- name: GB - zhuhai.uk 05
+  type: http
+  server: 5c78e09e-thxmo0-tjdj5q-azvy.cldvpuk.cdnbytescm.com
+  port: 443
+  username: a95e9198-0671-11f0-9426-f23c932f2c32
+  password: a95e9198-0671-11f0-9426-f23c932f2c32
+  tls: true
 - name: NL - zhuhai.uk 02
   type: socks5
   server: 85.17.179.81
@@ -327,21 +344,157 @@ proxies:
   server: 213.199.47.140
   port: 1080
   udp: true
-- name: 美國丨yoyapai.com
-  type: vless
-  server: www.true.th
-  port: 80
-  uuid: ff0c1cde-6f94-4bf1-9774-ab25c6b4977d
-  network: ws
-  servername: d7iwyzy9wpvuu.cloudfront.net
-  tls: false
-  ws-opts:
-    path: /knl8
-    headers:
-      Host: d7iwyzy9wpvuu.cloudfront.net
+- name: 🇷🇺_RU俄羅斯丨yoyapai.com
+  type: ss
+  server: 176.32.35.51
+  port: 10910
+  cipher: aes-256-gcm
+  password: 895b4b796a357570
   skip-cert-verify: true
   udp: true
-- name: 免費節點丨yoyapai.com_9
+- name: FR法國丨yoyapai.com
+  type: vless
+  server: 162.159.43.131
+  port: 443
+  uuid: 407ecce0-dc85-465f-89f5-e520e9378baf
+  network: ws
+  servername: ld.223350.xyz
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: ld.223350.xyz
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰HK香港節點丨yoyapai.com
+  type: vless
+  server: 91.193.58.93
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  network: ws
+  servername: jamph131-1228.pages.dev
+  tls: true
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
+  skip-cert-verify: true
+  udp: true
+- name: 美國CloudFlare节点丨yoyapai.com
+  type: vless
+  server: 162.159.81.104
+  port: 80
+  uuid: 4b00d726-e072-429b-997e-f07affea3b7f
+  network: ws
+  tls: false
+  ws-opts:
+    path: /eyJqdW5rIjoiUEVTdDRlR2hhc0JuYyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ
+    headers:
+      Host: icy-darkness-8ff1.farzambia12mo.workers.dev
+  skip-cert-verify: true
+  udp: true
+- name: FR法國丨yoyapai.com_1
+  type: vless
+  server: 104.19.87.194
+  port: 443
+  uuid: 407ecce0-dc85-465f-89f5-e520e9378baf
+  network: ws
+  servername: ld.223350.xyz
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: ld.223350.xyz
+  skip-cert-verify: true
+  udp: true
+- name: FR法國丨yoyapai.com_2
+  type: vless
+  server: 162.159.49.145
+  port: 443
+  uuid: 407ecce0-dc85-465f-89f5-e520e9378baf
+  network: ws
+  servername: ld.223350.xyz
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: ld.223350.xyz
+  skip-cert-verify: true
+  udp: true
+- name: 德國丨yoyapai.com
+  type: vless
+  server: 91.206.71.8
+  port: 80
+  uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=Telegram🇨🇳 @WangCai2
+    headers:
+      Host: round-haze-8783.294.workers.dev
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰HK香港節點丨yoyapai.com_1
+  type: vless
+  server: 91.193.58.195
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  network: ws
+  servername: jamph131-1228.pages.dev
+  tls: true
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
+  skip-cert-verify: true
+  udp: true
+- name: 美國丨yoyapai.com_2
+  type: vless
+  server: 172.67.223.190
+  port: 2086
+  uuid: e6bad6ca-ab7c-4bdd-b07e-5c8ec407decd
+  network: ws
+  tls: false
+  ws-opts:
+    path: /eyJqdW5rIjoidGpkTkY2VHk0bE1pV3AiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
+    headers:
+      Host: cool-hill-7fe5.thenewata.workers.dev
+  skip-cert-verify: true
+  udp: true
+- name: FR法國丨yoyapai.com_9
+  type: vless
+  server: 104.24.9.6
+  port: 443
+  uuid: 407ecce0-dc85-465f-89f5-e520e9378baf
+  network: ws
+  servername: ld.223350.xyz
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: ld.223350.xyz
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US美國丨yoyapai.com
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 6e2e03e2-4f66-479a-a186-a34d66ca8c91
+  network: ws
+  servername: ssl.fastly.com
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+    headers:
+      Host: pan11.global.ssl.fastly.net
+  skip-cert-verify: true
+  udp: true
+- name: 免費節點丨yoyapai.com
   type: vless
   server: blog.cloudflare.com
   port: 2095
@@ -355,89 +508,7 @@ proxies:
       Host: cnmfangbinxing.cnmfangbinxing-s.workers.dev
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰HK香港節點丨yoyapai.com
-  type: vless
-  server: 91.193.58.93
-  port: 80
-  uuid: f2d55510-fa3c-4e3b-adfc-2d96fa399c19
-  network: ws
-  tls: false
-  ws-opts:
-    path: /pyip=Telegram🇨🇳+@WangCai2
-    headers:
-      Host: plain-darkness-90ea.259.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 法國丨yoyapai.com
-  type: vless
-  server: 94.140.0.100
-  port: 8880
-  uuid: 78e6619e-e82a-cd8d-b482-0973d8498305
-  network: ws
-  tls: false
-  ws-opts:
-    path: /sync
-    headers:
-      Host: silent-pine-a674.jfadwkglaugul.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 免費節點丨yoyapai.com_10
-  type: vless
-  server: 104.16.8.66
-  port: 8880
-  uuid: 725c66a2-2bce-4a24-ba52-b4e2e7047076
-  network: ws
-  tls: false
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: rapid-base-6c9e.45-d79.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰HK香港節點丨yoyapai.com_1
-  type: vless
-  server: 91.193.58.92
-  port: 80
-  uuid: f2d55510-fa3c-4e3b-adfc-2d96fa399c19
-  network: ws
-  tls: false
-  ws-opts:
-    path: /pyip=Telegram🇨🇳+@WangCai2
-    headers:
-      Host: plain-darkness-90ea.259.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 免費節點丨yoyapai.com_15
-  type: vless
-  server: chatgpt.com
-  port: 443
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-  network: ws
-  servername: powered-by-surena.user68f797c2f3e1b.workers.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed
-    headers:
-      Host: powered-by-surena.user68f797c2f3e1b.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 免費節點丨yoyapai.com_18
-  type: vless
-  server: 198.41.209.43
-  port: 443
-  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
-  network: ws
-  servername: support.zoom.us.yxls.eu.cc
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: support.zoom.us.yxls.eu.cc
-  skip-cert-verify: true
-  udp: true
-- name: 美國賓利大學丨yoyapai.com
+- name: 🇨🇿_CZ_捷克丨yoyapai.com
   type: vless
   server: 141.133.172.222
   port: 20342
@@ -445,59 +516,125 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 美國丨yoyapai.com_2
+- name: 🇺🇸US美國丨yoyapai.com_1
+  type: vless
+  server: 18.239.134.69
+  port: 80
+  uuid: f55ce6cc-3f6b-40fc-9e3b-abe26db17009
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+  skip-cert-verify: true
+  udp: true
+- name: 免費節點丨yoyapai.com_14
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  network: http
+  servername: dey.lnmarketplace.net
+  tls: true
+  client-fingerprint: chrome
+  http-opts:
+    path:
+    - /kavir
+    headers:
+      Host:
+      - dey.lnmarketplace.net
+  skip-cert-verify: true
+  udp: true
+- name: 免費節點丨yoyapai.com_18
   type: trojan
-  server: www.ignitelimit.com
-  port: 443
-  password: humanity
+  server: 2----------------------------------------------------3.poki-pakipon.ir
+  port: 38331
+  password: oeaQHjIg021hag3UB1gHR60iA1iaNSs2
+  sni: www.icloud.com
   skip-cert-verify: true
   tls: true
-  ws-opts:
-    path: /assignment
+  grpc-opts:
+    grpc-service-name: BanV2ray------BanV2ray-----BanV2ray------BanV2ray-----BanV2ray------BanV2ray-----BanV2ray------BanV2ray-----BanV2ray------BanV2ray-----BanV2ray------BanV2ray-----BanV2ray------BanV2ray-----BanV2ray------BanV2ray-----BanV2ray------BanV2ray-----
   udp: true
-- name: 俄羅斯丨yoyapai.com
-  type: vless
-  server: 77.105.163.46
-  port: 443
-  uuid: 0e192bd1-8f19-4184-9fff-6d67e4f738bd
-  network: ws
-  servername: ov186.ochmaybrooooo.online
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: ov186.ochmaybrooooo.online
+- name: 🇮🇷_IR_伊朗
+  type: vmess
+  server: 94.182.88.61
+  port: 2078
+  uuid: 8c207682-e007-4a0d-88a3-68b8638b3d10
+  alterId: 0
+  cipher: auto
+  tls: false
   skip-cert-verify: true
   udp: true
-- name: 免費節點丨yoyapai.com_39
+- name: 免費節點丨yoyapai.com_19
   type: vless
-  server: ad-018.cloud25075.info
+  server: www.speedtest.net
   port: 8443
-  uuid: 5d3abfa9-bdf5-4334-8383-dcf92df802a5
+  uuid: 8a88edf2-235a-4e74-a012-315e8b0f000c
   network: ws
-  servername: ad-018.cloud25075.info
+  servername: oknoloy.dearhossein-taktaz.ir
   tls: true
   client-fingerprint: chrome
   ws-opts:
     path: /
     headers:
-      Host: ad-018.cloud25075.info
+      Host: oknoloy.dearhossein-taktaz.ir
   skip-cert-verify: true
   udp: true
-- name: 免費節點丨yoyapai.com_40
+- name: 亞太地區丨yoyapai.com
   type: vless
-  server: 172.67.175.34
-  port: 8443
-  uuid: 2e8beadd-99bf-4fda-8692-8493886504bc
+  server: 103.133.1.160
+  port: 80
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
   network: ws
-  servername: ad-007.cloud25075.info
-  tls: true
-  client-fingerprint: chrome
+  tls: false
+  ws-opts:
+    path: /ws
+    headers:
+      Host: soft-shadow-1e33.xicav73335.workers.dev
+  skip-cert-verify: true
+  udp: true
+- name: 免費節點丨yoyapai.com_26
+  type: vless
+  server: cdn-cloudflare91.korvexe.ir
+  port: 8880
+  uuid: 28926c34-865c-447e-8d42-a17240af743b
+  network: ws
+  tls: false
   ws-opts:
     path: /
     headers:
-      Host: ad-007.cloud25075.info
+      Host: cdn-cloudflare91.korvexe.ir
   skip-cert-verify: true
+  udp: true
+- name: 免費節點丨yoyapai.com_27
+  type: vless
+  server: cdn-cloudflare91.korvexe.ir
+  port: 2086
+  uuid: 28926c34-865c-447e-8d42-a17240af743b
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn-cloudflare91.korvexe.ir
+  skip-cert-verify: true
+  udp: true
+- name: 🇲🇽MX墨西哥
+  type: vmess
+  server: cindy50.ceoiii.com
+  port: 36801
+  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: ajax.microsoft.com
   udp: true
 - name: 🇺🇸 US美國
   type: vmess
@@ -513,37 +650,6 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: ajax.microsoft.com
-  udp: true
-- name: 🇺🇸 US美國_1
-  type: vmess
-  server: cindy50.ceoiii.com
-  port: 36801
-  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: ajax.microsoft.com
-  udp: true
-- name: 免費節點丨yoyapai.com_42
-  type: ss
-  server: 82.38.31.218
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  skip-cert-verify: true
-  udp: true
-- name: 烏克蘭丨yoyapai.com
-  type: hysteria2
-  server: 194.247.182.201
-  port: 8080
-  password: grape_288923
-  sni: grape-coffee-fi.gleeze.com
-  skip-cert-verify: true
   udp: true
 - name: 新加坡丨yoyapai.com
   type: vless
@@ -593,7 +699,7 @@ proxies:
     headers:
       Host: 2a02:6ea0:d32f::f8fe:349b
   udp: true
-- name: 德國丨yoyapai.com
+- name: 德國丨yoyapai.com_1
   type: vless
   server: 77.37.33.50
   port: 8880
@@ -784,19 +890,6 @@ proxies:
       Host: vms.lifetime51.workers.dev
   skip-cert-verify: true
   udp: true
-- name: 美国+亚利桑那州斯科茨代尔市丨yoyapai.com
-  type: vless
-  server: 72.167.230.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime51.workers.dev
-  skip-cert-verify: true
-  udp: true
 - name: 臺灣省丨yoyapai.com
   type: trojan
   server: 211.76.176.98
@@ -806,7 +899,7 @@ proxies:
   skip-cert-verify: true
   tls: true
   udp: true
-- name: 亞太地區丨yoyapai.com
+- name: 亞太地區丨yoyapai.com_1
   type: trojan
   server: 103.45.245.208
   port: 2053
@@ -883,7 +976,7 @@ proxies:
   password: wc/eqRPrYjnxfAJ2JKnio7cG2Ko9K9DiMwzonRjU3LI=
   skip-cert-verify: true
   udp: true
-- name: 烏克蘭丨yoyapai.com_4
+- name: 烏克蘭丨yoyapai.com_2
   type: vless
   server: 95.133.245.106
   port: 8443
@@ -937,7 +1030,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   udp: true
-- name: 德國丨yoyapai.com_3
+- name: 德國丨yoyapai.com_4
   type: vless
   server: 95.133.245.213
   port: 8443
@@ -946,7 +1039,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   udp: true
-- name: 德國丨yoyapai.com_4
+- name: 德國丨yoyapai.com_5
   type: vless
   server: 95.133.245.212
   port: 8443
@@ -982,19 +1075,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   udp: true
-- name: 美國CloudFlare节点丨yoyapai.com
-  type: vless
-  server: 162.159.81.104
-  port: 80
-  uuid: 4b00d726-e072-429b-997e-f07affea3b7f
-  network: ws
-  tls: false
-  ws-opts:
-    path: /eyJqdW5rIjoiUEVTdDRlR2hhc0JuYyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ
-    headers:
-      Host: icy-darkness-8ff1.farzambia12mo.workers.dev
-  skip-cert-verify: true
-  udp: true
 - name: 美國南卡羅來納州丨yoyapai.com
   type: vless
   server: 169.150.215.80
@@ -1004,7 +1084,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   udp: true
-- name: 捷克丨yoyapai.com_1
+- name: 捷克丨yoyapai.com
   type: vless
   server: 87.249.139.248
   port: 8443
@@ -1082,7 +1162,7 @@ proxies:
   client-fingerprint: chrome
   skip-cert-verify: true
   udp: true
-- name: 烏克蘭丨yoyapai.com_5
+- name: 烏克蘭丨yoyapai.com_3
   type: vless
   server: 143.244.45.53
   port: 8443
@@ -1193,19 +1273,6 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
   udp: true
-- name: 美國丨yoyapai.com_13
-  type: vless
-  server: 172.67.223.190
-  port: 2086
-  uuid: e6bad6ca-ab7c-4bdd-b07e-5c8ec407decd
-  network: ws
-  tls: false
-  ws-opts:
-    path: /eyJqdW5rIjoidGpkTkY2VHk0bE1pV3AiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
-    headers:
-      Host: cool-hill-7fe5.thenewata.workers.dev
-  skip-cert-verify: true
-  udp: true
 - name: 丹麥
   type: vless
   server: 185.162.229.50
@@ -1292,7 +1359,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸US美國丨yoyapai.com
+- name: 🇺🇸US美國丨yoyapai.com_3
   type: vless
   server: 167.82.0.1
   port: 80
@@ -1591,7 +1658,7 @@ proxies:
     headers:
       Host: tjsp.hhxaf.cc.cd
   udp: true
-- name: FR法國丨yoyapai.com
+- name: FR法國丨yoyapai.com_12
   type: vless
   server: yx.cloudflare.182682.xyz
   port: 443
@@ -1606,7 +1673,7 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: FR法國丨yoyapai.com_1
+- name: FR法國丨yoyapai.com_13
   type: vless
   server: cf.130519.xyz
   port: 443
@@ -1621,7 +1688,7 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: FR法國丨yoyapai.com_2
+- name: FR法國丨yoyapai.com_14
   type: vless
   server: cloudflare-ip.mofashi.ltd
   port: 443
@@ -1634,66 +1701,6 @@ proxies:
     path: /
     headers:
       Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: FR法國丨yoyapai.com_3
-  type: vless
-  server: 104.24.9.6
-  port: 443
-  uuid: 407ecce0-dc85-465f-89f5-e520e9378baf
-  network: ws
-  servername: ld.223350.xyz
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: ld.223350.xyz
-  skip-cert-verify: true
-  udp: true
-- name: FR法國丨yoyapai.com_4
-  type: vless
-  server: 104.19.87.194
-  port: 443
-  uuid: 407ecce0-dc85-465f-89f5-e520e9378baf
-  network: ws
-  servername: ld.223350.xyz
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: ld.223350.xyz
-  skip-cert-verify: true
-  udp: true
-- name: FR法國丨yoyapai.com_5
-  type: vless
-  server: 162.159.49.145
-  port: 443
-  uuid: 407ecce0-dc85-465f-89f5-e520e9378baf
-  network: ws
-  servername: ld.223350.xyz
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: ld.223350.xyz
-  skip-cert-verify: true
-  udp: true
-- name: FR法國丨yoyapai.com_6
-  type: vless
-  server: 162.159.43.131
-  port: 443
-  uuid: 407ecce0-dc85-465f-89f5-e520e9378baf
-  network: ws
-  servername: ld.223350.xyz
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: ld.223350.xyz
   skip-cert-verify: true
   udp: true
 - name: CA加拿大丨yoyapai.com_3
@@ -1734,7 +1741,7 @@ proxies:
   password: JVrsLLN1tkN8oXZO
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸US美國丨yoyapai.com_1
+- name: 🇺🇸US美國丨yoyapai.com_4
   type: vless
   server: 108.162.194.135
   port: 443
@@ -1748,7 +1755,7 @@ proxies:
       Host: nbhhh.mrcool.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 免費節點丨yoyapai.com_45
+- name: 免費節點丨yoyapai.com_30
   type: hysteria2
   server: 103.251.167.168
   port: 443
@@ -1772,7 +1779,7 @@ proxies:
       Host: newip.global.ssl.fastly.neT.
   skip-cert-verify: true
   udp: true
-- name: 美國丨yoyapai.com_17
+- name: 美國丨yoyapai.com_16
   type: trojan
   server: 167.82.101.251
   port: 443
@@ -1787,6 +1794,16 @@ proxies:
     headers:
       Host: 3-mitivpn.global.ssl.fastly.net
   udp: true
+- name: 美國丨yoyapai.com_18
+  type: trojan
+  server: www.ignitelimit.com
+  port: 443
+  password: humanity
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+  udp: true
 - name: 🇷🇺 RU俄羅斯丨yoyapai.com
   type: ss
   server: 212.192.13.91
@@ -1795,7 +1812,7 @@ proxies:
   password: 7e1dd4c55bf85da5
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸US美國丨yoyapai.com_2
+- name: 🇺🇸US美國丨yoyapai.com_5
   type: vless
   server: support.zoom.us
   port: 443
@@ -1810,7 +1827,7 @@ proxies:
       Host: support.zoom.us.yxls.eu.cc
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸US美國丨yoyapai.com_6
+- name: 🇺🇸US美國丨yoyapai.com_8
   type: vless
   server: www.cnae.top
   port: 443
@@ -1862,7 +1879,7 @@ proxies:
     path: /page=2
   skip-cert-verify: true
   udp: true
-- name: 美國丨yoyapai.com_22
+- name: 美國丨yoyapai.com_21
   type: vless
   server: 162.159.32.239
   port: 443
@@ -1877,7 +1894,7 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 美國丨yoyapai.com_23
+- name: 美國丨yoyapai.com_22
   type: vless
   server: 198.41.223.238
   port: 443
@@ -1892,7 +1909,7 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸US美國丨yoyapai.com_9
+- name: 🇺🇸US美國丨yoyapai.com_11
   type: vless
   server: 162.159.10.87
   port: 443
@@ -1907,7 +1924,7 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸US美國丨yoyapai.com_10
+- name: 🇺🇸US美國丨yoyapai.com_12
   type: vless
   server: 162.159.60.167
   port: 443
@@ -1960,7 +1977,7 @@ proxies:
       Host: sertraline.adaspoloandco.com
   skip-cert-verify: true
   udp: true
-- name: FR法國丨yoyapai.com_14
+- name: FR法國丨yoyapai.com_18
   type: vless
   server: cf.877774.xyz
   port: 443
@@ -1975,7 +1992,7 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: FR法國丨yoyapai.com_16
+- name: FR法國丨yoyapai.com_20
   type: vless
   server: store.ubi.com
   port: 443
@@ -2157,6 +2174,14 @@ proxies:
   password: EMIruFl6nN37LDQxCIwstG09haCBkyjvZVjWIMOQ0Jk=
   skip-cert-verify: true
   udp: true
+- name: 烏克蘭丨yoyapai.com_4
+  type: hysteria2
+  server: 194.247.182.201
+  port: 8080
+  password: grape_288923
+  sni: grape-coffee-fi.gleeze.com
+  skip-cert-verify: true
+  udp: true
 - name: 美國丨yoyapai.com_27
   type: hysteria2
   server: 161.33.231.22
@@ -2229,7 +2254,7 @@ proxies:
       Host: BankMelat.glObal.ssl.faStly.nEt.
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸US美國丨yoyapai.com_12
+- name: 🇺🇸US美國丨yoyapai.com_14
   type: vless
   server: 185.193.29.123
   port: 443
@@ -2241,19 +2266,6 @@ proxies:
     path: Telegram-WangCai2🇨🇳
     headers:
       Host: notls.lukongtou.eu.org
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸US美國丨yoyapai.com_13
-  type: vless
-  server: 18.239.134.69
-  port: 80
-  uuid: f55ce6cc-3f6b-40fc-9e3b-abe26db17009
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
   skip-cert-verify: true
   udp: true
 - name: 🇯🇵JP日本丨yoyapai.com
@@ -2362,19 +2374,6 @@ proxies:
       Host: twilight-poetry-2bfe.218-699.workers.dev
   skip-cert-verify: true
   udp: true
-- name: 亞太地區丨yoyapai.com_3
-  type: vless
-  server: 103.133.1.160
-  port: 80
-  uuid: eaf76557-2219-4799-8171-d7020adfefd0
-  network: ws
-  tls: false
-  ws-opts:
-    path: /ws
-    headers:
-      Host: soft-shadow-1e33.xicav73335.workers.dev
-  skip-cert-verify: true
-  udp: true
 - name: 美國+CloudFlare节点丨yoyapai.com_3
   type: vless
   server: 173.245.59.40
@@ -2388,7 +2387,7 @@ proxies:
       Host: vms.lifetime37.workers.dev
   skip-cert-verify: true
   udp: true
-- name: 法國丨yoyapai.com_1
+- name: 法國丨yoyapai.com
   type: vless
   server: 51.89.23.94
   port: 2053
@@ -2401,19 +2400,6 @@ proxies:
     path: /
     headers:
       Host: forfreeuse.sub-flow.online
-  skip-cert-verify: true
-  udp: true
-- name: 德國丨yoyapai.com_5
-  type: vless
-  server: 91.206.71.8
-  port: 80
-  uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
-  network: ws
-  tls: false
-  ws-opts:
-    path: /pyip=Telegram🇨🇳 @WangCai2
-    headers:
-      Host: round-haze-8783.294.workers.dev
   skip-cert-verify: true
   udp: true
 - name: 香港丨yoyapai.com_3
@@ -2482,34 +2468,6 @@ proxies:
   udp: true
 - name: 🇭🇰HK香港節點丨yoyapai.com_2
   type: vless
-  server: 91.193.58.93
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  network: ws
-  servername: jamph131-1228.pages.dev
-  tls: true
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰HK香港節點丨yoyapai.com_3
-  type: vless
-  server: 91.193.58.195
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  network: ws
-  servername: jamph131-1228.pages.dev
-  tls: true
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰HK香港節點丨yoyapai.com_4
-  type: vless
   server: 91.193.58.141
   port: 443
   uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
@@ -2522,7 +2480,7 @@ proxies:
       Host: jamph131-1228.pages.dev
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰HK香港節點丨yoyapai.com_5
+- name: 🇭🇰HK香港節點丨yoyapai.com_3
   type: vless
   server: 91.193.58.117
   port: 443
@@ -2549,110 +2507,397 @@ proxies:
     headers:
       Host: blackshadow.dpdns.org
   udp: true
-- name: US美国(mibei77.com 米贝节点分享)
+- name: 俄羅斯丨yoyapai.com_3
   type: vless
-  server: 108.162.198.240
-  port: 2053
+  server: 77.105.163.46
+  port: 443
+  uuid: 0e192bd1-8f19-4184-9fff-6d67e4f738bd
+  network: ws
+  servername: ov186.ochmaybrooooo.online
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: ov186.ochmaybrooooo.online
+  skip-cert-verify: true
+  udp: true
+- name: 法國丨yoyapai.com_1
+  type: vless
+  server: 94.140.0.100
+  port: 8880
+  uuid: 78e6619e-e82a-cd8d-b482-0973d8498305
+  network: ws
+  tls: false
+  ws-opts:
+    path: /sync
+    headers:
+      Host: silent-pine-a674.jfadwkglaugul.workers.dev
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰HK香港節點丨yoyapai.com_4
+  type: vless
+  server: 91.193.58.92
+  port: 80
+  uuid: f2d55510-fa3c-4e3b-adfc-2d96fa399c19
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=Telegram🇨🇳+@WangCai2
+    headers:
+      Host: plain-darkness-90ea.259.workers.dev
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰HK香港節點丨yoyapai.com_5
+  type: vless
+  server: 91.193.58.93
+  port: 80
+  uuid: f2d55510-fa3c-4e3b-adfc-2d96fa399c19
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=Telegram🇨🇳+@WangCai2
+    headers:
+      Host: plain-darkness-90ea.259.workers.dev
+  skip-cert-verify: true
+  udp: true
+- name: 免費節點丨yoyapai.com_31
+  type: ss
+  server: 82.38.31.218
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  skip-cert-verify: true
+  udp: true
+- name: 免費節點丨yoyapai.com_32
+  type: vless
+  server: 172.67.175.34
+  port: 8443
+  uuid: 2e8beadd-99bf-4fda-8692-8493886504bc
+  network: ws
+  servername: ad-007.cloud25075.info
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-007.cloud25075.info
+  skip-cert-verify: true
+  udp: true
+- name: 免費節點丨yoyapai.com_38
+  type: vless
+  server: 198.41.209.43
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 免費節點丨yoyapai.com_53
+  type: vless
+  server: ad-018.cloud25075.info
+  port: 8443
+  uuid: 5d3abfa9-bdf5-4334-8383-dcf92df802a5
+  network: ws
+  servername: ad-018.cloud25075.info
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-018.cloud25075.info
+  skip-cert-verify: true
+  udp: true
+- name: 免費節點丨yoyapai.com_54
+  type: vless
+  server: 104.16.8.66
+  port: 8880
+  uuid: 725c66a2-2bce-4a24-ba52-b4e2e7047076
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: rapid-base-6c9e.45-d79.workers.dev
+  skip-cert-verify: true
+  udp: true
+- name: 免費節點丨yoyapai.com_62
+  type: vless
+  server: chatgpt.com
+  port: 443
+  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  network: ws
+  servername: powered-by-surena.user68f797c2f3e1b.workers.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed
+    headers:
+      Host: powered-by-surena.user68f797c2f3e1b.workers.dev
+  skip-cert-verify: true
+  udp: true
+- name: FR法国(mibei77.com 米贝节点分享)
+  type: vless
+  server: 104.18.42.68
+  port: 8443
   uuid: 29ca503d-e6b8-4509-b666-48133f450857
   network: ws
   servername: learn00.evany.de5.net
   tls: true
-  client-fingerprint: chrome
+  client-fingerprint: random
   ws-opts:
     path: /
     headers:
       Host: learn00.evany.de5.net
   skip-cert-verify: true
   udp: true
-- name: DE德国(mibei77.com 米贝节点分享)
+- name: KR韩国(mibei77.com 米贝节点分享)
   type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 957797d5-1710-4e4a-bf41-9f5b641503e3
+  server: 211.220.53.131
+  port: 12545
+  uuid: ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
   network: ws
-  servername: ssl.fastly.com
+  servername: sni.ehb.cc.cd
   tls: true
   client-fingerprint: chrome
   ws-opts:
-    path: /
+    path: /proxyip=ProxyIP.CMLiussss.net?uuid=ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
     headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
+      Host: sni.ehb.cc.cd
   skip-cert-verify: true
   udp: true
-- name: FR法国(mibei77.com 米贝节点分享)
+- name: US美国(mibei77.com 米贝节点分享)_5
   type: vless
-  server: www.glassdoor.com
+  server: dtac.exp.dog
+  port: 80
+  uuid: 19668b6f-e215-41e6-8102-b8d29fb5b8ae
+  network: ws
+  tls: false
+  ws-opts:
+    path: /fnet50
+    headers:
+      Host: duatoup3wk8q2.cloudfront.net
+  skip-cert-verify: true
+  udp: true
+- name: US美国(mibei77.com 米贝节点分享)_6
+  type: vless
+  server: 104.18.37.228
+  port: 443
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  network: ws
+  servername: hhlfy.twiladaphne.ndjp.net
+  tls: true
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  skip-cert-verify: true
+  udp: true
+- name: NL荷兰(mibei77.com 米贝节点分享)
+  type: vless
+  server: 45.142.120.40
   port: 8880
-  uuid: f6e14309-5cff-4f5d-bce1-06a260159bbe
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   tls: false
   ws-opts:
     path: /
     headers:
-      Host: steep-bread-32f0.92-d12.workers.dev
+      Host: vms.lifetime08.workers.dev
+  skip-cert-verify: true
+  udp: true
+- name: KR韩国(mibei77.com 米贝节点分享)_2
+  type: vless
+  server: 211.104.99.209
+  port: 11019
+  uuid: ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
+  network: ws
+  servername: sni.ehb.cc.cd
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net?uuid=ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
+    headers:
+      Host: sni.ehb.cc.cd
+  skip-cert-verify: true
+  udp: true
+- name: US美国(mibei77.com 米贝节点分享)_19
+  type: vless
+  server: 8.47.69.0
+  port: 8880
+  uuid: fd22ad82-2d89-4338-b72c-5092ae699c7d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /rutube
+    headers:
+      Host: rutube.ummapeople.online
+  skip-cert-verify: true
+  udp: true
+- name: 巴西(mibei77.com 米贝节点分享)
+  type: hysteria2
+  server: 163.176.21.66
+  port: 443
+  password: CyG0RFxMjzs41uQD4OLuHQ==
+  sni: rmgyvpn.rest
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
+  udp: true
+- name: DE德国(mibei77.com 米贝节点分享)_1
+  type: vless
+  server: 217.163.76.118
+  port: 2086
+  uuid: b7977b65-cfd8-4db9-a029-6ef014a4ae4a
+  network: http
+  tls: false
+  http-opts:
+    path:
+    - /
+    headers:
+      Host:
+      - xvh.andishehparenting.com
+  skip-cert-verify: true
+  udp: true
+- name: 泰国(mibei77.com 米贝节点分享)
+  type: vless
+  server: 171.103.93.107
+  port: 10911
+  uuid: ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
+  network: ws
+  servername: sni.ehb.cc.cd
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net?uuid=ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
+    headers:
+      Host: sni.ehb.cc.cd
+  skip-cert-verify: true
+  udp: true
+- name: US美国(mibei77.com 米贝节点分享)_66
+  type: hysteria2
+  server: 205.237.109.212
+  port: 8443
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  sni: grape-turbo-fr.roxa.org
+  skip-cert-verify: true
+  udp: true
+- name: JP日本(mibei77.com 米贝节点分享)
+  type: vless
+  server: 151.241.129.98
+  port: 7219
+  uuid: ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
+  network: ws
+  servername: sni.ehb.cc.cd
+  tls: true
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net?uuid=ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
+    headers:
+      Host: sni.ehb.cc.cd
   skip-cert-verify: true
   udp: true
 - name: FR法国(mibei77.com 米贝节点分享)_2
   type: vless
-  server: 108.162.192.5
-  port: 443
-  uuid: dd321f25-8f90-4e7c-a1fa-01883a8988a7
+  server: 172.67.201.133
+  port: 8443
+  uuid: 05cf7b0e-ad1a-42bb-80e7-73ae45b1019a
   network: ws
-  servername: soucuovls.pages.dev
+  servername: france.io-com-de-dev.org
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /api/voip/updates/static/x9i2
+    headers:
+      Host: france.io-com-de-dev.org
+  skip-cert-verify: true
+  udp: true
+- name: DE德国(mibei77.com 米贝节点分享)_8
+  type: vless
+  server: wx-deu-037.cdnphotos.org
+  port: 443
+  uuid: 77930005-ea92-44dc-9d94-e9192427f519
+  network: http
+  servername: wx-deu-037.cdnphotos.org
+  tls: true
+  client-fingerprint: qq
+  http-opts:
+    path:
+    - /api/v1/
+    headers:
+      Host:
+      - wx-deu-037.cdnphotos.org
+  skip-cert-verify: true
+  udp: true
+- name: US美国(mibei77.com 米贝节点分享)_82
+  type: vless
+  server: fast.nanniang.top
+  port: 8443
+  uuid: 916e3030-6eac-418b-9402-7508ca7d6280
+  network: ws
+  servername: us-akile.nanniang.top
   tls: true
   client-fingerprint: chrome
   ws-opts:
     path: /
     headers:
-      Host: soucuovls.pages.dev
+      Host: us-akile.nanniang.top
   skip-cert-verify: true
-  udp: true
-- name: FR法国(mibei77.com 米贝节点分享)_3
-  type: trojan
-  server: 104.16.174.72
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /assignment
-  udp: true
-- name: FR法国(mibei77.com 米贝节点分享)_4
-  type: trojan
-  server: 86.38.214.205
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /assignment
   udp: true
 - name: FR法国(mibei77.com 米贝节点分享)_5
   type: trojan
-  server: 104.18.152.246
+  server: 104.16.148.5
   port: 443
-  password: humanity
-  sni: www.ignitelimit.com
+  password: 19877587-ed94-4033-88cd-4ac50a5e8718
+  sni: dimskiee.biz.id
   skip-cert-verify: true
   tls: true
   ws-opts:
-    path: /assignment
+    path: /WangCai-8
   udp: true
-- name: FR法国(mibei77.com 米贝节点分享)_6
+- name: NL荷兰(mibei77.com 米贝节点分享)_1
   type: vless
-  server: 104.18.36.192
+  server: 176.124.223.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime38.workers.dev
+  skip-cert-verify: true
+  udp: true
+- name: US美国(mibei77.com 米贝节点分享)_83
+  type: vless
+  server: 162.159.44.100
   port: 2087
   uuid: 29ca503d-e6b8-4509-b666-48133f450857
   network: ws
   servername: learn00.evany.de5.net
   tls: true
-  client-fingerprint: chrome
+  client-fingerprint: random
   ws-opts:
     path: /
     headers:
       Host: learn00.evany.de5.net
+  skip-cert-verify: true
+  udp: true
+- name: FR法国(mibei77.com 米贝节点分享)_6
+  type: vless
+  server: 104.16.75.70
+  port: 80
+  uuid: df301b32-1152-4526-9a63-beedd93d3156
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: vl.dalazhi.cloudns.biz
   skip-cert-verify: true
   udp: true
 - name: FR法国(mibei77.com 米贝节点分享)_7
@@ -2672,77 +2917,6 @@ proxies:
   udp: true
 - name: FR法国(mibei77.com 米贝节点分享)_8
   type: vless
-  server: 162.159.0.70
-  port: 2087
-  uuid: 29ca503d-e6b8-4509-b666-48133f450857
-  network: ws
-  servername: learn00.evany.de5.net
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: learn00.evany.de5.net
-  skip-cert-verify: true
-  udp: true
-- name: FR法国(mibei77.com 米贝节点分享)_9
-  type: vless
-  server: 172.64.35.32
-  port: 8443
-  uuid: 29ca503d-e6b8-4509-b666-48133f450857
-  network: ws
-  servername: learn00.evany.de5.net
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: learn00.evany.de5.net
-  skip-cert-verify: true
-  udp: true
-- name: FR法国(mibei77.com 米贝节点分享)_10
-  type: vless
-  server: 172.64.52.81
-  port: 443
-  uuid: 29ca503d-e6b8-4509-b666-48133f450857
-  network: ws
-  servername: learn00.evany.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /
-    headers:
-      Host: learn00.evany.de5.net
-  skip-cert-verify: true
-  udp: true
-- name: FR法国(mibei77.com 米贝节点分享)_11
-  type: trojan
-  server: 104.18.152.113
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /assignment
-  udp: true
-- name: FR法国(mibei77.com 米贝节点分享)_12
-  type: vless
-  server: 172.64.154.5
-  port: 8443
-  uuid: 29ca503d-e6b8-4509-b666-48133f450857
-  network: ws
-  servername: learn00.evany.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /
-    headers:
-      Host: learn00.evany.de5.net
-  skip-cert-verify: true
-  udp: true
-- name: FR法国(mibei77.com 米贝节点分享)_13
-  type: vless
   server: 108.162.193.0
   port: 443
   uuid: 29ca503d-e6b8-4509-b666-48133f450857
@@ -2756,400 +2930,219 @@ proxies:
       Host: learn00.evany.de5.net
   skip-cert-verify: true
   udp: true
-- name: FR法国(mibei77.com 米贝节点分享)_14
+- name: KR韩国(mibei77.com 米贝节点分享)_5
   type: vless
-  server: 104.21.41.131
-  port: 8443
-  uuid: 901fc0c9-ae4c-4d06-9fed-253b25b68a0e
+  server: 121.159.11.183
+  port: 37020
+  uuid: ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
   network: ws
-  servername: ad-004.vector9nmb3.info
+  servername: sni.ehb.cc.cd
   tls: true
-  client-fingerprint: chrome
   ws-opts:
-    path: /
+    path: /proxyip=ProxyIP.CMLiussss.net?uuid=ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
     headers:
-      Host: ad-004.vector9nmb3.info
+      Host: sni.ehb.cc.cd
   skip-cert-verify: true
   udp: true
-- name: NL荷兰(mibei77.com 米贝节点分享)
+- name: AU澳大利亚(mibei77.com 米贝节点分享)
   type: vless
-  server: 45.142.120.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime08.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: NL荷兰(mibei77.com 米贝节点分享)_1
-  type: vless
-  server: 176.124.223.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime38.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: NL荷兰(mibei77.com 米贝节点分享)_2
-  type: vless
-  server: 198.71.189.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime04.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: RU俄罗斯(mibei77.com 米贝节点分享)_1
-  type: vless
-  server: dtac.exp.dog
-  port: 80
-  uuid: 19668b6f-e215-41e6-8102-b8d29fb5b8ae
-  network: ws
-  servername: duatoup3wk8q2.cloudfront.net
-  tls: false
-  ws-opts:
-    path: /fnet50
-    headers:
-      Host: duatoup3wk8q2.cloudfront.net
-  skip-cert-verify: true
-  udp: true
-- name: US美国(mibei77.com 米贝节点分享)_2
-  type: vless
-  server: 162.159.44.100
-  port: 2087
-  uuid: 29ca503d-e6b8-4509-b666-48133f450857
-  network: ws
-  servername: learn00.evany.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /
-    headers:
-      Host: learn00.evany.de5.net
-  skip-cert-verify: true
-  udp: true
-- name: US美国(mibei77.com 米贝节点分享)_3
-  type: vless
-  server: one-for-all.levikogjgfdd.ir
-  port: 2096
-  uuid: 50414e45-4c5f-5a45-5553-6f51879c0594
-  network: ws
-  servername: levikoconfig.levikogjgfdd.ir
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: levikoconfig.levikogjgfdd.ir
-  skip-cert-verify: true
-  udp: true
-- name: US美国(mibei77.com 米贝节点分享)_4
-  type: vless
-  server: 104.18.42.98
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
-  skip-cert-verify: true
-  udp: true
-- name: US美国(mibei77.com 米贝节点分享)_5
-  type: vless
-  server: 108.162.198.58
+  server: 103.122.247.54
   port: 443
-  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  uuid: ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
   network: ws
-  servername: learn00.evany.de5.net
+  servername: sni.ehb.cc.cd
   tls: true
-  client-fingerprint: random
   ws-opts:
-    path: /
+    path: /proxyip=ProxyIP.CMLiussss.net?uuid=ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
     headers:
-      Host: learn00.evany.de5.net
+      Host: sni.ehb.cc.cd
   skip-cert-verify: true
   udp: true
-- name: DE德国(mibei77.com 米贝节点分享)_1
+- name: JP日本(mibei77.com 米贝节点分享)_2
   type: vless
-  server: 217.144.190.14
-  port: 2053
-  uuid: c7e9c591-2764-423a-afca-efbd010fd396
+  server: 210.152.85.154
+  port: 19364
+  uuid: ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
   network: ws
-  servername: forfreeuse.sub-flow.online
+  servername: sni.ehb.cc.cd
   tls: true
   client-fingerprint: chrome
   ws-opts:
-    path: /
+    path: /proxyip=ProxyIP.CMLiussss.net?uuid=ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
     headers:
-      Host: forfreeuse.sub-flow.online
+      Host: sni.ehb.cc.cd
   skip-cert-verify: true
   udp: true
-- name: DE德国(mibei77.com 米贝节点分享)_2
+- name: JP日本(mibei77.com 米贝节点分享)_4
   type: vless
-  server: 217.163.76.118
-  port: 2086
-  uuid: b7977b65-cfd8-4db9-a029-6ef014a4ae4a
-  network: http
+  server: 203.137.165.164
+  port: 57554
+  uuid: ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
+  network: ws
+  servername: sni.ehb.cc.cd
+  tls: true
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net?uuid=ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
+    headers:
+      Host: sni.ehb.cc.cd
+  skip-cert-verify: true
+  udp: true
+- name: SG新加坡(mibei77.com 米贝节点分享)
+  type: vless
+  server: 188.239.17.75
+  port: 2000
+  uuid: ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
+  network: ws
+  servername: sni.ehb.cc.cd
+  tls: true
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net?uuid=ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
+    headers:
+      Host: sni.ehb.cc.cd
+  skip-cert-verify: true
+  udp: true
+- name: CA加拿大(mibei77.com 米贝节点分享)
+  type: vless
+  server: 208.66.228.194
+  port: 443
+  uuid: ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
+  network: ws
+  servername: sni.ehb.cc.cd
+  tls: true
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net?uuid=ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
+    headers:
+      Host: sni.ehb.cc.cd
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港
+  type: vmess
+  server: 47.86.167.194
+  port: 800
+  uuid: f2c67cae-c09d-4739-947d-f5302d87a3c0
+  alterId: 0
+  cipher: auto
   tls: false
+  skip-cert-verify: true
+  network: http
   http-opts:
     path:
-    - /
+    - /x
     headers:
       Host:
-      - xvh.andishehparenting.com
-  skip-cert-verify: true
+      - sjskendn.dingtalk.com
   udp: true
-- name: RU俄罗斯(mibei77.com 米贝节点分享)_6
-  type: hysteria2
-  server: 82.117.87.248
-  port: 2096
-  password: 71cada65-d23e-418c-88e4-a06188d14689
-  sni: it-one.quiet-rogue.site
-  skip-cert-verify: true
-  udp: true
-- name: KR韩国(mibei77.com 米贝节点分享)
-  type: vless
-  server: 211.104.99.209
-  port: 11019
-  uuid: 3ee15a68-9391-470d-b810-29fc663beb28
-  network: ws
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: NL荷兰(mibei77.com 米贝节点分享)_3
-  type: vless
-  server: 31.59.170.251
-  port: 2053
-  uuid: c7e9c591-2764-423a-afca-efbd010fd396
-  network: ws
-  servername: forfreeuse.sub-flow.online
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: forfreeuse.sub-flow.online
-  skip-cert-verify: true
-  udp: true
-- name: US美国(mibei77.com 米贝节点分享)_6
-  type: hysteria2
-  server: 23.95.75.151
-  port: 8443
-  password: VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC
-  sni: hopp-us.yyuyy.com
-  skip-cert-verify: true
-  udp: true
-- name: US美国(mibei77.com 米贝节点分享)_14
-  type: vless
-  server: 104.21.90.146
-  port: 443
-  uuid: e35a5ad5-0175-4cd6-b654-1eb220ff28f0
-  network: ws
-  servername: node-dispatch-c8-2.e20260720.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /Wvf67jc5MgASmsb9Qsr0
-    headers:
-      Host: node-dispatch-c8-2.e20260720.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: US美国(mibei77.com 米贝节点分享)_15
-  type: vless
-  server: 104.17.171.60
-  port: 2083
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  network: ws
-  servername: vlso6.1d.mom
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /socks5=888:888@hkip.1d.mom:1080
-    headers:
-      Host: vlso6.1d.mom
-  skip-cert-verify: true
-  udp: true
-- name: US美国(mibei77.com 米贝节点分享)_27
-  type: vless
-  server: 173.245.49.116
-  port: 443
-  uuid: 9e5e0a3f-0fdc-4272-9c6b-bc6f00000001
-  network: ws
-  servername: amirweb1388.dpdns.org
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /mr
-    headers:
-      Host: amirweb1388.dpdns.org
-  skip-cert-verify: true
-  udp: true
-- name: US美国(mibei77.com 米贝节点分享)_43
-  type: hysteria2
-  server: taga3.api3-max.ru
-  port: 443
-  password: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
-  sni: taga3.api3-max.ru
-  skip-cert-verify: true
-  udp: true
-- name: US美国(mibei77.com 米贝节点分享)_44
-  type: hysteria2
-  server: taga4.api3-max.ru
-  port: 443
-  password: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
-  sni: taga4.api3-max.ru
-  skip-cert-verify: true
-  udp: true
-- name: US美国(mibei77.com 米贝节点分享)_53
-  type: trojan
-  server: undef.network
-  port: 8443
-  password: 5xjmr1dz66pgsew0
-  sni: com.digitalposts.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /bkdicj
-  udp: true
-- name: HK香港(mibei77.com 米贝节点分享)
-  type: anytls
-  server: c17b5a81-tdups0-tf8z9r-1pr35.hk2.hyhuawei.com
-  port: 443
-  password: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
-  sni: c17b5a81-tdups0-tf8z9r-1pr35.hk2.hyhuawei.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: GB英国(mibei77.com 米贝节点分享)_2
-  type: hysteria2
-  server: wopa8.api3-max.ru
-  port: 443
-  password: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
-  sni: wopa8.api3-max.ru
-  skip-cert-verify: true
-  udp: true
-- name: 🇲🇾_MY_马来西亚->🇺🇸_US_美国
+- name: 🇭🇰_HK_中国香港_1
   type: vmess
-  server: v24.hdacd.com
-  port: 30824
+  server: drbkg16egf3fzlm3.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+  udp: true
+- name: 🇩🇪_DE_德国_1
+  type: vless
+  server: 45.80.111.7
+  port: 443
+  uuid: 926bc4cd-709e-4e90-8aa7-78db75fbe86b
+  network: ws
+  servername: 2--ldej--MiTiVPN---MiTiVPN-o.KingNetwork.ir
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/de2---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: De2-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.KinGNetWork.iR
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港_2
+  type: vmess
+  server: m01c7b2z26dtqgee.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+  udp: true
+- name: 🇩🇪_DE_德国_3
+  type: vless
+  server: 31.76.11.46.cdn-one.org
+  port: 443
+  uuid: 4f375fb4-3c95-425f-bc7b-8085487a6f3c
+  network: ws
+  servername: 31.76.11.46.cdn-one.org
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /52872/BNzG4FvIAr
+    headers:
+      Host: 31.76.11.46.cdn-one.org
+  skip-cert-verify: true
+  udp: true
+- name: 🇦🇪_AE_阿拉伯联合酋长国->🇩🇪_DE_德国_1
+  type: vless
+  server: ddc-akn.astralweb.tech
+  port: 443
+  uuid: 04b9e828-43ed-4faf-8952-41069ec08355
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+  type: vmess
+  server: v9.hdacd.com
+  port: 30809
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
   tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇭🇰_HK_中国香港->🇹🇼_TW_中国台湾
-  type: vmess
-  server: world.t.51guangtaobao.com
-  port: 2510
-  uuid: 1d3d868e-ae7b-3762-b9d9-a7f267494c7e
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸_US_美国->🇨🇭_CH_瑞士
-  type: trojan
-  server: 90081bb25c.node.tro.cac.cab
-  port: 45553
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: ch.01.naiun.bilibili.com
   skip-cert-verify: true
-  tls: false
   udp: true
-- name: 🇫🇮_FI_芬兰
-  type: ss
-  server: 109.107.182.229
-  port: 51544
-  cipher: chacha20-ietf-poly1305
-  password: MZeSTvpl2uoey1R0frhPyJ
-  udp: true
-- name: 🇺🇸_US_美国->🇸🇬_SG_新加坡
-  type: vmess
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
-  port: 6004
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸_US_美国
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸_US_美国->🇫🇷_FR_法国
-  type: trojan
-  server: 90081bb25c.node.tro.cac.cab
-  port: 45619
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: fr.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 🇨🇦_CA_加拿大
-  type: ss
-  server: 15.223.186.62
+- name: 🇵🇱_PL_波兰_1
+  type: vless
+  server: 31.76.251.127.cdn-one.org
   port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇫🇮_FI_芬兰_1
-  type: ss
-  server: 195.133.2.2
-  port: 34898
-  cipher: chacha20-ietf-poly1305
-  password: v2LIewZzNUsIrqODr22FVc
-  udp: true
-- name: 🇺🇸_US_美国_1
-  type: trojan
-  server: 90081bb25c.node.tro.cac.cab
-  port: 47909
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: is.01.naiun.bilibili.com
+  uuid: 4f375fb4-3c95-425f-bc7b-8085487a6f3c
+  network: ws
+  servername: 31.76.251.127.cdn-one.org
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /10336/2GCOqG7bvA
+    headers:
+      Host: 31.76.251.127.cdn-one.org
   skip-cert-verify: true
-  tls: false
   udp: true
-- name: 🇺🇸_US_美国->🇦🇿_AZ_阿塞拜疆
-  type: trojan
-  server: 90081bb25c.node.tro.cac.cab
-  port: 41943
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: az.01.naiun.bilibili.com
+- name: 🇺🇸_US_美国_2
+  type: vless
+  server: 104.17.21.32
+  port: 8880
+  uuid: 300f44af-adb8-42b7-b869-bef70b205d7e
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: icy-rice-3c1c.340-680.workers.dev
   skip-cert-verify: true
-  tls: false
   udp: true
-- name: 🇷🇺_RU_俄罗斯
-  type: ss
-  server: 45.140.169.216
-  port: 30129
-  cipher: aes-256-gcm
-  password: c5fcdf7829112cb4
+- name: 🇺🇸_US_美国_3
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
   udp: true
 - name: TG@ZDYZ2 -HK-Hong Kong8
   type: vless
@@ -3175,7 +3168,7 @@ proxies:
   port: 443
   cipher: aes-128-cfb
   password: shadowsocks
-- name: 🇺🇸_US_美国_2
+- name: 🇺🇸_US_美国
   type: vmess
   server: yh2.freeh1.xyz
   port: 8080
@@ -3804,7 +3797,7 @@ proxies:
     path: /
     headers:
       Host: us65.netfilx.live
-- name: 🇺🇸_US_美国->🇫🇷_FR_法国_1
+- name: 🇺🇸_US_美国->🇫🇷_FR_法国
   type: vmess
   server: 172.67.130.140
   port: 2082
@@ -3944,7 +3937,7 @@ proxies:
     path: /?ed=2048
     headers:
       Host: juzibaipiao.5112233.xyz
-- name: 🇺🇸_US_美国_3
+- name: 🇺🇸_US_美国_4
   type: vmess
   server: russia.com
   port: 2095
@@ -4116,7 +4109,7 @@ proxies:
     path: tg@zdyz2
     headers:
       Host: cfed.tgzdyz2.top
-- name: 🇺🇸_US_美国_4
+- name: 🇺🇸_US_美国_5
   type: vmess
   server: 172.67.116.48
   port: 80
@@ -4202,7 +4195,7 @@ proxies:
     path: /?ed=2048
     headers:
       Host: juzibaipiao.5112233.xyz
-- name: 🇺🇸_US_美国_5
+- name: 🇺🇸_US_美国_6
   type: vmess
   server: 172.67.152.170
   port: 2052
@@ -4246,7 +4239,7 @@ proxies:
     path: /linkvws
     headers:
       Host: nina.bond
-- name: 🇨🇦_CA_加拿大_1
+- name: 🇨🇦_CA_加拿大
   type: vmess
   server: 108.181.23.161
   port: 8080
@@ -4370,7 +4363,7 @@ proxies:
   port: 8091
   cipher: aes-256-gcm
   password: PCnnH6SQSnfoS27
-- name: 🇺🇸_US_美国_6
+- name: 🇺🇸_US_美国_7
   type: vmess
   server: yh3.freeh1.xyz
   port: 8080
@@ -4505,7 +4498,7 @@ proxies:
     path: /?ed=2048
     headers:
       Host: a.prapt1.ir
-- name: 🇺🇸_US_美国_7
+- name: 🇺🇸_US_美国_8
   type: vmess
   server: fbi.gov
   port: 8080
@@ -4607,7 +4600,7 @@ proxies:
     path: TG@ZDYZ2
     headers:
       Host: cfed.tgzdyz2.top
-- name: 🇺🇸_US_美国_8
+- name: 🇺🇸_US_美国_9
   type: vmess
   server: cold-dawn-9246.fly.dev
   port: 443
@@ -4686,7 +4679,7 @@ proxies:
     path: TG@ZDYZ2
     headers:
       Host: cfed.tgzdyz2.top
-- name: 🇺🇸_US_美国_9
+- name: 🇺🇸_US_美国_10
   type: vmess
   server: 104.21.234.52
   port: 80
@@ -4698,7 +4691,7 @@ proxies:
     path: /
     headers:
       Host: a.prapt1.ir
-- name: 🇺🇸_US_美国_10
+- name: 🇺🇸_US_美国_11
   type: trojan
   server: 3.141.130.47
   port: 22222
@@ -4770,7 +4763,7 @@ proxies:
   port: 7002
   cipher: aes-256-gcm
   password: RexnBgU7EV5ADxG
-- name: 🇺🇸_US_美国_11
+- name: 🇺🇸_US_美国_12
   type: ss
   server: 169.197.142.216
   port: 6679
@@ -4853,7 +4846,7 @@ proxies:
   server: kz-full.privateip.net
   port: 443
   password: 62011b3d-2706-4a97-98b7-9986003c5fe0
-- name: 🇨🇦_CA_加拿大_2
+- name: 🇨🇦_CA_加拿大_1
   type: vmess
   server: 23.227.39.24
   port: 8080
@@ -4938,7 +4931,7 @@ proxies:
     path: /
     headers:
       Host: a.prapt1.ir
-- name: 🇺🇸_US_美国_12
+- name: 🇺🇸_US_美国_13
   type: vmess
   server: yh2.dtku41.xyz
   port: 8080
@@ -5345,7 +5338,7 @@ proxies:
     path: TG@ZDYZ2
     headers:
       Host: cfed.tgzdyz2.top
-- name: 🇺🇸_US_美国_13
+- name: 🇺🇸_US_美国_14
   type: trojan
   server: 95.164.33.62
   port: 443
@@ -5579,7 +5572,7 @@ proxies:
   port: 80
   cipher: aes-128-gcm
   password: a-wym4ovY4Yw
-- name: 🇫🇷_FR_法国
+- name: 🇫🇷_FR_法国_1
   type: vmess
   server: 51.159.155.52
   port: 3389
@@ -5985,7 +5978,7 @@ proxies:
     path: /?ed=2048
     headers:
       Host: juzibaipiao.5112233.xyz
-- name: 🇺🇸_US_美国_14
+- name: 🇺🇸_US_美国_15
   type: ss
   server: 169.197.142.216
   port: 7002
@@ -6229,7 +6222,7 @@ proxies:
     path: /?ed=2048
     headers:
       Host: juzibaipiao.5112233.xyz
-- name: 🇺🇸_US_美国_15
+- name: 🇺🇸_US_美国_16
   type: vmess
   server: 104.26.4.57
   port: 2095
@@ -6531,7 +6524,7 @@ proxies:
   port: 64160
   cipher: chacha20-ietf-poly1305
   password: a7810702-8fd1-4df6-a060-79e840a7b652
-- name: 🇺🇸_US_美国_16
+- name: 🇺🇸_US_美国_17
   type: vmess
   server: mahilu.site
   port: 2052
@@ -6555,7 +6548,7 @@ proxies:
   port: 13022
   cipher: chacha20-ietf-poly1305
   password: w5drAL7PfCIwQ2ycUuoDsV2Ls
-- name: 🇺🇸_US_美国->🇫🇷_FR_法国_2
+- name: 🇺🇸_US_美国->🇫🇷_FR_法国_1
   type: vmess
   server: 104.21.8.157
   port: 2082
@@ -6683,7 +6676,7 @@ proxies:
   port: 7306
   cipher: aes-256-gcm
   password: FoOiGlkAA9yPEGP
-- name: 🇨🇦_CA_加拿大_3
+- name: 🇨🇦_CA_加拿大_2
   type: vmess
   server: 134.122.41.160
   port: 3389
@@ -6758,7 +6751,7 @@ proxies:
   port: 8009
   cipher: aes-256-gcm
   password: XKFKl2rULjIp74
-- name: 🇺🇸_US_美国_17
+- name: 🇺🇸_US_美国_18
   type: vmess
   server: 162.159.134.23
   port: 8080
@@ -6770,7 +6763,7 @@ proxies:
     path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
     headers:
       Host: championship-bidding-oxygen-brochure.trycloudflare.com
-- name: 🇺🇸_US_美国_18
+- name: 🇺🇸_US_美国_19
   type: vmess
   server: hms082.gwdef.sbs
   port: 443
@@ -6921,7 +6914,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳@WangCai_8
     headers:
       Host: a.prapt1.ir
-- name: 🇺🇸_US_美国_19
+- name: 🇺🇸_US_美国_20
   type: vmess
   server: cfcdn1.sanfencdn9.com
   port: 2086
@@ -7098,7 +7091,7 @@ proxies:
     path: /?ed=2048
     headers:
       Host: juzibaipiao.5112233.xyz
-- name: 🇺🇸_US_美国_20
+- name: 🇺🇸_US_美国_21
   type: vmess
   server: 162.159.130.208
   port: 8080
@@ -7208,7 +7201,7 @@ proxies:
   port: 443
   cipher: aes-128-gcm
   password: a-wym4ovY4Yw
-- name: 🇺🇸_US_美国_21
+- name: 🇺🇸_US_美国_22
   type: vmess
   server: yh1.dtku41.xyz
   port: 8080
@@ -7232,7 +7225,7 @@ proxies:
   port: 7001
   cipher: aes-256-gcm
   password: RexnBgU7EV5ADxG
-- name: 🇺🇸_US_美国_22
+- name: 🇺🇸_US_美国_23
   type: vmess
   server: russia.com
   port: 8880
@@ -7348,7 +7341,7 @@ proxies:
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇩🇪_DE_德国_1
+- name: 🇩🇪_DE_德国_6
   type: trojan
   server: 18.196.39.57
   port: 22222
@@ -7416,7 +7409,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
     headers:
       Host: a.prapt1.ir
-- name: 🇩🇪_DE_德国_2
+- name: 🇩🇪_DE_德国_7
   type: trojan
   server: 3.68.139.230
   port: 22222
@@ -7497,63 +7490,63 @@ proxy-groups:
   - 美国+CloudFlare节点_P
   - 美国+CloudFlare节点_P_1
   - 美国+CloudFlare节点_P_2
-  - 伊朗+V2CROSS.COM_P
-  - 美国+Amazon+EC2服务器_P
   - 美国+CloudFlare节点_P_3
+  - 英国+Technicolor+SA_P
+  - 美国+Digital+Ocean_P
+  - 英国+Technicolor+SA_P_1
   - 美国+CloudFlare节点_P_4
   - 美国+CloudFlare节点_P_5
-  - 俄罗斯+V2CROSS.COM_P
-  - 美国+V2CROSS.COM_P_1
+  - 美国+得克萨斯州达拉斯Cloudflare+Warp节点_P
   - 美国+CloudFlare节点_P_6
+  - 希腊+V2CROSS.COM_P
+  - 伊朗+V2CROSS.COM_P
   - 美国+CloudFlare节点_P_7
-  - 英国+Technicolor+SA_P
-  - RO - zhuhai.uk
-  - RO - zhuhai.uk 02
-  - GB - zhuhai.uk
-  - GB - zhuhai.uk 02
-  - GB - zhuhai.uk 04
+  - 美国 Akamai科技公司CDN网络节点_P
   - US - zhuhai.uk
+  - RO - zhuhai.uk
   - US - zhuhai.uk 02
   - US - zhuhai.uk 03
+  - DE - zhuhai.uk
+  - TH - zhuhai.uk
+  - RO - zhuhai.uk 02
   - US - zhuhai.uk 04
-  - US - zhuhai.uk 05
-  - US - zhuhai.uk 06
+  - HK - zhuhai.uk
   - RO - zhuhai.uk 03
   - RO - zhuhai.uk 04
   - RO - zhuhai.uk 05
   - RO - zhuhai.uk 06
-  - NL - zhuhai.uk
-  - KR - zhuhai.uk
   - RO - zhuhai.uk 07
-  - GB - zhuhai.uk 05
-  - US - zhuhai.uk 07
   - RO - zhuhai.uk 08
   - RO - zhuhai.uk 09
+  - GB - zhuhai.uk 03
+  - NL - zhuhai.uk
   - RO - zhuhai.uk 10
   - RO - zhuhai.uk 11
+  - GB - zhuhai.uk 04
   - RO - zhuhai.uk 12
+  - RO - zhuhai.uk 13
+  - PT - zhuhai.uk
+  - TH - zhuhai.uk 02
   - DE - zhuhai.uk 07
+  - GB - zhuhai.uk 05
   - NL - zhuhai.uk 02
   - FR - zhuhai.uk 01
-  - 美國丨yoyapai.com
-  - 免費節點丨yoyapai.com_9
+  - 🇷🇺_RU俄羅斯丨yoyapai.com
+  - FR法國丨yoyapai.com
   - 🇭🇰HK香港節點丨yoyapai.com
-  - 法國丨yoyapai.com
-  - 免費節點丨yoyapai.com_10
+  - 美國CloudFlare节点丨yoyapai.com
+  - FR法國丨yoyapai.com_1
+  - FR法國丨yoyapai.com_2
+  - 德國丨yoyapai.com
   - 🇭🇰HK香港節點丨yoyapai.com_1
-  - 免費節點丨yoyapai.com_15
-  - 免費節點丨yoyapai.com_18
-  - 美國賓利大學丨yoyapai.com
   - 美國丨yoyapai.com_2
-  - 俄羅斯丨yoyapai.com
-  - 免費節點丨yoyapai.com_39
-  - 免費節點丨yoyapai.com_40
-  - 🇺🇸 US美國
-  - 🇺🇸 US美國_1
-  - 免費節點丨yoyapai.com_42
-  - 烏克蘭丨yoyapai.com
-  - 新加坡丨yoyapai.com
-  - 美國節點丨yoyapai.com_1
+  - FR法國丨yoyapai.com_9
+  - 🇺🇸_US美國丨yoyapai.com
+  - 免費節點丨yoyapai.com
+  - 🇨🇿_CZ_捷克丨yoyapai.com
+  - 🇺🇸US美國丨yoyapai.com_1
+  - 免費節點丨yoyapai.com_14
+  - 免費節點丨yoyapai.com_18
 - name: AUTO
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -7563,66 +7556,75 @@ proxy-groups:
   - 美国+CloudFlare节点_P
   - 美国+CloudFlare节点_P_1
   - 美国+CloudFlare节点_P_2
-  - 伊朗+V2CROSS.COM_P
-  - 美国+Amazon+EC2服务器_P
   - 美国+CloudFlare节点_P_3
+  - 英国+Technicolor+SA_P
+  - 美国+Digital+Ocean_P
+  - 英国+Technicolor+SA_P_1
   - 美国+CloudFlare节点_P_4
   - 美国+CloudFlare节点_P_5
-  - 俄罗斯+V2CROSS.COM_P
-  - 美国+V2CROSS.COM_P_1
+  - 美国+得克萨斯州达拉斯Cloudflare+Warp节点_P
   - 美国+CloudFlare节点_P_6
+  - 希腊+V2CROSS.COM_P
+  - 伊朗+V2CROSS.COM_P
   - 美国+CloudFlare节点_P_7
-  - 英国+Technicolor+SA_P
-  - RO - zhuhai.uk
-  - RO - zhuhai.uk 02
-  - GB - zhuhai.uk
-  - GB - zhuhai.uk 02
-  - GB - zhuhai.uk 04
+  - 美国 Akamai科技公司CDN网络节点_P
   - US - zhuhai.uk
+  - RO - zhuhai.uk
   - US - zhuhai.uk 02
   - US - zhuhai.uk 03
+  - DE - zhuhai.uk
+  - TH - zhuhai.uk
+  - RO - zhuhai.uk 02
   - US - zhuhai.uk 04
-  - US - zhuhai.uk 05
-  - US - zhuhai.uk 06
+  - HK - zhuhai.uk
   - RO - zhuhai.uk 03
   - RO - zhuhai.uk 04
   - RO - zhuhai.uk 05
   - RO - zhuhai.uk 06
-  - NL - zhuhai.uk
-  - KR - zhuhai.uk
   - RO - zhuhai.uk 07
-  - GB - zhuhai.uk 05
-  - US - zhuhai.uk 07
   - RO - zhuhai.uk 08
   - RO - zhuhai.uk 09
+  - GB - zhuhai.uk 03
+  - NL - zhuhai.uk
   - RO - zhuhai.uk 10
   - RO - zhuhai.uk 11
+  - GB - zhuhai.uk 04
   - RO - zhuhai.uk 12
+  - RO - zhuhai.uk 13
+  - PT - zhuhai.uk
+  - TH - zhuhai.uk 02
   - DE - zhuhai.uk 07
+  - GB - zhuhai.uk 05
   - NL - zhuhai.uk 02
   - FR - zhuhai.uk 01
-  - 美國丨yoyapai.com
-  - 免費節點丨yoyapai.com_9
+  - 🇷🇺_RU俄羅斯丨yoyapai.com
+  - FR法國丨yoyapai.com
   - 🇭🇰HK香港節點丨yoyapai.com
-  - 法國丨yoyapai.com
-  - 免費節點丨yoyapai.com_10
+  - 美國CloudFlare节点丨yoyapai.com
+  - FR法國丨yoyapai.com_1
+  - FR法國丨yoyapai.com_2
+  - 德國丨yoyapai.com
   - 🇭🇰HK香港節點丨yoyapai.com_1
-  - 免費節點丨yoyapai.com_15
-  - 免費節點丨yoyapai.com_18
-  - 美國賓利大學丨yoyapai.com
   - 美國丨yoyapai.com_2
-  - 俄羅斯丨yoyapai.com
-  - 免費節點丨yoyapai.com_39
-  - 免費節點丨yoyapai.com_40
+  - FR法國丨yoyapai.com_9
+  - 🇺🇸_US美國丨yoyapai.com
+  - 免費節點丨yoyapai.com
+  - 🇨🇿_CZ_捷克丨yoyapai.com
+  - 🇺🇸US美國丨yoyapai.com_1
+  - 免費節點丨yoyapai.com_14
+  - 免費節點丨yoyapai.com_18
+  - 🇮🇷_IR_伊朗
+  - 免費節點丨yoyapai.com_19
+  - 亞太地區丨yoyapai.com
+  - 免費節點丨yoyapai.com_26
+  - 免費節點丨yoyapai.com_27
+  - 🇲🇽MX墨西哥
   - 🇺🇸 US美國
-  - 🇺🇸 US美國_1
-  - 免費節點丨yoyapai.com_42
-  - 烏克蘭丨yoyapai.com
   - 新加坡丨yoyapai.com
   - 美國節點丨yoyapai.com_1
   - 英國
   - 日本節點
-  - 德國丨yoyapai.com
+  - 德國丨yoyapai.com_1
   - 臺灣節點丨yoyapai.com
   - 美國節點
   - 🇰🇷KR南朝鮮丨yoyapai.com
@@ -7639,28 +7641,26 @@ proxy-groups:
   - 亞太地區
   - 亞太地區_1
   - 歐盟丨yoyapai.com
-  - 美国+亚利桑那州斯科茨代尔市丨yoyapai.com
   - 臺灣省丨yoyapai.com
-  - 亞太地區丨yoyapai.com
+  - 亞太地區丨yoyapai.com_1
   - 俄羅斯
   - 英國節點
   - 台湾省台北市丨yoyapai.com
   - 日本節點丨yoyapai.com
   - 巴西聖保羅丨yoyapai.com
   - 土耳其丨yoyapai.com
-  - 烏克蘭丨yoyapai.com_4
+  - 烏克蘭丨yoyapai.com_2
   - 美國丨yoyapai.com_7
   - 美國丨yoyapai.com_8
   - 羅馬尼亞節點丨yoyapai.com
   - 羅馬尼亞節點丨yoyapai.com_1
-  - 德國丨yoyapai.com_3
   - 德國丨yoyapai.com_4
+  - 德國丨yoyapai.com_5
   - 荷蘭節點丨yoyapai.com_1
   - 荷蘭節點丨yoyapai.com_2
   - 荷蘭節點丨yoyapai.com_3
-  - 美國CloudFlare节点丨yoyapai.com
   - 美國南卡羅來納州丨yoyapai.com
-  - 捷克丨yoyapai.com_1
+  - 捷克丨yoyapai.com
   - 德國法蘭克福丨yoyapai.com
   - 羅馬尼亞丨yoyapai.com
   - 羅馬尼亞丨yoyapai.com_1
@@ -7668,7 +7668,7 @@ proxy-groups:
   - 羅馬尼亞丨yoyapai.com_3
   - 瑞典丨yoyapai.com
   - 瑞典丨yoyapai.com_1
-  - 烏克蘭丨yoyapai.com_5
+  - 烏克蘭丨yoyapai.com_3
   - 土耳其丨yoyapai.com_1
   - 土耳其丨yoyapai.com_2
   - 瑞典丨yoyapai.com_2
@@ -7679,7 +7679,6 @@ proxy-groups:
   - 巴西聖保羅丨yoyapai.com_1
   - 土耳其
   - 法國節點
-  - 美國丨yoyapai.com_13
   - 丹麥
   - 斯洛文尼亞丨yoyapai.com
   - 羅馬尼亞丨yoyapai.com_6
@@ -7688,7 +7687,7 @@ proxy-groups:
   - 土耳其節點丨yoyapai.com_1
   - 亞太地區_4
   - JP日本丨yoyapai.com
-  - 🇺🇸US美國丨yoyapai.com
+  - 🇺🇸US美國丨yoyapai.com_3
   - NL荷兰+阿姆斯特丹丨yoyapai.com
   - 歐盟丨yoyapai.com_2
   - 香港丨yoyapai.com_1
@@ -7710,35 +7709,32 @@ proxy-groups:
   - US美國丨yoyapai.com
   - US美國丨yoyapai.com_1
   - KR韓國丨yoyapai.com
-  - FR法國丨yoyapai.com
-  - FR法國丨yoyapai.com_1
-  - FR法國丨yoyapai.com_2
-  - FR法國丨yoyapai.com_3
-  - FR法國丨yoyapai.com_4
-  - FR法國丨yoyapai.com_5
-  - FR法國丨yoyapai.com_6
+  - FR法國丨yoyapai.com_12
+  - FR法國丨yoyapai.com_13
+  - FR法國丨yoyapai.com_14
   - CA加拿大丨yoyapai.com_3
   - CA加拿大丨yoyapai.com_4
   - 美國節點丨yoyapai.com_9
-  - 🇺🇸US美國丨yoyapai.com_1
-  - 免費節點丨yoyapai.com_45
+  - 🇺🇸US美國丨yoyapai.com_4
+  - 免費節點丨yoyapai.com_30
   - 🇺🇸 US美國丨yoyapai.com_2
-  - 美國丨yoyapai.com_17
+  - 美國丨yoyapai.com_16
+  - 美國丨yoyapai.com_18
   - 🇷🇺 RU俄羅斯丨yoyapai.com
-  - 🇺🇸US美國丨yoyapai.com_2
-  - 🇺🇸US美國丨yoyapai.com_6
+  - 🇺🇸US美國丨yoyapai.com_5
+  - 🇺🇸US美國丨yoyapai.com_8
   - 美國+CloudFlare节点丨yoyapai.com
   - 美國+CloudFlare节点丨yoyapai.com_1
   - 美國+CloudFlare节点丨yoyapai.com_2
+  - 美國丨yoyapai.com_21
   - 美國丨yoyapai.com_22
-  - 美國丨yoyapai.com_23
-  - 🇺🇸US美國丨yoyapai.com_9
-  - 🇺🇸US美國丨yoyapai.com_10
+  - 🇺🇸US美國丨yoyapai.com_11
+  - 🇺🇸US美國丨yoyapai.com_12
   - CA加拿大丨yoyapai.com_5
   - 🇳🇱_NL荷蘭丨yoyapai.com
   - 🇷🇺俄羅斯丨yoyapai.com
-  - FR法國丨yoyapai.com_14
-  - FR法國丨yoyapai.com_16
+  - FR法國丨yoyapai.com_18
+  - FR法國丨yoyapai.com_20
   - 美国丨yoyapai.com
   - 美国丨yoyapai.com_1
   - 日本丨yoyapai.com_1
@@ -7755,14 +7751,14 @@ proxy-groups:
   - 日本丨yoyapai.com_5
   - 香港_2
   - 伊朗丨yoyapai.com
+  - 烏克蘭丨yoyapai.com_4
   - 美國丨yoyapai.com_27
   - 🇸🇬 SG新加坡
   - 美國丨yoyapai.com_28
   - 巴西聖保羅丨yoyapai.com_3
   - 美國麻省理工學院丨yoyapai.com
   - 美國丨yoyapai.com_30
-  - 🇺🇸US美國丨yoyapai.com_12
-  - 🇺🇸US美國丨yoyapai.com_13
+  - 🇺🇸US美國丨yoyapai.com_14
   - 🇯🇵JP日本丨yoyapai.com
   - 🇯🇵JP日本丨yoyapai.com_1
   - 🇭🇰HK香港丨yoyapai.com
@@ -7771,10 +7767,8 @@ proxy-groups:
   - 🇭🇰HK香港丨yoyapai.com_3
   - 🇭🇰HK香港丨yoyapai.com_4
   - 🇭🇰HK香港丨yoyapai.com_5
-  - 亞太地區丨yoyapai.com_3
   - 美國+CloudFlare节点丨yoyapai.com_3
-  - 法國丨yoyapai.com_1
-  - 德國丨yoyapai.com_5
+  - 法國丨yoyapai.com
   - 香港丨yoyapai.com_3
   - 日本丨yoyapai.com_6
   - 日本丨yoyapai.com_7
@@ -7783,63 +7777,58 @@ proxy-groups:
   - 🇯🇵JP日本節點丨yoyapai.com_1
   - 🇭🇰HK香港節點丨yoyapai.com_2
   - 🇭🇰HK香港節點丨yoyapai.com_3
+  - 美國丨yoyapai.com_33
+  - 俄羅斯丨yoyapai.com_3
+  - 法國丨yoyapai.com_1
   - 🇭🇰HK香港節點丨yoyapai.com_4
   - 🇭🇰HK香港節點丨yoyapai.com_5
-  - 美國丨yoyapai.com_33
-  - US美国(mibei77.com 米贝节点分享)
-  - DE德国(mibei77.com 米贝节点分享)
+  - 免費節點丨yoyapai.com_31
+  - 免費節點丨yoyapai.com_32
+  - 免費節點丨yoyapai.com_38
+  - 免費節點丨yoyapai.com_53
+  - 免費節點丨yoyapai.com_54
+  - 免費節點丨yoyapai.com_62
   - FR法国(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)_5
+  - US美国(mibei77.com 米贝节点分享)_6
+  - NL荷兰(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)_2
+  - US美国(mibei77.com 米贝节点分享)_19
+  - 巴西(mibei77.com 米贝节点分享)
+  - DE德国(mibei77.com 米贝节点分享)_1
+  - 泰国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)_66
+  - JP日本(mibei77.com 米贝节点分享)
   - FR法国(mibei77.com 米贝节点分享)_2
-  - FR法国(mibei77.com 米贝节点分享)_3
-  - FR法国(mibei77.com 米贝节点分享)_4
+  - DE德国(mibei77.com 米贝节点分享)_8
+  - US美国(mibei77.com 米贝节点分享)_82
   - FR法国(mibei77.com 米贝节点分享)_5
+  - NL荷兰(mibei77.com 米贝节点分享)_1
+  - US美国(mibei77.com 米贝节点分享)_83
   - FR法国(mibei77.com 米贝节点分享)_6
   - FR法国(mibei77.com 米贝节点分享)_7
   - FR法国(mibei77.com 米贝节点分享)_8
-  - FR法国(mibei77.com 米贝节点分享)_9
-  - FR法国(mibei77.com 米贝节点分享)_10
-  - FR法国(mibei77.com 米贝节点分享)_11
-  - FR法国(mibei77.com 米贝节点分享)_12
-  - FR法国(mibei77.com 米贝节点分享)_13
-  - FR法国(mibei77.com 米贝节点分享)_14
-  - NL荷兰(mibei77.com 米贝节点分享)
-  - NL荷兰(mibei77.com 米贝节点分享)_1
-  - NL荷兰(mibei77.com 米贝节点分享)_2
-  - RU俄罗斯(mibei77.com 米贝节点分享)_1
-  - US美国(mibei77.com 米贝节点分享)_2
-  - US美国(mibei77.com 米贝节点分享)_3
-  - US美国(mibei77.com 米贝节点分享)_4
-  - US美国(mibei77.com 米贝节点分享)_5
-  - DE德国(mibei77.com 米贝节点分享)_1
-  - DE德国(mibei77.com 米贝节点分享)_2
-  - RU俄罗斯(mibei77.com 米贝节点分享)_6
-  - KR韩国(mibei77.com 米贝节点分享)
-  - NL荷兰(mibei77.com 米贝节点分享)_3
-  - US美国(mibei77.com 米贝节点分享)_6
-  - US美国(mibei77.com 米贝节点分享)_14
-  - US美国(mibei77.com 米贝节点分享)_15
-  - US美国(mibei77.com 米贝节点分享)_27
-  - US美国(mibei77.com 米贝节点分享)_43
-  - US美国(mibei77.com 米贝节点分享)_44
-  - US美国(mibei77.com 米贝节点分享)_53
-  - HK香港(mibei77.com 米贝节点分享)
-  - GB英国(mibei77.com 米贝节点分享)_2
-  - 🇲🇾_MY_马来西亚->🇺🇸_US_美国
-  - 🇭🇰_HK_中国香港->🇹🇼_TW_中国台湾
-  - 🇺🇸_US_美国->🇨🇭_CH_瑞士
-  - 🇫🇮_FI_芬兰
-  - 🇺🇸_US_美国->🇸🇬_SG_新加坡
-  - 🇺🇸_US_美国
-  - 🇺🇸_US_美国->🇫🇷_FR_法国
-  - 🇨🇦_CA_加拿大
-  - 🇫🇮_FI_芬兰_1
-  - 🇺🇸_US_美国_1
-  - 🇺🇸_US_美国->🇦🇿_AZ_阿塞拜疆
-  - 🇷🇺_RU_俄罗斯
+  - KR韩国(mibei77.com 米贝节点分享)_5
+  - AU澳大利亚(mibei77.com 米贝节点分享)
+  - JP日本(mibei77.com 米贝节点分享)_2
+  - JP日本(mibei77.com 米贝节点分享)_4
+  - SG新加坡(mibei77.com 米贝节点分享)
+  - CA加拿大(mibei77.com 米贝节点分享)
+  - 🇭🇰_HK_中国香港
+  - 🇭🇰_HK_中国香港_1
+  - 🇩🇪_DE_德国_1
+  - 🇭🇰_HK_中国香港_2
+  - 🇩🇪_DE_德国_3
+  - 🇦🇪_AE_阿拉伯联合酋长国->🇩🇪_DE_德国_1
+  - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+  - 🇵🇱_PL_波兰_1
+  - 🇺🇸_US_美国_2
+  - 🇺🇸_US_美国_3
   - TG@ZDYZ2 -HK-Hong Kong8
   - 🇫🇷FR-51.15.27.48-0708
   - 🇺🇸US-156.146.38.163-1702
-  - 🇺🇸_US_美国_2
+  - 🇺🇸_US_美国
   - 🇸🇬SG-103.172.116.103-0795
   - 🇺🇸US-38.75.136.135-0832
   - "TG频道:@hkaa0▓新加坡\r_1"
@@ -7907,7 +7896,7 @@ proxy-groups:
   - 🇺🇸US-38.75.136.21-8525
   - 韩国2|@ripaojiedian
   - 美国 CloudFlare节点_7
-  - 🇺🇸_US_美国->🇫🇷_FR_法国_1
+  - 🇺🇸_US_美国->🇫🇷_FR_法国
   - 🇺🇸US-38.107.226.132-8672
   - 🇨🇳+CN+中国+57
   - 🇬🇧 United Kingdom 01 @nodpai
@@ -7921,7 +7910,7 @@ proxy-groups:
   - 🇺🇸US-38.107.226.132-1301
   - 🇯🇵JP-185.172.113.182-0790
   - 🇺🇸+US+美国+29
-  - 🇺🇸_US_美国_3
+  - 🇺🇸_US_美国_4
   - 🇺🇸US-38.121.43.97-0865
   - 🇺🇸US-38.68.135.18-6268
   - 🇺🇸US-205.134.180.147-9378
@@ -7939,7 +7928,7 @@ proxy-groups:
   - 🇱🇺+LU+卢森堡+77
   - 🇩🇪DE-130.162.47.123-9800
   - 🇨🇳+CN+中国+34
-  - 🇺🇸_US_美国_4
+  - 🇺🇸_US_美国_5
   - github.com/freefq - 广东省移动 7
   - 🇺🇸US-38.107.226.132-8108
   - 🇺🇸US-38.75.136.135-0881
@@ -7948,12 +7937,12 @@ proxy-groups:
   - 🏁RELAY-104.21.15.36-0106
   - 🇺🇸US-38.75.136.135-7889
   - 🇱🇺+LU+卢森堡+1
-  - 🇺🇸_US_美国_5
+  - 🇺🇸_US_美国_6
   - 🇺🇸US-205.134.180.151-0692
   - "TG频道:@hkaa0▓中国\r_5"
   - 🇺🇸US-38.143.66.87-8496
   - 🏁RELAY-104.21.51.208-0152
-  - 🇨🇦_CA_加拿大_1
+  - 🇨🇦_CA_加拿大
   - 🇨🇦_CA_加拿大->🇺🇸_US_美国
   - 🇯🇵JP-18.183.174.138-0743
   - TG@ZDYZ2 -HK-Hong Kong2
@@ -7965,7 +7954,7 @@ proxy-groups:
   - 🇺🇸美国 02
   - 美国 CloudFlare节点_11
   - 🇺🇸US-38.75.136.135-0859
-  - 🇺🇸_US_美国_6
+  - 🇺🇸_US_美国_7
   - "TG频道:@hkaa0▓中国\r_2"
   - TG@ZDYZ2 -KR1
   - 美国 CloudFlare节点_12
@@ -7980,7 +7969,7 @@ proxy-groups:
   - 美国 CloudFlare节点_13
   - 🏁RELAY-172.67.184.11-0151
   - 美国 CloudFlare节点_14
-  - 🇺🇸_US_美国_7
+  - 🇺🇸_US_美国_8
   - 🇺🇸+US+美国+19
   - 美国 CloudFlare节点_15
   - 新加坡2|@ripaojiedian
@@ -7991,7 +7980,7 @@ proxy-groups:
   - 瑞典+V2CROSS.COM
   - 🇺🇸US-38.121.43.51-0841
   - TG@ZDYZ2 -HK-Hong Kong14
-  - 🇺🇸_US_美国_8
+  - 🇺🇸_US_美国_9
   - 🇸🇬+SG+新加坡+51
   - 香港1|@ripaojiedian
   - 美国+华盛顿州昆西Microsoft公司
@@ -8000,8 +7989,8 @@ proxy-groups:
   - TG@ZDYZ2 -HK-Hong Kong16
   - 🇯🇵JP-185.172.113.182-0796
   - TG@ZDYZ2 -TW4
-  - 🇺🇸_US_美国_9
   - 🇺🇸_US_美国_10
+  - 🇺🇸_US_美国_11
   - TG@ZDYZ2 -KR5
   - 🇫🇷FR-195.154.185.174-0719
   - 🇭🇰+HK+香港+31
@@ -8009,7 +7998,7 @@ proxy-groups:
   - 🏁RELAY-10.10.34.36-0103
   - 德国+黑森州法兰克福Amazon数据中心
   - 🇺🇸US-38.68.134.9-0858
-  - 🇺🇸_US_美国_11
+  - 🇺🇸_US_美国_12
   - 美国 CloudFlare节点_18
   - 🇨🇴CO-190.120.231.45-0775
   - 🇺🇸US-38.75.136.21-8085
@@ -8020,7 +8009,7 @@ proxy-groups:
   - 🇦🇷AR-190.103.176.29-0770
   - github.com/freefq - 广东省江门市移动 12
   - "TG频道:@hkaa0▓美国\r_1"
-  - 🇨🇦_CA_加拿大_2
+  - 🇨🇦_CA_加拿大_1
   - 🇹🇷TR-45.89.52.66-0781
   - 德国 黑森州法兰克福DigitalOcean数据中心
   - 🇱🇹+LT+立陶宛+5
@@ -8029,7 +8018,7 @@ proxy-groups:
   - TG@ZDYZ2 -SG-Singapore5
   - ''
   - 美国 CloudFlare节点_19
-  - 🇺🇸_US_美国_12
+  - 🇺🇸_US_美国_13
   - TG频道:@hkaa0▓美国_7
   - 🇺🇸US-92.38.145.145-0139
   - 🇺🇸+US+美国+37
@@ -8072,7 +8061,7 @@ proxy-groups:
   - 🇬🇧+GB+英国+4
   - 🇸🇬SG-103.172.116.79-0818
   - TG@ZDYZ2 -HK-Hong Kong3
-  - 🇺🇸_US_美国_13
+  - 🇺🇸_US_美国_14
   - 🇭🇰+HK+香港+60
   - github.com/freefq - 印度  2
   - github.com/freefq - 美国Fastly全球Anycast节点 13
@@ -8097,7 +8086,7 @@ proxy-groups:
   - 美国 CloudFlare节点_26
   - 美国 CloudFlare节点_27
   - ss_1
-  - 🇫🇷_FR_法国
+  - 🇫🇷_FR_法国_1
   - 🇯🇵JP-154.47.20.240-0742
   - "TG频道:@hkaa0▓香港\r"
   - 🇺🇸US-38.68.134.9-0860
@@ -8144,7 +8133,7 @@ proxy-groups:
   - 🇪🇸ES-5.188.181.201-0769
   - 🇺🇸+US+美国+64
   - 🇱🇺+LU+卢森堡+16
-  - 🇺🇸_US_美国_14
+  - 🇺🇸_US_美国_15
   - 🇺🇸+US+美国+72
   - 美国 CloudFlare节点_30
   - 🇺🇸US-138.197.5.103-0150
@@ -8170,7 +8159,7 @@ proxy-groups:
   - 🇯🇵+JP+日本+56
   - 🇺🇸US-167.88.61.175-7552
   - 🇷🇺+RU+俄罗斯联邦+11
-  - 🇺🇸_US_美国_15
+  - 🇺🇸_US_美国_16
   - 美国 CloudFlare节点_31
   - 🇺🇸US-38.107.226.238-7689
   - 🇺🇸US-38.75.136.21-7277
@@ -8203,10 +8192,10 @@ proxy-groups:
   - TG频道:@hkaa0▓美国_3
   - 🇺🇸US-167.88.61.175-0829
   - 香港 02
-  - 🇺🇸_US_美国_16
+  - 🇺🇸_US_美国_17
   - 🇦🇱AL-31.171.153.181-0736
   - 🇦🇹AT-212.113.106.243-0804
-  - 🇺🇸_US_美国->🇫🇷_FR_法国_2
+  - 🇺🇸_US_美国->🇫🇷_FR_法国_1
   - 🏁RELAY-172.67.166.192-3724
   - 🇺🇸+US+美国+33
   - TG@ZDYZ2 -JP-Tokyo5
@@ -8220,7 +8209,7 @@ proxy-groups:
   - 🇰🇷+KR+韩国+50
   - 🇸🇬SG-103.172.116.103-3721
   - 🇺🇸US-38.75.136.21-7887
-  - 🇨🇦_CA_加拿大_3
+  - 🇨🇦_CA_加拿大_2
   - 美国 CloudFlare节点_36
   - 🇺🇸US-38.75.136.21-0834
   - 美国 CloudFlare节点_37
@@ -8228,8 +8217,8 @@ proxy-groups:
   - 🏁RELAY-172.67.136.244-3852
   - 美国 CloudFlare节点_38
   - 🇺🇸US-38.75.136.135-8371
-  - 🇺🇸_US_美国_17
   - 🇺🇸_US_美国_18
+  - 🇺🇸_US_美国_19
   - 🇦🇹AT-185.180.12.81-0729
   - node_3
   - 🇺🇸US-38.68.134.9-0839
@@ -8246,7 +8235,7 @@ proxy-groups:
   - 美国 CloudFlare节点_41
   - TG频道:@hkaa0▓美国_4
   - 美国 CloudFlare节点_42
-  - 🇺🇸_US_美国_19
+  - 🇺🇸_US_美国_20
   - 🇺🇸US-167.88.61.175-7853
   - 🇩🇪DE-217.160.45.31-0340
   - 🇸🇬+SG+新加坡+18
@@ -8266,7 +8255,7 @@ proxy-groups:
   - 🇺🇸+US+美国+59
   - 🇹🇼TW-103.159.206.35-0342
   - 🇱🇹+LT+立陶宛+54
-  - 🇺🇸_US_美国_20
+  - 🇺🇸_US_美国_21
   - 🇸🇬SG-103.172.116.79-0819
   - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
   - ss_5
@@ -8279,10 +8268,10 @@ proxy-groups:
   - 🇺🇸US-38.68.134.9-7060
   - 🏁RELAY-104.21.16.62-0137
   - ss_6
-  - 🇺🇸_US_美国_21
+  - 🇺🇸_US_美国_22
   - "TG频道:@hkaa0▓中国\r_10"
   - 法国+OVH机房SAS硬盘BGP主机_2
-  - 🇺🇸_US_美国_22
+  - 🇺🇸_US_美国_23
   - 🇭🇰+HK+香港+45
   - "TG频道:@hkaa0▓中国\r_9"
   - 🇺🇸+US+美国+23
@@ -8295,7 +8284,7 @@ proxy-groups:
   - 爱尔兰+都柏林Amazon数据中心
   - 🇪🇸ES-176.120.74.142-0763
   - "TG频道:@hkaa0▓新加坡\r_2"
-  - 🇩🇪_DE_德国_1
+  - 🇩🇪_DE_德国_6
   - github.com/freefq - 美国CloudFlare公司CDN节点 9
   - 🇺🇸US-38.68.134.9-0856
   - 日本3|@ripaojiedian
@@ -8303,7 +8292,7 @@ proxy-groups:
   - 🇺🇸US-205.134.180.137-0691
   - 🏁RELAY-104.21.12.173-0114
   - 美国 CloudFlare节点_44
-  - 🇩🇪_DE_德国_2
+  - 🇩🇪_DE_德国_7
   - 美国 CloudFlare节点_45
   - TG@ZDYZ2 -TW5
   - 🇺🇸US-38.68.134.9-0851
