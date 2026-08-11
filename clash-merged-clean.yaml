@@ -5,7 +5,7 @@ log-level: info
 proxies:
 - name: 美国+CloudFlare节点_P
   type: trojan
-  server: 104.16.7.70
+  server: 104.18.152.229
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -14,19 +14,19 @@ proxies:
     path: /assignment
 - name: 美国+CloudFlare节点_P_1
   type: vless
-  server: nuclear.us.kg
+  server: cf-vless-4cf55824.aimall.fr
   port: 443
-  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  uuid: ea50b1a3-3a98-4c5e-a150-48ada40d68d7
   network: ws
   tls: true
-  sni: nuclear.us.kg
+  sni: cf-vless-4cf55824.aimall.fr
   ws-opts:
-    path: /free/1.226.227.169:50001
+    path: /connect
     headers:
-      Host: nuclear.us.kg
+      Host: cf-vless-4cf55824.aimall.fr
 - name: 美国+CloudFlare节点_P_2
   type: trojan
-  server: 104.18.152.155
+  server: 104.18.152.210
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -35,107 +35,29 @@ proxies:
     path: /assignment
 - name: 美国+CloudFlare节点_P_3
   type: vless
-  server: deepl.com
-  port: 8880
-  uuid: 6d73dc1e-1627-4b16-b471-53e63aa16c78
+  server: 104.17.171.60
+  port: 2083
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
   network: ws
+  tls: true
+  sni: vlso6.1d.mom
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /socks5=888:888@hkip.1d.mom:1080
     headers:
-      Host: sweet-truth-ccdb.134-7e9.workers.dev
+      Host: vlso6.1d.mom
 - name: 美国+V2CROSS.COM_P
   type: vless
-  server: 192.0.54.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime35.workers.dev
-- name: 美国+V2CROSS.COM_P_1
-  type: vless
-  server: www.true.th
+  server: 140.248.186.45
   port: 443
-  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  uuid: XpnTeam-25
   network: ws
   tls: true
-  sni: d1yxsk0zprgivr.cloudfront.net
+  sni: ssl.fastly.com
   ws-opts:
     path: /
     headers:
-      Host: d1yxsk0zprgivr.cloudfront.net
+      Host: Appxdn.global.ssl.fastly.net
 - name: 美国+CloudFlare节点_P_4
-  type: trojan
-  server: ip.myip2.qzz.io
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 美国+V2CROSS.COM_P_2
-  type: vless
-  server: 45.131.4.115
-  port: 80
-  uuid: a7b22989-6c1f-4b59-b0f3-0605401813c4
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiQXoydFJwaWM0WSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: worker3.gigak25604.workers.dev
-- name: 美国+CloudFlare节点_P_5
-  type: trojan
-  server: 104.21.46.3
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 美国+CloudFlare节点_P_6
-  type: vless
-  server: cf3.466688.xyz
-  port: 8880
-  uuid: 50c91104-c1fc-471e-914f-3ad252a0a34c
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net@https://t.me/QiangLieTuiJian
-    headers:
-      Host: quiet-snowflake-e1dd.374-ac3.workers.dev
-- name: 美国+CloudFlare节点_P_7
-  type: trojan
-  server: 104.18.152.103
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 美国+CloudFlare节点_P_8
-  type: trojan
-  server: www.speedtest.org
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 美国 CloudFlare节点_P
-  type: vmess
-  server: 104.17.77.77
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  sni: v2ray1.dozapp.xyz
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: 美国+CloudFlare节点_P_9
   type: trojan
   server: 104.16.174.36
   port: 443
@@ -144,238 +66,314 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
+- name: 美国+乔治亚洲亚特兰大Fastly节点_P
+  type: vless
+  server: 151.101.56.7
+  port: 443
+  uuid: 255f9bd5-670f-4b34-9429-9e4388594160
+  network: ws
+  tls: true
+  sni: ssl.fastly.com
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+    headers:
+      Host: pane3.global.ssl.fastly.net
+- name: 美国+CloudFlare节点_P_5
+  type: trojan
+  server: 104.18.152.77
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 美国+CloudFlare节点_P_6
+  type: trojan
+  server: 104.16.174.44
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 保加利亚+V2CROSS.COM_P
+  type: vless
+  server: 185.176.26.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime06.workers.dev
+- name: 美国+CloudFlare节点_P_7
+  type: trojan
+  server: 104.18.152.108
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 美国+得克萨斯州达拉斯Cloudflare+Warp节点_P
+  type: trojan
+  server: 8.6.112.0
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 美国+CloudFlare节点_P_8
+  type: trojan
+  server: 104.17.121.43
+  port: 443
+  password: humanity
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 美国+CloudFlare节点_P_9
+  type: trojan
+  server: 104.16.148.5
+  port: 443
+  password: 19877587-ed94-4033-88cd-4ac50a5e8718
+  sni: dimskiee.biz.id
+  network: ws
+  ws-opts:
+    path: /WangCai-8
 - name: 美国+CloudFlare节点_P_10
   type: trojan
-  server: 104.16.73.213
+  server: 104.16.174.22
   port: 443
   password: humanity
   sni: www.ignitelimit.com
   network: ws
   ws-opts:
-    path: /assignment
+    path: //assignment
+- name: 美国+CloudFlare节点_P_11
+  type: vless
+  server: 104.16.27.134
+  port: 80
+  uuid: df301b32-1152-4526-9a63-beedd93d3156
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vl.dalazhi.cloudns.biz
 - name: 伊朗+V2CROSS.COM_P
   type: trojan
-  server: 2.144.21.150
-  port: 2000
+  server: 2.144.21.112
+  port: 40443
   password: humanity
   sni: www.ignitelimit.com
   network: ws
   ws-opts:
     path: /assignment
-- name: 美国+CloudFlare节点_P_11
+- name: 美国+CloudFlare节点_P_12
   type: trojan
-  server: 104.18.152.187
+  server: 104.18.152.140
   port: 443
   password: humanity
   sni: www.ignitelimit.com
   network: ws
   ws-opts:
     path: /assignment
-- name: RO - zhuhai.uk
+- name: 美国+CloudFlare节点_P_13
+  type: vless
+  server: cf9.466688.xyz
+  port: 8880
+  uuid: 6b504c50-8535-44cf-8e4e-f8ee674a922e
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net@https://t.me/QiangLieTuiJian
+    headers:
+      Host: old-moon-16d0.156-a25.workers.dev
+- name: CO - zhuhai.uk
+  type: vless
+  server: 158.247.122.238
+  port: 62145
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+- name: NL - zhuhai.uk
   type: http
-  server: 84.239.14.160
+  server: 51.159.225.196
+  port: 23856
+  tls: true
+  skip-cert-verify: true
+- name: TR - zhuhai.uk
+  type: http
+  server: br4-tr.freeconnect.link
+  port: 9251
+  username: freeuser1
+  password: freeuser1
+  tls: true
+  sni: br4-tr.freeconnect.link
+  skip-cert-verify: true
+- name: US - zhuhai.uk
+  type: http
+  server: 162.243.146.243
+  port: 443
+  username: testuser1
+  password: e4b72b531a2d10900519
+  tls: true
+  sni: a2f392f3.acsnet.co
+- name: FI - zhuhai.uk
+  type: http
+  server: extension.intern3t.ru
+  port: 8891
+  username: 85efca17026d85555ffc9b651149b5b7
+  password: x
+  tls: true
+  sni: extension.intern3t.ru
+  skip-cert-verify: true
+- name: US - zhuhai.uk 02
+  type: http
+  server: 156.146.59.32
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 03
+  type: http
+  server: 156.146.59.39
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: HK - zhuhai.uk
+  type: hysteria2
+  server: hkaw1.awo-link.com
+  port: 14101
+  password: 53b59cb5-c741-3399-9065-93dc34685f5b
+  sni: hkaw1.awo-link.com
+  obfs: salamander
+  obfs-password: XBvVbvzQCq6Ovbnh
+- name: GB - zhuhai.uk
+  type: http
+  server: 3051f36a-t9zts0-tr9h64-1f1f1.uk.oshuawei.com
+  port: 443
+  username: 61c4be90-6235-11ec-a8bf-f23c91cfbbc9
+  password: 61c4be90-6235-11ec-a8bf-f23c91cfbbc9
+  tls: true
+  sni: 3051f36a-t9zts0-tr9h64-1f1f1.uk.oshuawei.com
+- name: US - zhuhai.uk 04
+  type: http
+  server: 156.146.59.49
+  port: 9002
+  tls: true
+  sni: 156.146.59.49
+  skip-cert-verify: true
+- name: NL - zhuhai.uk 02
+  type: vless
+  server: 143.47.188.131
+  port: 62145
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+- name: GB - zhuhai.uk 02
+  type: http
+  server: 9035056e-t9zts0-tcmken-19les.uk.oshuawei.com
+  port: 443
+  username: d095ecc6-7b69-11eb-b77b-f23c913c8d2b
+  password: d095ecc6-7b69-11eb-b77b-f23c913c8d2b
+  tls: true
+  sni: 9035056e-t9zts0-tcmken-19les.uk.oshuawei.com
+  skip-cert-verify: true
+- name: NL - zhuhai.uk 03
+  type: http
+  server: 84.17.47.148
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  sni: 84.17.47.148
+  skip-cert-verify: true
+- name: US - zhuhai.uk 05
+  type: http
+  server: 138.199.35.205
   port: 9002
   username: 'null'
   password: 'null'
   tls: true
   skip-cert-verify: true
-- name: RO - zhuhai.uk 02
+- name: US - zhuhai.uk 06
   type: http
-  server: 84.239.49.199
-  port: 9002
-  tls: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: US - zhuhai.uk
-  type: http
-  server: 156.146.59.20
-  port: 9002
-  tls: true
-  sni: 156.146.59.20
-  skip-cert-verify: true
-- name: RO - zhuhai.uk 03
-  type: http
-  server: 193.176.84.33
-  port: 9002
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 02
-  type: http
-  server: 156.146.59.33
-  port: 9002
-  tls: true
-  skip-cert-verify: true
-- name: RO - zhuhai.uk 04
-  type: http
-  server: 84.239.49.239
-  port: 9002
-  tls: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: US - zhuhai.uk 03
-  type: http
-  server: 156.146.59.44
-  port: 9002
-  tls: true
-  sni: 156.146.59.44
-  skip-cert-verify: true
-- name: RO - zhuhai.uk 05
-  type: http
-  server: 84.239.49.163
+  server: 138.199.35.199
   port: 9002
   username: 'null'
-  password: None
+  password: 'null'
   tls: true
   skip-cert-verify: true
-- name: RO - zhuhai.uk 06
+- name: US - zhuhai.uk 07
+  type: socks5
+  server: 185.145.99.41
+  port: 1080
+  username: test123
+  password: test123
+- name: US - zhuhai.uk 08
   type: http
-  server: 84.239.14.153
+  server: 138.199.35.203
   port: 9002
   tls: true
-  sni: 84.239.14.153
   skip-cert-verify: true
-- name: RO - zhuhai.uk 07
+- name: US - zhuhai.uk 09
   type: http
-  server: 84.239.49.254
+  server: 156.146.59.4
   port: 9002
   tls: true
-  sni: 84.239.49.254
   skip-cert-verify: true
-- name: RO - zhuhai.uk 08
-  type: http
-  server: 84.239.14.146
-  port: 9002
-  tls: true
-  sni: 84.239.14.146
-  skip-cert-verify: true
-- name: RO - zhuhai.uk 09
-  type: http
-  server: 84.239.49.62
-  port: 9002
-  tls: true
-  sni: 84.239.49.62
-  skip-cert-verify: true
-- name: US - zhuhai.uk 04
+- name: US - zhuhai.uk 10
   type: vless
-  server: 188.164.248.32
-  port: 2087
-  uuid: 5b06a1b1-8839-4969-874a-3b501528275b
-  tls: true
-  servername: jcxjcnasvip.jcdenas.top
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: jcxjcnasvip.jcdenas.top
-- name: RO - zhuhai.uk 10
+  server: 180.178.60.253
+  port: 10000
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+- name: US - zhuhai.uk 11
   type: http
-  server: 84.239.49.42
+  server: 138.199.35.204
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: RO - zhuhai.uk 11
+- name: GB - zhuhai.uk 03
   type: http
-  server: 84.239.49.49
-  port: 9002
-  tls: true
-  sni: 84.239.49.49
-  skip-cert-verify: true
-- name: RO - zhuhai.uk 12
-  type: http
-  server: 84.239.49.180
-  port: 9002
-  tls: true
-  sni: 84.239.49.180
-  skip-cert-verify: true
-- name: RO - zhuhai.uk 13
-  type: http
-  server: 84.239.49.168
-  port: 9002
-  tls: true
-  sni: 84.239.49.168
-  skip-cert-verify: true
-- name: RO - zhuhai.uk 14
-  type: http
-  server: 193.176.84.36
-  port: 9002
-  tls: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: NL - zhuhai.uk
-  type: http
-  server: 84.17.47.125
-  port: 9002
-  tls: true
-  sni: 84.17.47.125
-  skip-cert-verify: true
-- name: DE - zhuhai.uk
-  type: vless
-  server: 46.101.253.244
-  port: 2083
-  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
-  tls: true
-  servername: edge.yzkvm.top
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edge.yzkvm.top
-- name: RO - zhuhai.uk 15
-  type: http
-  server: 84.239.49.245
-  port: 9002
-  tls: true
-  skip-cert-verify: true
-- name: RO - zhuhai.uk 16
-  type: http
-  server: 84.239.49.230
-  port: 9002
-  tls: true
-  skip-cert-verify: true
-- name: RO - zhuhai.uk 17
-  type: http
-  server: 84.239.49.214
-  port: 9002
-  tls: true
-  sni: 84.239.49.214
-  skip-cert-verify: true
-- name: RO - zhuhai.uk 18
-  type: http
-  server: 84.239.49.176
-  port: 9002
-  tls: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: US - zhuhai.uk 05
-  type: http
-  server: 156.146.59.30
-  port: 9002
-  tls: true
-  skip-cert-verify: true
-- name: JP - zhuhai.uk 02
-  type: ss
-  server: 51.21.130.209
+  server: 0a6a8aa6-t9zts0-tighxj-12hj8.uk.oshuawei.com
   port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: JP - zhuhai.uk 01
-  type: ss
-  server: 13.50.4.72
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
+  username: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
+  password: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
+  tls: true
+  sni: 0a6a8aa6-t9zts0-tighxj-12hj8.uk.oshuawei.com
+- name: US - zhuhai.uk 12
+  type: http
+  server: 156.146.59.9
+  port: 9002
+  tls: true
+  sni: 156.146.59.9
+  skip-cert-verify: true
+- name: US - zhuhai.uk 13
+  type: http
+  server: 138.199.35.217
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: HK - zhuhai.uk 02
+  type: vmess
+  server: 366-1095.rabbitpro-in-3.com
+  port: 29013
+  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
+  alterId: 0
+  cipher: auto
+- name: US - zhuhai.uk 14
+  type: http
+  server: 156.146.59.21
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  sni: 156.146.59.21
+  skip-cert-verify: true
 - name: GB - zhuhai.uk 04
   type: http
-  server: 73721193-tcxds0-tvgkxc-hrtf.uk.oshuawei.com
+  server: 650f31b8-t9zts0-tkka1f-1k25p.uk.oshuawei.com
   port: 443
-  username: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
-  password: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
+  username: 6e8482fb-1f9b-11ed-af5f-f23c91cfbbc9
+  password: 6e8482fb-1f9b-11ed-af5f-f23c91cfbbc9
   tls: true
+  sni: 650f31b8-t9zts0-tkka1f-1k25p.uk.oshuawei.com
 - name: GB - zhuhai.uk 06
   type: http
   server: c0a5bcb4-thtxc0-ths4hq-azvy.cldvpuk.cdnbytescm.com
@@ -424,6 +422,20 @@ proxies:
   port: 2083
   uuid: b91abe1a-80ca-417b-998b-2b542661c16f
   skip-cert-verify: true
+- type: vless
+  name: 未知VLESS-641|free-nodes
+  server: www.true.th
+  port: 443
+  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: d1yxsk0zprgivr.cloudfront.net
+  ws-opts:
+    path: /
+    headers:
+      host: d1yxsk0zprgivr.cloudfront.net
 - type: vless
   name: 🇳🇱荷兰0.14MB/s
   server: 88.218.44.4
@@ -8297,45 +8309,45 @@ proxy-groups:
   - 美国+CloudFlare节点_P_2
   - 美国+CloudFlare节点_P_3
   - 美国+V2CROSS.COM_P
-  - 美国+V2CROSS.COM_P_1
   - 美国+CloudFlare节点_P_4
-  - 美国+V2CROSS.COM_P_2
+  - 美国+乔治亚洲亚特兰大Fastly节点_P
   - 美国+CloudFlare节点_P_5
   - 美国+CloudFlare节点_P_6
+  - 保加利亚+V2CROSS.COM_P
   - 美国+CloudFlare节点_P_7
+  - 美国+得克萨斯州达拉斯Cloudflare+Warp节点_P
   - 美国+CloudFlare节点_P_8
-  - 美国 CloudFlare节点_P
   - 美国+CloudFlare节点_P_9
   - 美国+CloudFlare节点_P_10
-  - 伊朗+V2CROSS.COM_P
   - 美国+CloudFlare节点_P_11
-  - RO - zhuhai.uk
-  - RO - zhuhai.uk 02
-  - US - zhuhai.uk
-  - RO - zhuhai.uk 03
-  - US - zhuhai.uk 02
-  - RO - zhuhai.uk 04
-  - US - zhuhai.uk 03
-  - RO - zhuhai.uk 05
-  - RO - zhuhai.uk 06
-  - RO - zhuhai.uk 07
-  - RO - zhuhai.uk 08
-  - RO - zhuhai.uk 09
-  - US - zhuhai.uk 04
-  - RO - zhuhai.uk 10
-  - RO - zhuhai.uk 11
-  - RO - zhuhai.uk 12
-  - RO - zhuhai.uk 13
-  - RO - zhuhai.uk 14
+  - 伊朗+V2CROSS.COM_P
+  - 美国+CloudFlare节点_P_12
+  - 美国+CloudFlare节点_P_13
+  - CO - zhuhai.uk
   - NL - zhuhai.uk
-  - DE - zhuhai.uk
-  - RO - zhuhai.uk 15
-  - RO - zhuhai.uk 16
-  - RO - zhuhai.uk 17
-  - RO - zhuhai.uk 18
+  - TR - zhuhai.uk
+  - US - zhuhai.uk
+  - FI - zhuhai.uk
+  - US - zhuhai.uk 02
+  - US - zhuhai.uk 03
+  - HK - zhuhai.uk
+  - GB - zhuhai.uk
+  - US - zhuhai.uk 04
+  - NL - zhuhai.uk 02
+  - GB - zhuhai.uk 02
+  - NL - zhuhai.uk 03
   - US - zhuhai.uk 05
-  - JP - zhuhai.uk 02
-  - JP - zhuhai.uk 01
+  - US - zhuhai.uk 06
+  - US - zhuhai.uk 07
+  - US - zhuhai.uk 08
+  - US - zhuhai.uk 09
+  - US - zhuhai.uk 10
+  - US - zhuhai.uk 11
+  - GB - zhuhai.uk 03
+  - US - zhuhai.uk 12
+  - US - zhuhai.uk 13
+  - HK - zhuhai.uk 02
+  - US - zhuhai.uk 14
   - GB - zhuhai.uk 04
   - GB - zhuhai.uk 06
   - TW - zhuhai.uk 03
@@ -8343,6 +8355,7 @@ proxy-groups:
   - 🇫🇮芬兰FI-1026
   - 🇹🇷TR1.85MB/s
   - 🇬🇧英国29.90MB/s
+  - 未知VLESS-641|free-nodes
   - 🇳🇱荷兰0.14MB/s
   - 🇷🇺俄罗斯0.20MB/s
   - 未知TROJAN-230|free-nodes
@@ -8351,7 +8364,6 @@ proxy-groups:
   - 🇭🇰 香港(yudou789.top 玉豆免费节点)
   - 🇭🇰 香港(yudou789.top 玉豆免费节点) 2
   - 🇺🇸 美国(yudou789.top 玉豆免费节点) 2
-  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 3
 - name: AUTO
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -8363,45 +8375,45 @@ proxy-groups:
   - 美国+CloudFlare节点_P_2
   - 美国+CloudFlare节点_P_3
   - 美国+V2CROSS.COM_P
-  - 美国+V2CROSS.COM_P_1
   - 美国+CloudFlare节点_P_4
-  - 美国+V2CROSS.COM_P_2
+  - 美国+乔治亚洲亚特兰大Fastly节点_P
   - 美国+CloudFlare节点_P_5
   - 美国+CloudFlare节点_P_6
+  - 保加利亚+V2CROSS.COM_P
   - 美国+CloudFlare节点_P_7
+  - 美国+得克萨斯州达拉斯Cloudflare+Warp节点_P
   - 美国+CloudFlare节点_P_8
-  - 美国 CloudFlare节点_P
   - 美国+CloudFlare节点_P_9
   - 美国+CloudFlare节点_P_10
-  - 伊朗+V2CROSS.COM_P
   - 美国+CloudFlare节点_P_11
-  - RO - zhuhai.uk
-  - RO - zhuhai.uk 02
-  - US - zhuhai.uk
-  - RO - zhuhai.uk 03
-  - US - zhuhai.uk 02
-  - RO - zhuhai.uk 04
-  - US - zhuhai.uk 03
-  - RO - zhuhai.uk 05
-  - RO - zhuhai.uk 06
-  - RO - zhuhai.uk 07
-  - RO - zhuhai.uk 08
-  - RO - zhuhai.uk 09
-  - US - zhuhai.uk 04
-  - RO - zhuhai.uk 10
-  - RO - zhuhai.uk 11
-  - RO - zhuhai.uk 12
-  - RO - zhuhai.uk 13
-  - RO - zhuhai.uk 14
+  - 伊朗+V2CROSS.COM_P
+  - 美国+CloudFlare节点_P_12
+  - 美国+CloudFlare节点_P_13
+  - CO - zhuhai.uk
   - NL - zhuhai.uk
-  - DE - zhuhai.uk
-  - RO - zhuhai.uk 15
-  - RO - zhuhai.uk 16
-  - RO - zhuhai.uk 17
-  - RO - zhuhai.uk 18
+  - TR - zhuhai.uk
+  - US - zhuhai.uk
+  - FI - zhuhai.uk
+  - US - zhuhai.uk 02
+  - US - zhuhai.uk 03
+  - HK - zhuhai.uk
+  - GB - zhuhai.uk
+  - US - zhuhai.uk 04
+  - NL - zhuhai.uk 02
+  - GB - zhuhai.uk 02
+  - NL - zhuhai.uk 03
   - US - zhuhai.uk 05
-  - JP - zhuhai.uk 02
-  - JP - zhuhai.uk 01
+  - US - zhuhai.uk 06
+  - US - zhuhai.uk 07
+  - US - zhuhai.uk 08
+  - US - zhuhai.uk 09
+  - US - zhuhai.uk 10
+  - US - zhuhai.uk 11
+  - GB - zhuhai.uk 03
+  - US - zhuhai.uk 12
+  - US - zhuhai.uk 13
+  - HK - zhuhai.uk 02
+  - US - zhuhai.uk 14
   - GB - zhuhai.uk 04
   - GB - zhuhai.uk 06
   - TW - zhuhai.uk 03
@@ -8409,6 +8421,7 @@ proxy-groups:
   - 🇫🇮芬兰FI-1026
   - 🇹🇷TR1.85MB/s
   - 🇬🇧英国29.90MB/s
+  - 未知VLESS-641|free-nodes
   - 🇳🇱荷兰0.14MB/s
   - 🇷🇺俄罗斯0.20MB/s
   - 未知TROJAN-230|free-nodes
