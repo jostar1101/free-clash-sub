@@ -5,38 +5,43 @@ log-level: info
 proxies:
 - name: 美国+CloudFlare节点_P
   type: trojan
-  server: 104.16.174.72
+  server: 104.19.229.21
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: assignment
+- name: 美国+CloudFlare节点_P_1
+  type: trojan
+  server: 104.18.152.187
   port: 443
   password: humanity
   sni: www.ignitelimit.com
   network: ws
   ws-opts:
     path: /assignment
-- name: 美国+CloudFlare节点_P_1
-  type: vless
-  server: 104.20.6.134
+- name: 巴西圣保罗+CloudFlare节点_P
+  type: trojan
+  server: 188.114.97.7
   port: 443
-  uuid: 2088ef0d-4d2c-43b3-874b-b6a03531c81b
+  password: humanity
+  sni: www.ignitelimit.com
   network: ws
-  tls: true
-  sni: r.meDiASHOPPp.sbS
   ws-opts:
-    path: /eyJqdW5rIjoiVVpPeXNodUFQMHNVcU12aCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: r.mediashoppp.sbs
+    path: /assignment
 - name: 美国+CloudFlare节点_P_2
-  type: vless
-  server: 104.21.25.168
-  port: 8880
-  uuid: abd3678b-f654-404c-adc7-1355865197e1
+  type: trojan
+  server: 104.16.174.14
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiNUZVWmdPNWNpTW5LOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ
-    headers:
-      Host: vless.a-amr79.workers.dev
+    path: /assignment
 - name: 美国+CloudFlare节点_P_3
   type: trojan
-  server: 104.18.22.63
+  server: 104.18.152.246
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -45,25 +50,16 @@ proxies:
     path: /assignment
 - name: 美国+CloudFlare节点_P_4
   type: trojan
-  server: 104.18.152.219
+  server: 104.18.152.133
   port: 443
   password: humanity
   sni: www.ignitelimit.com
   network: ws
   ws-opts:
     path: /assignment
-- name: 美国+V2CROSS.COM_P
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: MITIVPN
-  sni: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e2@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
 - name: 美国+CloudFlare节点_P_5
   type: trojan
-  server: 104.18.152.144
+  server: 104.18.152.103
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -71,96 +67,18 @@ proxies:
   ws-opts:
     path: /assignment
 - name: 美国+CloudFlare节点_P_6
-  type: trojan
-  server: 104.17.111.3
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 立陶宛+V2CROSS.COM_P
   type: vless
-  server: 88.216.66.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 172.66.44.97
+  port: 443
+  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
   network: ws
+  tls: true
+  sni: josni.hoyes.cloudns.ch
   ws-opts:
-    path: /
+    path: /sg?ed=512TELEGRAM-MTMVPN---TELEGRAM-MTMVPN---TELEGRAM-MTMVPN---TELEGRAM-MTMVPN---TELEGRAM-MTMVPN
     headers:
-      Host: vms.lifetime04.workers.dev
+      Host: josni.hoyes.cloudns.ch
 - name: 美国+CloudFlare节点_P_7
-  type: trojan
-  server: 104.18.152.204
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 美国+CloudFlare节点_P_8
-  type: trojan
-  server: 104.18.152.50
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 美国+CloudFlare节点_P_9
-  type: vless
-  server: cf-vless-4cf55824.aimall.fr
-  port: 443
-  uuid: ea50b1a3-3a98-4c5e-a150-48ada40d68d7
-  network: ws
-  tls: true
-  sni: ''
-  ws-opts:
-    path: ''
-- name: 瑞典+V2CROSS.COM_P
-  type: vless
-  server: 159.194.226.13
-  port: 2053
-  uuid: b6c29ae7-4748-4049-b642-b695c0d2c776
-  network: ws
-  ws-opts:
-    path: /
-- name: 美国 V2CROSS.COM_P
-  type: vmess
-  server: 366-1095.rabbitpro-in-3.com
-  port: 29009
-  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
-  alterId: 0
-  cipher: auto
-- name: 美国+V2CROSS.COM_P_1
-  type: trojan
-  server: 165.215.250.14
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 西班牙+V2CROSS.COM_P
-  type: trojan
-  server: 185.18.250.252
-  port: 443
-  password: humanity
-  sni: www.calmlunch.com
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 美国+CloudFlare节点_P_10
-  type: vless
-  server: 104.16.75.44
-  port: 443
-  uuid: 03707fb7-0990-440f-88f6-b0e0f7242a38
-  network: ws
-  tls: true
-  sni: de-new.ariyuz.org
-  ws-opts:
-    path: ''
-- name: 美国+CloudFlare节点_P_11
   type: trojan
   server: 104.18.152.77
   port: 443
@@ -169,253 +87,295 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 香港+Simcentric网络公司_P
+- name: 美国+CloudFlare节点_P_8
+  type: trojan
+  server: 104.18.152.175
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 美国+CloudFlare节点_P_9
+  type: trojan
+  server: 104.18.152.155
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 美国+CloudFlare节点_P_10
+  type: trojan
+  server: 104.18.152.113
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 美国+CloudFlare节点_P_11
+  type: trojan
+  server: www.speedtest.org
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 美国+CloudFlare节点_P_12
+  type: trojan
+  server: 104.16.174.22
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: //assignment
+- name: 美国+CloudFlare节点_P_13
   type: vless
-  server: 180.178.60.253
-  port: 10000
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-  network: tcp
+  server: 162.159.140.78
+  port: 8880
+  uuid: 363202dd-0521-46b4-b4e2-443dfbaa2ce1
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: flat-heart-b60a.401-306.workers.dev
+- name: 美国+CloudFlare节点_P_14
+  type: trojan
+  server: 104.17.177.143
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 欧盟+V2CROSS.COM_P
+  type: trojan
+  server: 45.80.111.7
+  port: 443
+  password: MiTiVPN
+  sni: d-2-AA-ia-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e1@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+- name: 法国巴黎+CloudFlare节点_P
+  type: trojan
+  server: 141.101.90.101
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 美国+CloudFlare节点_P_15
+  type: trojan
+  server: 104.18.152.225
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
 - name: US - zhuhai.uk
   type: http
-  server: purecambogiasl.live
-  port: 443
-  tls: true
-  sni: purecambogiasl.live
-  skip-cert-verify: true
-- name: US - zhuhai.uk 02
-  type: vless
-  server: 172.66.0.75
-  port: 443
-  uuid: cf63446e-f6b7-4d34-b7ed-d8648eeed0f7
-  tls: true
-  servername: vps.181110.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /cf63446e-vl
-    headers:
-      Host: vps.181110.xyz
-- name: US - zhuhai.uk 03
-  type: vless
-  server: 104.21.74.8
-  port: 443
-  uuid: cf63446e-f6b7-4d34-b7ed-d8648eeed0f7
-  tls: true
-  servername: vps.181110.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /cf63446e-vl
-    headers:
-      Host: vps.181110.xyz
-- name: US - zhuhai.uk 04
-  type: http
-  server: 138.199.35.199
+  server: 156.146.59.47
   port: 9002
-  username: 'null'
-  password: 'null'
   tls: true
   skip-cert-verify: true
-- name: GB - zhuhai.uk
-  type: http
-  server: c0a5bcb4-thtxc0-ths4hq-azvy.cldvpuk.cdnbytescm.com
-  port: 443
-  username: a95e9198-0671-11f0-9426-f23c932f2c32
-  password: a95e9198-0671-11f0-9426-f23c932f2c32
-  tls: true
 - name: RO - zhuhai.uk
   type: http
-  server: 84.239.49.56
+  server: 84.239.14.156
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: US - zhuhai.uk 05
+- name: ZA - zhuhai.uk
   type: vless
-  server: 104.16.36.235
+  server: cf-yes.nekocloud.host
   port: 443
-  uuid: cf63446e-f6b7-4d34-b7ed-d8648eeed0f7
+  uuid: a496e939-6e1c-4875-92ec-141f94400274
   tls: true
-  servername: vps.181110.xyz
-  client-fingerprint: chrome
+  servername: za.stepfly.space
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /cf63446e-vl
+    path: /ws
     headers:
-      Host: vps.181110.xyz
-- name: US - zhuhai.uk 06
-  type: http
-  server: 138.199.35.202
-  port: 9002
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 07
-  type: socks5
-  server: 185.145.99.41
-  port: 1080
-  username: test123
-  password: test123
-- name: SG - zhuhai.uk
-  type: anytls
-  server: sivp666.ipad1el.com
-  port: 60572
-  password: 13f0acfa-38c1-4e82-a758-583aa31740df
-  udp: true
-  sni: yzhou015.jdvipkuai.cc
-- name: US - zhuhai.uk 08
-  type: vless
-  server: 104.21.91.20
-  port: 443
-  uuid: cf63446e-f6b7-4d34-b7ed-d8648eeed0f7
-  tls: true
-  servername: vps.181110.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /cf63446e-vl
-    headers:
-      Host: vps.181110.xyz
-- name: CO - zhuhai.uk
-  type: vless
-  server: 149.130.186.7
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-- name: US - zhuhai.uk 09
-  type: http
-  server: 138.199.35.195
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-- name: SG - zhuhai.uk 02
-  type: anytls
-  server: yazhouany02.twzq59.cc
-  port: 47053
-  password: 13f0acfa-38c1-4e82-a758-583aa31740df
-  udp: true
-  sni: xjp0202.asgg2026.vip
-- name: US - zhuhai.uk 10
-  type: http
-  server: 138.199.35.211
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-- name: GB - zhuhai.uk 02
-  type: vless
-  server: 140.248.186.45
-  port: 443
-  uuid: XpnTeam-29
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
-- name: GB - zhuhai.uk 03
-  type: http
-  server: f6cfde13-tcxds0-tqgocx-1plv4.uk.oshuawei.com
-  port: 443
-  username: 28213b50-7ed5-11ee-add6-f23c91369f2d
-  password: 28213b50-7ed5-11ee-add6-f23c91369f2d
-  tls: true
-  sni: f6cfde13-tcxds0-tqgocx-1plv4.uk.oshuawei.com
-- name: US - zhuhai.uk 12
-  type: http
-  server: 138.199.35.209
-  port: 9002
-  tls: true
-  skip-cert-verify: true
-- name: FI - zhuhai.uk 02
-  type: http
-  server: extension.intern3t.ru
-  port: 8891
-  username: 85efca17026d85555ffc9b651149b5b7
-  password: x
-  tls: true
-  sni: extension.intern3t.ru
-- name: GB - zhuhai.uk 04
-  type: http
-  server: 0bfaae1c-t9zts0-tlm64c-xm0q.uk.oshuawei.com
-  port: 443
-  username: 3437f34e-1b77-11eb-8684-f23c913c8d2b
-  password: 3437f34e-1b77-11eb-8684-f23c913c8d2b
-  tls: true
-  sni: 0bfaae1c-t9zts0-tlm64c-xm0q.uk.oshuawei.com
-- name: HK - zhuhai.uk
-  type: socks5
-  server: 8.210.31.250
-  port: 1080
-  username: '8888'
-  password: '8888'
-- name: HK - zhuhai.uk 02
-  type: socks5
-  server: 43.100.43.112
-  port: 3060
-  username: '123'
-  password: '123'
-- name: FI - zhuhai.uk 03
-  type: socks5
-  server: 83.147.216.208
-  port: 1080
-  username: Og==
+      Host: za.stepfly.space
 - name: RO - zhuhai.uk 02
   type: http
-  server: 84.239.49.194
+  server: 84.239.49.57
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: HK - zhuhai.uk
+  type: hysteria2
+  server: hk1.ktmhyld.com
+  port: 18385
+  password: ec19e705-c8fe-4e9c-8cbe-c47038da0620
+  skip-cert-verify: true
+- name: RO - zhuhai.uk 03
+  type: http
+  server: 84.239.49.233
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 02
+  type: http
+  server: 138.199.35.198
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 03
+  type: http
+  server: 156.146.59.15
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 04
+  type: http
+  server: 156.146.59.41
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: RO - zhuhai.uk 04
+  type: http
+  server: 193.176.84.29
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: RO - zhuhai.uk 05
+  type: http
+  server: 84.239.49.245
+  port: 9002
+  tls: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: US - zhuhai.uk 05
+  type: http
+  server: 138.199.35.208
   port: 9002
   username: 'null'
   password: None
   tls: true
   skip-cert-verify: true
-- name: DE - zhuhai.uk
-  type: socks5
-  server: 159.195.49.27
-  port: 1080
-- name: US - zhuhai.uk 13
+- name: US - zhuhai.uk 06
   type: http
-  server: dl1-us.freeconnect.link
-  port: 9251
-  username: freeuser1
-  password: freeuser1
+  server: 138.199.35.206
+  port: 9002
+  username: 'null'
+  password: 'null'
   tls: true
-  sni: dl1-us.freeconnect.link
   skip-cert-verify: true
-- name: TW - zhuhai.uk 03
-  type: socks5
-  server: 106.107.236.110
-  port: 1080
-  udp: true
-  username: '111'
-  password: '111'
-- name: 🇦🇪_阿拉伯联合酋长国丨yoyapai.com
-  type: vless
-  server: 217.60.193.4
-  port: 443
-  uuid: 5dc56757-458e-4df2-9e71-2a14ce47e8af
-  servername: ddc-akn.astralweb.tech
+- name: RO - zhuhai.uk 06
+  type: http
+  server: 84.239.49.156
+  port: 9002
   tls: true
+  sni: 84.239.49.156
+  skip-cert-verify: true
+- name: US - zhuhai.uk 07
+  type: http
+  server: 138.199.35.203
+  port: 9002
+  tls: true
+  sni: 138.199.35.203
+  skip-cert-verify: true
+- name: NL - zhuhai.uk
+  type: vless
+  server: 92.5.229.133
+  port: 62145
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+- name: RO - zhuhai.uk 07
+  type: http
+  server: 84.239.14.160
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 08
+  type: vless
+  server: yx-auto.pages.dev
+  port: 443
+  uuid: cf63446e-f6b7-4d34-b7ed-d8648eeed0f7
+  tls: true
+  servername: vps.181110.xyz
   client-fingerprint: chrome
-  skip-cert-verify: true
-  udp: true
-- name: 未知丨yoyapai.com
-  type: vless
-  server: www.true.th
-  port: 443
-  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
   network: ws
-  servername: d1yxsk0zprgivr.cloudfront.net
-  tls: true
-  client-fingerprint: chrome
   ws-opts:
-    path: /
+    path: /cf63446e-vl
     headers:
-      Host: d1yxsk0zprgivr.cloudfront.net
+      Host: vps.181110.xyz
+- name: HK - zhuhai.uk 02
+  type: vmess
+  server: 366-1095.rabbitpro-in-3.com
+  port: 27107
+  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
+  alterId: 0
+  cipher: auto
+- name: US - zhuhai.uk 09
+  type: http
+  server: 138.199.35.216
+  port: 9002
+  tls: true
   skip-cert-verify: true
+- name: US - zhuhai.uk 10
+  type: socks5
+  server: 185.145.99.41
+  port: 1080
+  username: test123
+  password: test123
+- name: US - zhuhai.uk 11
+  type: http
+  server: 138.199.35.211
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 12
+  type: http
+  server: purposebydesig.club
+  port: 443
+  tls: true
+  sni: purposebydesig.club
+- name: RO - zhuhai.uk 08
+  type: http
+  server: 84.239.49.219
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: RO - zhuhai.uk 09
+  type: http
+  server: 84.239.49.254
+  port: 9002
+  tls: true
+  sni: 84.239.49.254
+  skip-cert-verify: true
+- name: GB - zhuhai.uk 02
+  type: ss
+  server: 144.24.230.163
+  port: 61312
+  cipher: chacha20-ietf-poly1305
+  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
+- name: GB - zhuhai.uk 04
+  type: http
+  server: 73721193-tcxds0-tvgkxc-hrtf.uk.oshuawei.com
+  port: 443
+  username: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
+  password: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
+  tls: true
+- name: JP - zhuhai.uk 11
+  type: trojan
+  server: oplosgru-c.catcat321.com
+  port: 20004
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   udp: true
-- name: 🇹🇭TH泰國丨yoyapai.com
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+- name: 🇹🇭泰國丨yoyapai.com
   type: vless
   server: www.true.th
   port: 80
@@ -426,6 +386,19 @@ proxies:
     path: /than
     headers:
       Host: d16l6nb4do0zu4.cloudfront.net
+  skip-cert-verify: true
+  udp: true
+- name: 🇷🇺俄罗斯丨yoyapai.com
+  type: vless
+  server: 176.98.178.17
+  port: 4100
+  uuid: 87f3bc47-ee10-4418-9260-7a4e43f28e00
+  network: ws
+  tls: false
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
   skip-cert-verify: true
   udp: true
 - name: 免費節點丨yoyapai.com
@@ -441,6 +414,60 @@ proxies:
       Host: holy-breeze-0bac.47-dec.workers.dev
   skip-cert-verify: true
   udp: true
+- name: 🇮🇷 IR伊朗丨yoyapai.com
+  type: vless
+  server: 45.131.4.115
+  port: 80
+  uuid: a7b22989-6c1f-4b59-b0f3-0605401813c4
+  network: ws
+  tls: false
+  ws-opts:
+    path: /eyJqdW5rIjoiQXoydFJwaWM0WSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: worker3.gigak25604.workers.dev
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇬新加坡
+  type: vless
+  server: 45.40.149.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime39.workers.dev
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇦CA加拿大丨yoyapai.com
+  type: vless
+  server: 104.21.23.72
+  port: 8880
+  uuid: 30a88c40-581e-4952-aa4c-8af95686ede0
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: rapid-lab-95ef.173-74c.workers.dev
+  skip-cert-verify: true
+  udp: true
+- name: 🇫🇮 荷蘭
+  type: vmess
+  server: 185.246.152.159
+  port: 443
+  uuid: 5f72f180-b21b-4b7a-8484-240759012604
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5f72f180-b21b-4b7a-8484-240759096785
+    headers:
+      Host: apjhdggyx.com
+  udp: true
 - name: 法國丨yoyapai.com
   type: vless
   server: 94.140.0.100
@@ -454,32 +481,6 @@ proxies:
       Host: silent-pine-a674.jfadwkglaugul.workers.dev
   skip-cert-verify: true
   udp: true
-- name: 美國CloudFlare节点丨yoyapai.com
-  type: vless
-  server: 162.159.81.104
-  port: 80
-  uuid: 4b00d726-e072-429b-997e-f07affea3b7f
-  network: ws
-  tls: false
-  ws-opts:
-    path: /eyJqdW5rIjoiUEVTdDRlR2hhc0JuYyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ
-    headers:
-      Host: icy-darkness-8ff1.farzambia12mo.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 免費節點丨yoyapai.com_1
-  type: vless
-  server: 104.16.8.66
-  port: 8880
-  uuid: 725c66a2-2bce-4a24-ba52-b4e2e7047076
-  network: ws
-  tls: false
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: rapid-base-6c9e.45-d79.workers.dev
-  skip-cert-verify: true
-  udp: true
 - name: 德國丨yoyapai.com
   type: vless
   server: 91.206.71.8
@@ -491,6 +492,31 @@ proxies:
     path: /pyip=Telegram🇨🇳 @WangCai2
     headers:
       Host: round-haze-8783.294.workers.dev
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇦CA加拿大丨yoyapai.com_1
+  type: vless
+  server: 155.46.167.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    headers:
+      Host: vms.lifetime50.workers.dev
+  skip-cert-verify: true
+  udp: true
+- name: 美國CloudFlare节点丨yoyapai.com
+  type: vless
+  server: 162.159.81.104
+  port: 80
+  uuid: 4b00d726-e072-429b-997e-f07affea3b7f
+  network: ws
+  tls: false
+  ws-opts:
+    path: /eyJqdW5rIjoiUEVTdDRlR2hhc0JuYyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ
+    headers:
+      Host: icy-darkness-8ff1.farzambia12mo.workers.dev
   skip-cert-verify: true
   udp: true
 - name: FR法國丨yoyapai.com
@@ -523,15 +549,115 @@ proxies:
       Host: ld.223350.xyz
   skip-cert-verify: true
   udp: true
-- name: 未知丨yoyapai.com_1
+- name: 🇷🇺俄罗斯丨yoyapai.com_2
   type: vless
-  server: 201.51.0.38
-  port: 4100
-  uuid: e7299042-7d8f-440f-8368-2516b0e69341
+  server: 104.171.137.176
+  port: 2200
+  uuid: 43874ef1-1f74-4b8b-bc84-1d13caabd71b
   network: ws
   tls: false
   ws-opts:
     path: /v1
+  skip-cert-verify: true
+  udp: true
+- name: 🇫🇷 France法国丨yoyapai.com
+  type: vless
+  server: 199.232.239.2
+  port: 443
+  uuid: f3ac6161-3592-43ed-82f2-daf9c97806aa
+  network: http
+  servername: accounts.fastly.com
+  tls: true
+  client-fingerprint: chrome
+  http-opts:
+    path:
+    - /
+    headers:
+      Host:
+      - oh6.global.ssl.fastly.net
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪_德国丨yoyapai.com
+  type: vless
+  server: 46.101.253.244
+  port: 2083
+  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
+  network: ws
+  servername: edge.yzkvm.top
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: edge.yzkvm.top
+  skip-cert-verify: true
+  udp: true
+- name: 未知
+  type: vmess
+  server: 2001:bc8:32d7:1a9::2
+  port: 23388
+  uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /github.com/Alvin9999-newpac/fanqiang
+  udp: true
+- name: GB英国丨yoyapai.com
+  type: vless
+  server: 91.110.174.210
+  port: 8443
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  network: ws
+  servername: rubifen.adaspoloandco.com
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /GOrbEh
+    headers:
+      Host: rubifen.adaspoloandco.com
+  skip-cert-verify: true
+  udp: true
+- name: FR法国丨yoyapai.com
+  type: trojan
+  server: 104.16.174.36
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 美國丨yoyapai.com_2
+  type: trojan
+  server: www.ignitelimit.com
+  port: 443
+  password: humanity
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+  udp: true
+- name: 免費節點丨yoyapai.com_1
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  network: http
+  servername: dey.lnmarketplace.net
+  tls: true
+  client-fingerprint: chrome
+  http-opts:
+    path:
+    - /kavir
+    headers:
+      Host:
+      - dey.lnmarketplace.net
   skip-cert-verify: true
   udp: true
 - name: 🇸🇪瑞典丨yoyapai.com
@@ -549,119 +675,9 @@ proxies:
       Host: edge.yzkvm.top
   skip-cert-verify: true
   udp: true
-- name: 🇳🇱_荷兰
-  type: vmess
-  server: 185.246.152.159
-  port: 443
-  uuid: 5f72f180-b21b-4b7a-8484-240759012604
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: apjhdggyx.com
-  network: ws
-  ws-opts:
-    path: /5f72f180-b21b-4b7a-8484-240759096785
-    headers:
-      Host: apjhdggyx.com
-  udp: true
-- name: NL荷兰丨yoyapai.com
-  type: vless
-  server: 84.32.101.222
-  port: 443
-  uuid: 5dc56757-458e-4df2-9e71-2a14ce47e8af
-  servername: ddc-chr.astralweb.tech
-  tls: true
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  udp: true
-- name: 未知
-  type: vmess
-  server: 2001:bc8:32d7:1a9::2
-  port: 23388
-  uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /github.com/Alvin9999-newpac/fanqiang
-  udp: true
-- name: 🇩🇪_德国丨yoyapai.com
-  type: vless
-  server: 46.101.253.244
-  port: 2083
-  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
-  network: ws
-  servername: edge.yzkvm.top
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: edge.yzkvm.top
-  skip-cert-verify: true
-  udp: true
-- name: 🇯🇵日本丨yoyapai.com
-  type: vless
-  server: 82.40.42.204
-  port: 8443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  network: ws
-  servername: rubifen.adaspoloandco.com
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /GOrbEh
-    headers:
-      Host: rubifen.adaspoloandco.com
-  skip-cert-verify: true
-  udp: true
-- name: GB英国丨yoyapai.com
-  type: vless
-  server: 91.110.174.210
-  port: 8443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  network: ws
-  servername: rubifen.adaspoloandco.com
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /GOrbEh
-    headers:
-      Host: rubifen.adaspoloandco.com
-  skip-cert-verify: true
-  udp: true
-- name: 美国丨yoyapai.com
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  network: http
-  servername: dey.lnmarketplace.net
-  tls: true
-  http-opts:
-    path:
-    - /kavir
-    headers:
-      Host:
-      - dey.lnmarketplace.net
-  skip-cert-verify: true
-  udp: true
-- name: 美國丨yoyapai.com_1
+- name: 🇨🇦CA加拿大丨yoyapai.com_4
   type: trojan
-  server: www.ignitelimit.com
-  port: 443
-  password: humanity
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /assignment
-  udp: true
-- name: FR法国丨yoyapai.com
-  type: trojan
-  server: 104.16.174.36
+  server: 104.18.152.219
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -669,10 +685,8 @@ proxies:
   tls: true
   ws-opts:
     path: /assignment
-    headers:
-      Host: www.ignitelimit.com
   udp: true
-- name: 🇩🇪德国丨yoyapai.com_4
+- name: 🇩🇪德国丨yoyapai.com
   type: vless
   server: 104.18.12.149
   port: 443
@@ -704,9 +718,38 @@ proxies:
       - xvh.andishehparenting.com
   skip-cert-verify: true
   udp: true
-- name: 🇯🇵日本丨yoyapai.com_1
+- name: 🇷🇺俄罗斯丨yoyapai.com_3
   type: vless
-  server: 45.192.200.66
+  server: 104.18.32.47
+  port: 443
+  uuid: a5a544bf-e4b3-4651-9ff4-de3461910d87
+  network: http
+  servername: rus.aba-hum.store
+  tls: true
+  client-fingerprint: chrome
+  http-opts:
+    path:
+    - /
+  skip-cert-verify: true
+  udp: true
+- name: 🇹🇭泰国丨yoyapai.com
+  type: vless
+  server: 3.170.185.91
+  port: 443
+  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  network: ws
+  servername: d1yxsk0zprgivr.cloudfront.net
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: d1yxsk0zprgivr.cloudfront.net
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵日本丨yoyapai.com
+  type: vless
+  server: 82.40.42.204
   port: 8443
   uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
   network: ws
@@ -718,6 +761,17 @@ proxies:
     headers:
       Host: rubifen.adaspoloandco.com
   skip-cert-verify: true
+  udp: true
+- name: 🇮🇷_伊朗丨yoyapai.com
+  type: trojan
+  server: 2.144.21.150
+  port: 2000
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
   udp: true
 - name: 新加坡丨yoyapai.com
   type: vless
@@ -1036,7 +1090,7 @@ proxies:
   client-fingerprint: chrome
   skip-cert-verify: true
   udp: true
-- name: 美國丨yoyapai.com_7
+- name: 美國丨yoyapai.com_8
   type: vless
   server: 199.232.197.131
   port: 80
@@ -1049,7 +1103,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 美國丨yoyapai.com_8
+- name: 美國丨yoyapai.com_9
   type: vless
   server: 151.101.66.219
   port: 80
@@ -1305,7 +1359,7 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
   udp: true
-- name: 美國丨yoyapai.com_13
+- name: 美國丨yoyapai.com_14
   type: vless
   server: 172.67.223.190
   port: 2086
@@ -1404,7 +1458,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸US美國丨yoyapai.com_2
+- name: 🇺🇸US美國丨yoyapai.com_1
   type: vless
   server: 167.82.0.1
   port: 80
@@ -1816,7 +1870,7 @@ proxies:
   password: JVrsLLN1tkN8oXZO
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸US美國丨yoyapai.com_3
+- name: 🇺🇸US美國丨yoyapai.com_2
   type: vless
   server: 108.162.194.135
   port: 443
@@ -1830,7 +1884,7 @@ proxies:
       Host: nbhhh.mrcool.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 免費節點丨yoyapai.com_6
+- name: 免費節點丨yoyapai.com_5
   type: hysteria2
   server: 103.251.167.168
   port: 443
@@ -1854,7 +1908,7 @@ proxies:
       Host: newip.global.ssl.fastly.neT.
   skip-cert-verify: true
   udp: true
-- name: 美國丨yoyapai.com_17
+- name: 美國丨yoyapai.com_18
   type: trojan
   server: 167.82.101.251
   port: 443
@@ -1877,7 +1931,7 @@ proxies:
   password: 7e1dd4c55bf85da5
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸US美國丨yoyapai.com_4
+- name: 🇺🇸US美國丨yoyapai.com_3
   type: vless
   server: support.zoom.us
   port: 443
@@ -1892,7 +1946,7 @@ proxies:
       Host: support.zoom.us.yxls.eu.cc
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸US美國丨yoyapai.com_7
+- name: 🇺🇸US美國丨yoyapai.com_6
   type: vless
   server: www.cnae.top
   port: 443
@@ -1944,7 +1998,7 @@ proxies:
     path: /page=2
   skip-cert-verify: true
   udp: true
-- name: 美國丨yoyapai.com_21
+- name: 美國丨yoyapai.com_22
   type: vless
   server: 162.159.32.239
   port: 443
@@ -1959,7 +2013,7 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 美國丨yoyapai.com_22
+- name: 美國丨yoyapai.com_23
   type: vless
   server: 198.41.223.238
   port: 443
@@ -1974,7 +2028,7 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸US美國丨yoyapai.com_10
+- name: 🇺🇸US美國丨yoyapai.com_9
   type: vless
   server: 162.159.10.87
   port: 443
@@ -1989,7 +2043,7 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸US美國丨yoyapai.com_11
+- name: 🇺🇸US美國丨yoyapai.com_10
   type: vless
   server: 162.159.60.167
   port: 443
@@ -2027,7 +2081,7 @@ proxies:
   password: oZIoA69Q8yhcQV8ka3Pa3A
   skip-cert-verify: true
   udp: true
-- name: 🇷🇺俄羅斯丨yoyapai.com_1
+- name: 🇷🇺俄羅斯丨yoyapai.com
   type: vless
   server: 109.120.176.37
   port: 443
@@ -2177,7 +2231,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 美國丨yoyapai.com_25
+- name: 美國丨yoyapai.com_26
   type: vless
   server: 172.64.52.134
   port: 8443
@@ -2246,7 +2300,7 @@ proxies:
   sni: grape-coffee-fi.gleeze.com
   skip-cert-verify: true
   udp: true
-- name: 美國丨yoyapai.com_26
+- name: 美國丨yoyapai.com_27
   type: hysteria2
   server: 161.33.231.22
   port: 30000
@@ -2267,7 +2321,7 @@ proxies:
   ws-opts:
     path: /0zNW56sF
   udp: true
-- name: 美國丨yoyapai.com_27
+- name: 美國丨yoyapai.com_28
   type: vless
   server: 18.238.109.28
   port: 80
@@ -2326,7 +2380,7 @@ proxies:
       Host: BankMelat.glObal.ssl.faStly.nEt.
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸US美國丨yoyapai.com_13
+- name: 🇺🇸US美國丨yoyapai.com_12
   type: vless
   server: 185.193.29.123
   port: 443
@@ -2340,7 +2394,7 @@ proxies:
       Host: notls.lukongtou.eu.org
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸US美國丨yoyapai.com_14
+- name: 🇺🇸US美國丨yoyapai.com_13
   type: vless
   server: 18.239.134.69
   port: 80
@@ -2703,7 +2757,7 @@ proxies:
       Host: plain-darkness-90ea.259.workers.dev
   skip-cert-verify: true
   udp: true
-- name: 免費節點丨yoyapai.com_7
+- name: 免費節點丨yoyapai.com_6
   type: ss
   server: 82.38.31.218
   port: 8080
@@ -2711,7 +2765,7 @@ proxies:
   password: k1dBOmOB4oqi7Ump37a1bQ
   skip-cert-verify: true
   udp: true
-- name: 免費節點丨yoyapai.com_8
+- name: 免費節點丨yoyapai.com_7
   type: vless
   server: 172.67.175.34
   port: 8443
@@ -2726,7 +2780,7 @@ proxies:
       Host: ad-007.cloud25075.info
   skip-cert-verify: true
   udp: true
-- name: 免費節點丨yoyapai.com_14
+- name: 免費節點丨yoyapai.com_13
   type: vless
   server: 198.41.209.43
   port: 443
@@ -2741,7 +2795,7 @@ proxies:
       Host: support.zoom.us.yxls.eu.cc
   skip-cert-verify: true
   udp: true
-- name: 免費節點丨yoyapai.com_29
+- name: 免費節點丨yoyapai.com_28
   type: vless
   server: ad-018.cloud25075.info
   port: 8443
@@ -2754,6 +2808,19 @@ proxies:
     path: /
     headers:
       Host: ad-018.cloud25075.info
+  skip-cert-verify: true
+  udp: true
+- name: 免費節點丨yoyapai.com_29
+  type: vless
+  server: 104.16.8.66
+  port: 8880
+  uuid: 725c66a2-2bce-4a24-ba52-b4e2e7047076
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: rapid-base-6c9e.45-d79.workers.dev
   skip-cert-verify: true
   udp: true
 - name: 免費節點丨yoyapai.com_39
@@ -3074,6 +3141,21 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
+- name: 未知丨yoyapai.com_10
+  type: vless
+  server: www.true.th
+  port: 443
+  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  network: ws
+  servername: d1yxsk0zprgivr.cloudfront.net
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: d1yxsk0zprgivr.cloudfront.net
+  skip-cert-verify: true
+  udp: true
 - name: US美國丨yoyapai.com_4
   type: vless
   server: 8.35.211.87
@@ -3102,7 +3184,7 @@ proxies:
       Host: throbbing-moon-a07c.90-ec4.workers.dev
   skip-cert-verify: true
   udp: true
-- name: 未知丨yoyapai.com_28
+- name: 未知丨yoyapai.com_24
   type: vless
   server: 178.72.162.73
   port: 443
@@ -3119,7 +3201,7 @@ proxies:
       - wqeds.denverpresents.top
   skip-cert-verify: true
   udp: true
-- name: 未知丨yoyapai.com_30
+- name: 未知丨yoyapai.com_26
   type: vless
   server: 135.125.184.182
   port: 50559
@@ -3183,52 +3265,127 @@ proxies:
       Host: 31.76.251.127.cdn-one.org
   skip-cert-verify: true
   udp: true
+- name: 未知丨yoyapai.com_27
+  type: vless
+  server: 201.51.0.38
+  port: 4100
+  uuid: e7299042-7d8f-440f-8368-2516b0e69341
+  network: ws
+  tls: false
+  ws-opts:
+    path: /v1
+  skip-cert-verify: true
+  udp: true
+- name: 🇦🇪_阿拉伯联合酋长国丨yoyapai.com
+  type: vless
+  server: 217.60.193.4
+  port: 443
+  uuid: 5dc56757-458e-4df2-9e71-2a14ce47e8af
+  servername: ddc-akn.astralweb.tech
+  tls: true
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  udp: true
+- name: NL荷兰丨yoyapai.com
+  type: vless
+  server: 84.32.101.222
+  port: 443
+  uuid: 5dc56757-458e-4df2-9e71-2a14ce47e8af
+  servername: ddc-chr.astralweb.tech
+  tls: true
+  client-fingerprint: firefox
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵日本丨yoyapai.com_1
+  type: vless
+  server: 45.192.200.66
+  port: 8443
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  network: ws
+  servername: rubifen.adaspoloandco.com
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /GOrbEh
+    headers:
+      Host: rubifen.adaspoloandco.com
+  skip-cert-verify: true
+  udp: true
 - name: 🇭🇰 香港(yudou789.top 玉豆免费节点)
-  server: Og=@...
-  port: 0
-  type: socks5
+  server: 47.83.247.150
+  port: 800
+  type: vmess
+  uuid: 59c06976-3009-48d5-89f3-bd94d4a120a0
+  alterId: 0
+  cipher: auto
+  tls: false
   skip-cert-verify: true
   udp: true
 - name: 🇭🇰 香港(yudou789.top 玉豆免费节点) 2
-  server: '@...'
-  port: 0
-  type: socks5
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰 香港(yudou789.top 玉豆免费节点) 3
-  server: 8888
-  port: 8888
-  type: socks5
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰 香港(yudou789.top 玉豆免费节点) 4
-  server: Og
-  port: 0
-  type: socks5
-  skip-cert-verify: true
-  udp: true
-- name: 🇰🇷 韩国yudou789.top 玉豆免费节点) 2
   server: admin
   port: 0
   type: socks5
   skip-cert-verify: true
   udp: true
-- name: 🇬🇧 英国(yudou789.top 玉豆免费节点)
-  server: N9cyF6jvgy3ZEmCNKe04zBIR
-  port: 1
+- name: 🇭🇰 香港(yudou789.top 玉豆免费节点) 3
+  server: Og
+  port: 0
   type: socks5
   skip-cert-verify: true
   udp: true
-- name: 🇯🇵 日本(yudou789.top 玉豆免费节点) 2
-  server: oplosgru-c.catcat321.com
-  port: 20004
-  type: trojan
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: hk.catxstar.com
+- name: 🇭🇰 香港(yudou789.top 玉豆免费节点) 4
+  server: '@...'
+  port: 0
+  type: socks5
   skip-cert-verify: true
   udp: true
+- name: 🇭🇰 香港(yudou789.top 玉豆免费节点) 5
+  server: Og=@...
+  port: 0
+  type: socks5
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 香港(yudou789.top 玉豆免费节点) 6
+  server: hkkk498.cloudflare.182682.xyz
+  port: 443
+  type: trojan
+  password: e0ab846b-8eb2-4042-96dd-7c695e467fbf
+  sni: oe4up9z5j9yntita.tkgogocsgo.top
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /images
+    headers:
+      Host: oe4up9z5j9yntita.tkgogocsgo.top
+  udp: true
 - name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 3
+  server: mmefi.cloudflare.182682.xyz
+  port: 443
+  type: trojan
+  password: e0ab846b-8eb2-4042-96dd-7c695e467fbf
+  sni: gogoyy.bpmalai2026.top
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /images
+    headers:
+      Host: gogoyy.bpmalai2026.top
+  udp: true
+- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 4
   server: 104.18.23.63
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇨🇦 加拿大(yudou789.top 玉豆免费节点)
+  server: 104.18.22.63
   port: 443
   type: trojan
   password: humanity
@@ -3253,46 +3410,7 @@ proxies:
     headers:
       Host: default.fastly.com
   udp: true
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 4
-  server: 216.24.57.7
-  port: 443
-  type: trojan
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-  udp: true
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 5
-  server: 5344gt5.cloudflare.182682.xyz
-  port: 443
-  type: trojan
-  password: cd5637fd-f992-423a-8be0-5b80360f26fc
-  sni: ttt1.ttttlefjljl.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /images
-    headers:
-      Host: ttt1.ttttlefjljl.xyz
-  udp: true
-- name: 🇷🇺 俄罗斯(yudou789.top 玉豆免费节点)
-  server: aeryy5gfrp630ww1.lovebaipiao.net
-  port: 443
-  type: trojan
-  password: cd5637fd-f992-423a-8be0-5b80360f26fc
-  sni: aeryy5gfrp630ww1.lovebaipiao.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /images
-    headers:
-      Host: aeryy5gfrp630ww1.lovebaipiao.net
-  udp: true
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 6
+- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 7
   server: 104.17.111.8
   port: 443
   type: trojan
@@ -3305,15 +3423,8 @@ proxies:
     headers:
       Host: www.ignitelimit.com
   udp: true
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 8
-  server: 82.38.31.7
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 10
-  server: 104.16.174.44
+- name: 🇫🇷 法国(yudou789.top 玉豆免费节点) 3
+  server: 216.24.57.7
   port: 443
   type: trojan
   password: humanity
@@ -3325,8 +3436,21 @@ proxies:
     headers:
       Host: www.ignitelimit.com
   udp: true
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 11
-  server: 104.18.152.108
+- name: 🇯🇵 日本(yudou789.top 玉豆免费节点) 3
+  server: jjyeye.cloudflare.182682.xyz
+  port: 443
+  type: trojan
+  password: e0ab846b-8eb2-4042-96dd-7c695e467fbf
+  sni: jpefoaweho04.jptimecsgo.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /images
+    headers:
+      Host: jpefoaweho04.jptimecsgo.xyz
+  udp: true
+- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 9
+  server: 104.17.111.3
   port: 443
   type: trojan
   password: humanity
@@ -3337,22 +3461,50 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
+  udp: true
+- name: 🇨🇳 台湾(yudou789.top 玉豆免费节点)
+  server: tw3011h8r.cloudflare.182682.xyz
+  port: 443
+  type: trojan
+  password: e0ab846b-8eb2-4042-96dd-7c695e467fbf
+  sni: kfb9frqf0v.bpis2026.top
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /images
+    headers:
+      Host: kfb9frqf0v.bpis2026.top
+  udp: true
+- name: 🇨🇳 台湾(yudou789.top 玉豆免费节点) 2
+  server: visa.com.sg
+  port: 443
+  type: trojan
+  password: e0ab846b-8eb2-4042-96dd-7c695e467fbf
+  sni: px8r9i1b4k.bpusfaster2.top
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /images
+    headers:
+      Host: px8r9i1b4k.bpusfaster2.top
   udp: true
 - name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 12
-  server: 104.18.152.246
-  port: 443
-  type: trojan
-  password: humanity
-  sni: www.ignitelimit.com
+  server: www.nextkyc.com
+  port: 8443
+  type: vmess
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /assignment
+    path: /lMnsZUN4/
     headers:
-      Host: www.ignitelimit.com
+      Host: v2ray1.dozapp.xyz
   udp: true
 - name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 15
-  server: 104.18.12.149
+  server: 104.18.152.210
   port: 443
   type: trojan
   password: humanity
@@ -3365,20 +3517,15 @@ proxies:
       Host: www.ignitelimit.com
   udp: true
 - name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 17
-  server: 104.18.152.97
-  port: 443
+  server: oplosgru-c.catcat321.com
+  port: 20088
   type: trojan
-  password: humanity
-  sni: www.ignitelimit.com
+  password: 41c406e2-12b5-41f2-a329-d0621052d675
+  sni: hk.catxstar.com
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
   udp: true
 - name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 18
-  server: 104.18.152.113
+  server: 104.18.12.149
   port: 443
   type: trojan
   password: humanity
@@ -3391,7 +3538,7 @@ proxies:
       Host: www.ignitelimit.com
   udp: true
 - name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 20
-  server: 104.18.152.175
+  server: 104.16.174.44
   port: 443
   type: trojan
   password: humanity
@@ -3404,84 +3551,6 @@ proxies:
       Host: www.ignitelimit.com
   udp: true
 - name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 21
-  server: 104.18.152.103
-  port: 443
-  type: trojan
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-  udp: true
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 23
-  server: 104.18.152.225
-  port: 443
-  type: trojan
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-  udp: true
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 24
-  server: 104.21.46.3
-  port: 443
-  type: trojan
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-  udp: true
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 26
-  server: 172.67.149.60
-  port: 443
-  type: trojan
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-  udp: true
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 27
-  server: 104.26.14.137
-  port: 443
-  type: trojan
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-  udp: true
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 28
-  server: 104.16.73.213
-  port: 443
-  type: trojan
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-  udp: true
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 29
   server: 104.17.77.77
   port: 8443
   type: vmess
@@ -3496,169 +3565,363 @@ proxies:
     headers:
       Host: v2ray1.dozapp.xyz
   udp: true
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 31
-  server: cdn2.bpcdn.cc
+- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 22
+  server: 104.18.152.108
   port: 443
   type: trojan
-  password: cd5637fd-f992-423a-8be0-5b80360f26fc
-  sni: ehofhoe.bpuk2026.top
+  password: humanity
+  sni: www.ignitelimit.com
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /images
+    path: /assignment
     headers:
-      Host: ehofhoe.bpuk2026.top
+      Host: www.ignitelimit.com
   udp: true
-- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 33
-  server: jjyeye.cloudflare.182682.xyz
+- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 23
+  server: 104.18.152.97
   port: 443
   type: trojan
-  password: cd5637fd-f992-423a-8be0-5b80360f26fc
-  sni: jpefoaweho04.jptimecsgo.xyz
+  password: humanity
+  sni: www.ignitelimit.com
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /images
+    path: /assignment
     headers:
-      Host: jpefoaweho04.jptimecsgo.xyz
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 25
+  server: 104.16.174.72
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 26
+  server: 104.16.174.46
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 27
+  server: 104.18.152.152
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 30
+  server: 104.18.152.229
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 31
+  server: 104.18.152.159
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 35
+  server: 104.21.46.3
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 36
+  server: 104.16.73.213
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 38
+  server: 104.16.174.121
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 40
+  server: 104.18.152.50
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 41
+  server: 104.16.7.70
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 43
+  server: 172.67.149.60
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 50
+  server: 104.16.174.34
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇫🇷 法国(yudou789.top 玉豆免费节点) 6
+  server: 8.6.112.6
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇫🇷 法国(yudou789.top 玉豆免费节点) 7
+  server: 86.38.214.205
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 57
+  server: 104.18.152.207
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 60
+  server: 104.16.174.71
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 66
+  server: 8.6.112.0
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 69
+  server: 104.18.152.204
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇺🇸 美国(yudou789.top 玉豆免费节点) 70
+  server: 104.26.14.137
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
   udp: true
 - name: 🇭🇰_HK_中国香港
+  type: vless
+  server: 47.86.55.200
+  port: 19321
+  uuid: 394086c4-d8a4-4298-9b62-f70fa711082d
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国
   type: vmess
-  server: 47.86.167.194
-  port: 800
-  uuid: f2c67cae-c09d-4739-947d-f5302d87a3c0
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港_1
+  type: vmess
+  server: 154.37.223.19
+  port: 56972
+  uuid: ae225455-5e8c-491d-d931-c06ac56f4aee
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   network: http
-  http-opts:
-    path:
-    - /x
-    headers:
-      Host:
-      - sjskendn.dingtalk.com
   udp: true
-- name: 🇭🇰_HK_中国香港_1
+- name: 🇮🇩_ID_印度尼西亚->🇫🇷_FR_法国
   type: vmess
-  server: drbkg16egf3fzlm3.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-  udp: true
-- name: 🇩🇪_DE_德国_1
-  type: vless
-  server: 45.80.111.7
-  port: 443
-  uuid: 926bc4cd-709e-4e90-8aa7-78db75fbe86b
-  network: ws
-  servername: 2--ldej--MiTiVPN---MiTiVPN-o.KingNetwork.ir
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/de2---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: De2-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.KinGNetWork.iR
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港->🇩🇪_DE_德国
-  type: trojan
-  server: hkdcrtc-e.catcat321.com
-  port: 20041
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: de.catxstar.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇭🇰_HK_中国香港_2
-  type: vmess
-  server: m01c7b2z26dtqgee.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-  udp: true
-- name: 🇩🇪_DE_德国_3
-  type: vless
-  server: 31.76.11.46.cdn-one.org
-  port: 443
-  uuid: 4f375fb4-3c95-425f-bc7b-8085487a6f3c
-  network: ws
-  servername: 31.76.11.46.cdn-one.org
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /52872/BNzG4FvIAr
-    headers:
-      Host: 31.76.11.46.cdn-one.org
-  skip-cert-verify: true
-  udp: true
-- name: 🇦🇪_AE_阿拉伯联合酋长国->🇩🇪_DE_德国_1
-  type: vless
-  server: ddc-akn.astralweb.tech
-  port: 443
-  uuid: 04b9e828-43ed-4faf-8952-41069ec08355
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
-  type: vmess
-  server: v9.hdacd.com
-  port: 30809
+  server: v35.hdacd.com
+  port: 30835
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇵🇱_PL_波兰_1
-  type: vless
-  server: 31.76.251.127.cdn-one.org
-  port: 443
-  uuid: 4f375fb4-3c95-425f-bc7b-8085487a6f3c
-  network: ws
-  servername: 31.76.251.127.cdn-one.org
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /10336/2GCOqG7bvA
-    headers:
-      Host: 31.76.251.127.cdn-one.org
+- name: 🇭🇰_HK_中国香港_2
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国->🇦🇿_AZ_阿塞拜疆
+  type: trojan
+  server: 90081bb25c.node.tro.cac.cab
+  port: 41943
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: az.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: false
+  udp: true
+- name: 🇮🇩_ID_印度尼西亚->🇬🇧_GB_英国
+  type: vmess
+  server: v36.hdacd.com
+  port: 30836
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
   skip-cert-verify: true
   udp: true
 - name: 🇺🇸_US_美国_2
   type: vless
-  server: 104.17.21.32
-  port: 8880
-  uuid: 300f44af-adb8-42b7-b869-bef70b205d7e
-  network: ws
+  server: 47.77.214.201
+  port: 10035
+  uuid: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
   tls: false
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: icy-rice-3c1c.340-680.workers.dev
   skip-cert-verify: true
   udp: true
 - name: 🇺🇸_US_美国_3
-  type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
+  type: trojan
+  server: 90081bb25c.node.tro.cac.cab
+  port: 48697
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: gh.01.naiun.bilibili.com
   skip-cert-verify: true
+  tls: false
   udp: true
 - name: TG@ZDYZ2 -HK-Hong Kong8
   type: vless
@@ -3684,7 +3947,7 @@ proxies:
   port: 443
   cipher: aes-128-cfb
   password: shadowsocks
-- name: 🇺🇸_US_美国
+- name: 🇺🇸_US_美国_1
   type: vmess
   server: yh2.freeh1.xyz
   port: 8080
@@ -7857,7 +8120,7 @@ proxies:
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇩🇪_DE_德国_6
+- name: 🇩🇪_DE_德国
   type: trojan
   server: 18.196.39.57
   port: 22222
@@ -7925,7 +8188,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
     headers:
       Host: a.prapt1.ir
-- name: 🇩🇪_DE_德国_7
+- name: 🇩🇪_DE_德国_1
   type: trojan
   server: 3.68.139.230
   port: 22222
@@ -8005,64 +8268,64 @@ proxy-groups:
   - DIRECT
   - 美国+CloudFlare节点_P
   - 美国+CloudFlare节点_P_1
+  - 巴西圣保罗+CloudFlare节点_P
   - 美国+CloudFlare节点_P_2
   - 美国+CloudFlare节点_P_3
   - 美国+CloudFlare节点_P_4
-  - 美国+V2CROSS.COM_P
   - 美国+CloudFlare节点_P_5
   - 美国+CloudFlare节点_P_6
-  - 立陶宛+V2CROSS.COM_P
   - 美国+CloudFlare节点_P_7
   - 美国+CloudFlare节点_P_8
   - 美国+CloudFlare节点_P_9
-  - 瑞典+V2CROSS.COM_P
-  - 美国 V2CROSS.COM_P
-  - 美国+V2CROSS.COM_P_1
-  - 西班牙+V2CROSS.COM_P
   - 美国+CloudFlare节点_P_10
   - 美国+CloudFlare节点_P_11
-  - 香港+Simcentric网络公司_P
+  - 美国+CloudFlare节点_P_12
+  - 美国+CloudFlare节点_P_13
+  - 美国+CloudFlare节点_P_14
+  - 欧盟+V2CROSS.COM_P
+  - 法国巴黎+CloudFlare节点_P
+  - 美国+CloudFlare节点_P_15
   - US - zhuhai.uk
+  - RO - zhuhai.uk
+  - ZA - zhuhai.uk
+  - RO - zhuhai.uk 02
+  - HK - zhuhai.uk
+  - RO - zhuhai.uk 03
   - US - zhuhai.uk 02
   - US - zhuhai.uk 03
   - US - zhuhai.uk 04
-  - GB - zhuhai.uk
-  - RO - zhuhai.uk
+  - RO - zhuhai.uk 04
+  - RO - zhuhai.uk 05
   - US - zhuhai.uk 05
   - US - zhuhai.uk 06
+  - RO - zhuhai.uk 06
   - US - zhuhai.uk 07
-  - SG - zhuhai.uk
+  - NL - zhuhai.uk
+  - RO - zhuhai.uk 07
   - US - zhuhai.uk 08
-  - CO - zhuhai.uk
-  - US - zhuhai.uk 09
-  - SG - zhuhai.uk 02
-  - US - zhuhai.uk 10
-  - GB - zhuhai.uk 02
-  - GB - zhuhai.uk 03
-  - US - zhuhai.uk 12
-  - FI - zhuhai.uk 02
-  - GB - zhuhai.uk 04
-  - HK - zhuhai.uk
   - HK - zhuhai.uk 02
-  - FI - zhuhai.uk 03
-  - RO - zhuhai.uk 02
-  - DE - zhuhai.uk
-  - US - zhuhai.uk 13
-  - TW - zhuhai.uk 03
-  - 🇦🇪_阿拉伯联合酋长国丨yoyapai.com
-  - 未知丨yoyapai.com
-  - 🇹🇭TH泰國丨yoyapai.com
+  - US - zhuhai.uk 09
+  - US - zhuhai.uk 10
+  - US - zhuhai.uk 11
+  - US - zhuhai.uk 12
+  - RO - zhuhai.uk 08
+  - RO - zhuhai.uk 09
+  - GB - zhuhai.uk 02
+  - GB - zhuhai.uk 04
+  - JP - zhuhai.uk 11
+  - 🇹🇭泰國丨yoyapai.com
+  - 🇷🇺俄罗斯丨yoyapai.com
   - 免費節點丨yoyapai.com
+  - 🇮🇷 IR伊朗丨yoyapai.com
+  - 🇸🇬新加坡
+  - 🇨🇦CA加拿大丨yoyapai.com
+  - 🇫🇮 荷蘭
   - 法國丨yoyapai.com
-  - 美國CloudFlare节点丨yoyapai.com
-  - 免費節點丨yoyapai.com_1
   - 德國丨yoyapai.com
+  - 🇨🇦CA加拿大丨yoyapai.com_1
+  - 美國CloudFlare节点丨yoyapai.com
   - FR法國丨yoyapai.com
   - 🇺🇸US美國丨yoyapai.com
-  - 未知丨yoyapai.com_1
-  - 🇸🇪瑞典丨yoyapai.com
-  - 🇳🇱_荷兰
-  - NL荷兰丨yoyapai.com
 - name: AUTO
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -8071,74 +8334,80 @@ proxy-groups:
   proxies:
   - 美国+CloudFlare节点_P
   - 美国+CloudFlare节点_P_1
+  - 巴西圣保罗+CloudFlare节点_P
   - 美国+CloudFlare节点_P_2
   - 美国+CloudFlare节点_P_3
   - 美国+CloudFlare节点_P_4
-  - 美国+V2CROSS.COM_P
   - 美国+CloudFlare节点_P_5
   - 美国+CloudFlare节点_P_6
-  - 立陶宛+V2CROSS.COM_P
   - 美国+CloudFlare节点_P_7
   - 美国+CloudFlare节点_P_8
   - 美国+CloudFlare节点_P_9
-  - 瑞典+V2CROSS.COM_P
-  - 美国 V2CROSS.COM_P
-  - 美国+V2CROSS.COM_P_1
-  - 西班牙+V2CROSS.COM_P
   - 美国+CloudFlare节点_P_10
   - 美国+CloudFlare节点_P_11
-  - 香港+Simcentric网络公司_P
+  - 美国+CloudFlare节点_P_12
+  - 美国+CloudFlare节点_P_13
+  - 美国+CloudFlare节点_P_14
+  - 欧盟+V2CROSS.COM_P
+  - 法国巴黎+CloudFlare节点_P
+  - 美国+CloudFlare节点_P_15
   - US - zhuhai.uk
+  - RO - zhuhai.uk
+  - ZA - zhuhai.uk
+  - RO - zhuhai.uk 02
+  - HK - zhuhai.uk
+  - RO - zhuhai.uk 03
   - US - zhuhai.uk 02
   - US - zhuhai.uk 03
   - US - zhuhai.uk 04
-  - GB - zhuhai.uk
-  - RO - zhuhai.uk
+  - RO - zhuhai.uk 04
+  - RO - zhuhai.uk 05
   - US - zhuhai.uk 05
   - US - zhuhai.uk 06
+  - RO - zhuhai.uk 06
   - US - zhuhai.uk 07
-  - SG - zhuhai.uk
+  - NL - zhuhai.uk
+  - RO - zhuhai.uk 07
   - US - zhuhai.uk 08
-  - CO - zhuhai.uk
-  - US - zhuhai.uk 09
-  - SG - zhuhai.uk 02
-  - US - zhuhai.uk 10
-  - GB - zhuhai.uk 02
-  - GB - zhuhai.uk 03
-  - US - zhuhai.uk 12
-  - FI - zhuhai.uk 02
-  - GB - zhuhai.uk 04
-  - HK - zhuhai.uk
   - HK - zhuhai.uk 02
-  - FI - zhuhai.uk 03
-  - RO - zhuhai.uk 02
-  - DE - zhuhai.uk
-  - US - zhuhai.uk 13
-  - TW - zhuhai.uk 03
-  - 🇦🇪_阿拉伯联合酋长国丨yoyapai.com
-  - 未知丨yoyapai.com
-  - 🇹🇭TH泰國丨yoyapai.com
+  - US - zhuhai.uk 09
+  - US - zhuhai.uk 10
+  - US - zhuhai.uk 11
+  - US - zhuhai.uk 12
+  - RO - zhuhai.uk 08
+  - RO - zhuhai.uk 09
+  - GB - zhuhai.uk 02
+  - GB - zhuhai.uk 04
+  - JP - zhuhai.uk 11
+  - 🇹🇭泰國丨yoyapai.com
+  - 🇷🇺俄罗斯丨yoyapai.com
   - 免費節點丨yoyapai.com
+  - 🇮🇷 IR伊朗丨yoyapai.com
+  - 🇸🇬新加坡
+  - 🇨🇦CA加拿大丨yoyapai.com
+  - 🇫🇮 荷蘭
   - 法國丨yoyapai.com
-  - 美國CloudFlare节点丨yoyapai.com
-  - 免費節點丨yoyapai.com_1
   - 德國丨yoyapai.com
+  - 🇨🇦CA加拿大丨yoyapai.com_1
+  - 美國CloudFlare节点丨yoyapai.com
   - FR法國丨yoyapai.com
   - 🇺🇸US美國丨yoyapai.com
-  - 未知丨yoyapai.com_1
-  - 🇸🇪瑞典丨yoyapai.com
-  - 🇳🇱_荷兰
-  - NL荷兰丨yoyapai.com
-  - 未知
+  - 🇷🇺俄罗斯丨yoyapai.com_2
+  - 🇫🇷 France法国丨yoyapai.com
   - 🇩🇪_德国丨yoyapai.com
-  - 🇯🇵日本丨yoyapai.com
+  - 未知
   - GB英国丨yoyapai.com
-  - 美国丨yoyapai.com
-  - 美國丨yoyapai.com_1
   - FR法国丨yoyapai.com
-  - 🇩🇪德国丨yoyapai.com_4
+  - 美國丨yoyapai.com_2
+  - 免費節點丨yoyapai.com_1
+  - 🇸🇪瑞典丨yoyapai.com
+  - 🇨🇦CA加拿大丨yoyapai.com_4
+  - 🇩🇪德国丨yoyapai.com
   - DE德国丨yoyapai.com
-  - 🇯🇵日本丨yoyapai.com_1
+  - 🇷🇺俄罗斯丨yoyapai.com_3
+  - 🇹🇭泰国丨yoyapai.com
+  - 🇯🇵日本丨yoyapai.com
+  - 🇮🇷_伊朗丨yoyapai.com
   - 新加坡丨yoyapai.com
   - 美國節點丨yoyapai.com
   - 英國
@@ -8167,8 +8436,8 @@ proxy-groups:
   - 巴西聖保羅丨yoyapai.com
   - 土耳其丨yoyapai.com
   - 烏克蘭丨yoyapai.com_2
-  - 美國丨yoyapai.com_7
   - 美國丨yoyapai.com_8
+  - 美國丨yoyapai.com_9
   - 羅馬尼亞節點丨yoyapai.com
   - 羅馬尼亞節點丨yoyapai.com_1
   - 德國丨yoyapai.com_4
@@ -8194,7 +8463,7 @@ proxy-groups:
   - 巴西聖保羅丨yoyapai.com_1
   - 土耳其
   - 法國節點
-  - 美國丨yoyapai.com_13
+  - 美國丨yoyapai.com_14
   - 丹麥
   - 斯洛文尼亞丨yoyapai.com
   - 羅馬尼亞丨yoyapai.com_6
@@ -8203,7 +8472,7 @@ proxy-groups:
   - 土耳其節點丨yoyapai.com_1
   - 亞太地區_4
   - JP日本丨yoyapai.com
-  - 🇺🇸US美國丨yoyapai.com_2
+  - 🇺🇸US美國丨yoyapai.com_1
   - NL荷兰+阿姆斯特丹丨yoyapai.com
   - 歐盟丨yoyapai.com_2
   - 香港丨yoyapai.com_1
@@ -8233,23 +8502,23 @@ proxy-groups:
   - CA加拿大丨yoyapai.com_3
   - CA加拿大丨yoyapai.com_4
   - 美國節點丨yoyapai.com_8
-  - 🇺🇸US美國丨yoyapai.com_3
-  - 免費節點丨yoyapai.com_6
+  - 🇺🇸US美國丨yoyapai.com_2
+  - 免費節點丨yoyapai.com_5
   - 🇺🇸 US美國丨yoyapai.com_2
-  - 美國丨yoyapai.com_17
+  - 美國丨yoyapai.com_18
   - 🇷🇺 RU俄羅斯丨yoyapai.com
-  - 🇺🇸US美國丨yoyapai.com_4
-  - 🇺🇸US美國丨yoyapai.com_7
+  - 🇺🇸US美國丨yoyapai.com_3
+  - 🇺🇸US美國丨yoyapai.com_6
   - 美國+CloudFlare节点丨yoyapai.com
   - 美國+CloudFlare节点丨yoyapai.com_1
   - 美國+CloudFlare节点丨yoyapai.com_2
-  - 美國丨yoyapai.com_21
   - 美國丨yoyapai.com_22
+  - 美國丨yoyapai.com_23
+  - 🇺🇸US美國丨yoyapai.com_9
   - 🇺🇸US美國丨yoyapai.com_10
-  - 🇺🇸US美國丨yoyapai.com_11
   - CA加拿大丨yoyapai.com_5
   - 🇳🇱_NL荷蘭丨yoyapai.com
-  - 🇷🇺俄羅斯丨yoyapai.com_1
+  - 🇷🇺俄羅斯丨yoyapai.com
   - FR法國丨yoyapai.com_16
   - FR法國丨yoyapai.com_18
   - 美国丨yoyapai.com_1
@@ -8263,21 +8532,21 @@ proxy-groups:
   - 荷兰丨yoyapai.com
   - 美国丨yoyapai.com_5
   - 英国丨yoyapai.com
-  - 美國丨yoyapai.com_25
+  - 美國丨yoyapai.com_26
   - 加拿大丨yoyapai.com
   - 日本丨yoyapai.com_5
   - 香港_2
   - 伊朗丨yoyapai.com
   - 烏克蘭丨yoyapai.com_4
-  - 美國丨yoyapai.com_26
-  - 🇸🇬 SG新加坡
   - 美國丨yoyapai.com_27
+  - 🇸🇬 SG新加坡
+  - 美國丨yoyapai.com_28
   - 巴西聖保羅丨yoyapai.com_3
   - 美國賓利大學丨yoyapai.com
   - 美國麻省理工學院丨yoyapai.com
   - 美國丨yoyapai.com_29
+  - 🇺🇸US美國丨yoyapai.com_12
   - 🇺🇸US美國丨yoyapai.com_13
-  - 🇺🇸US美國丨yoyapai.com_14
   - 🇯🇵JP日本丨yoyapai.com
   - 🇯🇵JP日本丨yoyapai.com_1
   - 🇭🇰HK香港丨yoyapai.com
@@ -8305,9 +8574,10 @@ proxy-groups:
   - 俄羅斯丨yoyapai.com_3
   - 🇭🇰HK香港節點丨yoyapai.com_4
   - 🇭🇰HK香港節點丨yoyapai.com_5
+  - 免費節點丨yoyapai.com_6
   - 免費節點丨yoyapai.com_7
-  - 免費節點丨yoyapai.com_8
-  - 免費節點丨yoyapai.com_14
+  - 免費節點丨yoyapai.com_13
+  - 免費節點丨yoyapai.com_28
   - 免費節點丨yoyapai.com_29
   - 免費節點丨yoyapai.com_39
   - 免費節點丨yoyapai.com_48
@@ -8334,59 +8604,75 @@ proxy-groups:
   - 🇨🇦加拿大丨yoyapai.com_1
   - 🇨🇦加拿大丨yoyapai.com_2
   - 🇨🇴CO哥倫比亞丨yoyapai.com
+  - 未知丨yoyapai.com_10
   - US美國丨yoyapai.com_4
   - 🇺🇸美國丨yoyapai.com_3
-  - 未知丨yoyapai.com_28
-  - 未知丨yoyapai.com_30
+  - 未知丨yoyapai.com_24
+  - 未知丨yoyapai.com_26
   - 🇭🇰香港丨yoyapai.com
   - 🇰🇿哈薩克斯坦丨yoyapai.com
   - 🇭🇰香港丨yoyapai.com_1
   - PL波蘭丨yoyapai.com
+  - 未知丨yoyapai.com_27
+  - 🇦🇪_阿拉伯联合酋长国丨yoyapai.com
+  - NL荷兰丨yoyapai.com
+  - 🇯🇵日本丨yoyapai.com_1
   - 🇭🇰 香港(yudou789.top 玉豆免费节点)
   - 🇭🇰 香港(yudou789.top 玉豆免费节点) 2
   - 🇭🇰 香港(yudou789.top 玉豆免费节点) 3
   - 🇭🇰 香港(yudou789.top 玉豆免费节点) 4
-  - 🇰🇷 韩国yudou789.top 玉豆免费节点) 2
-  - 🇬🇧 英国(yudou789.top 玉豆免费节点)
-  - 🇯🇵 日本(yudou789.top 玉豆免费节点) 2
+  - 🇭🇰 香港(yudou789.top 玉豆免费节点) 5
+  - 🇭🇰 香港(yudou789.top 玉豆免费节点) 6
   - 🇺🇸 美国(yudou789.top 玉豆免费节点) 3
-  - 🇩🇪 德国(yudou789.top 玉豆免费节点)
   - 🇺🇸 美国(yudou789.top 玉豆免费节点) 4
-  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 5
-  - 🇷🇺 俄罗斯(yudou789.top 玉豆免费节点)
-  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 6
-  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 8
-  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 10
-  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 11
+  - 🇨🇦 加拿大(yudou789.top 玉豆免费节点)
+  - 🇩🇪 德国(yudou789.top 玉豆免费节点)
+  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 7
+  - 🇫🇷 法国(yudou789.top 玉豆免费节点) 3
+  - 🇯🇵 日本(yudou789.top 玉豆免费节点) 3
+  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 9
+  - 🇨🇳 台湾(yudou789.top 玉豆免费节点)
+  - 🇨🇳 台湾(yudou789.top 玉豆免费节点) 2
   - 🇺🇸 美国(yudou789.top 玉豆免费节点) 12
   - 🇺🇸 美国(yudou789.top 玉豆免费节点) 15
   - 🇺🇸 美国(yudou789.top 玉豆免费节点) 17
   - 🇺🇸 美国(yudou789.top 玉豆免费节点) 18
   - 🇺🇸 美国(yudou789.top 玉豆免费节点) 20
   - 🇺🇸 美国(yudou789.top 玉豆免费节点) 21
+  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 22
   - 🇺🇸 美国(yudou789.top 玉豆免费节点) 23
-  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 24
+  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 25
   - 🇺🇸 美国(yudou789.top 玉豆免费节点) 26
   - 🇺🇸 美国(yudou789.top 玉豆免费节点) 27
-  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 28
-  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 29
+  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 30
   - 🇺🇸 美国(yudou789.top 玉豆免费节点) 31
-  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 33
+  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 35
+  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 36
+  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 38
+  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 40
+  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 41
+  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 43
+  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 50
+  - 🇫🇷 法国(yudou789.top 玉豆免费节点) 6
+  - 🇫🇷 法国(yudou789.top 玉豆免费节点) 7
+  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 57
+  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 60
+  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 66
+  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 69
+  - 🇺🇸 美国(yudou789.top 玉豆免费节点) 70
   - 🇭🇰_HK_中国香港
+  - 🇺🇸_US_美国
   - 🇭🇰_HK_中国香港_1
-  - 🇩🇪_DE_德国_1
-  - 🇭🇰_HK_中国香港->🇩🇪_DE_德国
+  - 🇮🇩_ID_印度尼西亚->🇫🇷_FR_法国
   - 🇭🇰_HK_中国香港_2
-  - 🇩🇪_DE_德国_3
-  - 🇦🇪_AE_阿拉伯联合酋长国->🇩🇪_DE_德国_1
-  - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
-  - 🇵🇱_PL_波兰_1
+  - 🇺🇸_US_美国->🇦🇿_AZ_阿塞拜疆
+  - 🇮🇩_ID_印度尼西亚->🇬🇧_GB_英国
   - 🇺🇸_US_美国_2
   - 🇺🇸_US_美国_3
   - TG@ZDYZ2 -HK-Hong Kong8
   - 🇫🇷FR-51.15.27.48-0708
   - 🇺🇸US-156.146.38.163-1702
-  - 🇺🇸_US_美国
+  - 🇺🇸_US_美国_1
   - 🇸🇬SG-103.172.116.103-0795
   - 🇺🇸US-38.75.136.135-0832
   - "TG频道:@hkaa0▓新加坡\r_1"
@@ -8842,7 +9128,7 @@ proxy-groups:
   - 爱尔兰+都柏林Amazon数据中心
   - 🇪🇸ES-176.120.74.142-0763
   - "TG频道:@hkaa0▓新加坡\r_2"
-  - 🇩🇪_DE_德国_6
+  - 🇩🇪_DE_德国
   - github.com/freefq - 美国CloudFlare公司CDN节点 9
   - 🇺🇸US-38.68.134.9-0856
   - 日本3|@ripaojiedian
@@ -8850,7 +9136,7 @@ proxy-groups:
   - 🇺🇸US-205.134.180.137-0691
   - 🏁RELAY-104.21.12.173-0114
   - 美国 CloudFlare节点_44
-  - 🇩🇪_DE_德国_7
+  - 🇩🇪_DE_德国_1
   - 美国 CloudFlare节点_45
   - TG@ZDYZ2 -TW5
   - 🇺🇸US-38.68.134.9-0851
