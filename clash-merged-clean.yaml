@@ -5,7 +5,7 @@ log-level: info
 proxies:
 - name: 美国+CloudFlare节点_P
   type: trojan
-  server: 104.19.229.21
+  server: 104.18.152.97
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -14,7 +14,34 @@ proxies:
     path: /assignment
 - name: 美国+CloudFlare节点_P_1
   type: trojan
-  server: 104.18.152.233
+  server: 104.17.177.143
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 美国+CloudFlare节点_P_2
+  type: trojan
+  server: 104.18.152.152
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 美国+CloudFlare节点_P_3
+  type: trojan
+  server: 104.16.174.101
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 美国+CloudFlare节点_P_4
+  type: trojan
+  server: 104.18.22.63
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -30,39 +57,9 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 美国+CloudFlare节点_P_2
-  type: trojan
-  server: 104.18.152.103
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 美国+CloudFlare节点_P_3
-  type: vless
-  server: api.w2m.ink
-  port: 443
-  uuid: 8344360f-0349-4784-a19f-33fd92e89389
-  network: ws
-  tls: true
-  sni: api.w2m.ink
-  ws-opts:
-    path: /v2
-    headers:
-      Host: api.w2m.ink
-- name: 美国+CloudFlare节点_P_4
-  type: trojan
-  server: 104.18.12.149
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
 - name: 美国+CloudFlare节点_P_5
   type: trojan
-  server: 104.20.6.134
+  server: 104.16.174.6
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -71,7 +68,7 @@ proxies:
     path: /assignment
 - name: 美国+CloudFlare节点_P_6
   type: trojan
-  server: 104.18.152.187
+  server: 104.18.152.210
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -80,28 +77,16 @@ proxies:
     path: /assignment
 - name: 美国+CloudFlare节点_P_7
   type: trojan
-  server: 104.17.111.1
+  server: 104.17.111.3
   port: 443
   password: humanity
   sni: www.ignitelimit.com
   network: ws
   ws-opts:
     path: /assignment
-- name: 荷兰+V2CROSS.COM_P
-  type: vless
-  server: 85.149.211.28
-  port: 8443
-  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
-  network: ws
-  tls: true
-  sni: hk.152568.xyz
-  ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
-    headers:
-      Host: hk.152568.xyz
 - name: 美国+CloudFlare节点_P_8
   type: trojan
-  server: 104.16.73.213
+  server: 104.18.152.246
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -110,7 +95,7 @@ proxies:
     path: /assignment
 - name: 美国+CloudFlare节点_P_9
   type: trojan
-  server: 104.18.152.143
+  server: 104.16.174.12
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -119,177 +104,220 @@ proxies:
     path: /assignment
 - name: 美国+CloudFlare节点_P_10
   type: trojan
-  server: 104.16.174.46
+  server: 104.16.174.148
   port: 443
   password: humanity
   sni: www.ignitelimit.com
   network: ws
   ws-opts:
     path: /assignment
-- name: US - zhuhai.uk
-  type: http
-  server: 209.148.53.153
-  port: 8090
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-- name: FR - zhuhai.uk
-  type: anytls
-  server: ip5.934618.xyz
-  port: 30099
-  password: github.com/Alvin9999-newpac/fanqiang
-  udp: true
-  sni: ip5.934618.xyz
-- name: US - zhuhai.uk 02
-  type: vless
-  server: 139.162.41.109
+- name: 美国+加州_P
+  type: trojan
+  server: render.com
   port: 443
-  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
-  tls: true
-  servername: hk.152568.xyz
-  client-fingerprint: edge
+  password: humanity
+  sni: www.ignitelimit.com
   network: ws
   ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
-    headers:
-      Host: hk.152568.xyz
-- name: CH - zhuhai.uk
-  type: socks5
-  server: 185.195.71.218
-  port: 18080
-- name: US - zhuhai.uk 03
-  type: vless
-  server: 108.165.236.247
+    path: /assignment
+- name: 美国+CloudFlare节点_P_11
+  type: trojan
+  server: www.speedtest.org
   port: 443
-  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
-  tls: true
-  servername: hk.152568.xyz
-  client-fingerprint: edge
+  password: humanity
+  sni: www.ignitelimit.com
   network: ws
   ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
-    headers:
-      Host: hk.152568.xyz
-- name: CH - zhuhai.uk 02
-  type: http
-  server: 37.120.213.210
-  port: 9443
-  tls: true
-  skip-cert-verify: true
-- name: DE - zhuhai.uk
-  type: ss
-  server: 130.61.151.181
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 57c1Cki1OOfgfkTTKVU+y2V8zGvYuq42Z9AslJe4bZg=
-- name: RU - zhuhai.uk
-  type: hysteria2
-  server: 91.240.86.70
-  port: 22443
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  skip-cert-verify: true
-- name: HK - zhuhai.uk
-  type: hysteria2
-  server: 202.146.222.29
+    path: /assignment
+- name: 美国+CloudFlare节点_P_12
+  type: trojan
+  server: 104.18.152.187
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: httpst.mewangcai2U0001F1E8U0001F1F3
-  skip-cert-verify: true
-- name: US - zhuhai.uk 04
-  type: hysteria2
-  server: 108.181.8.123
-  port: 52125
-  password: 531d9e93-53be-4f05-a9c1-33490d4da2f3
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: HK - zhuhai.uk 02
-  type: hysteria2
-  server: hk01.kfc-520.com
-  port: 60001
-  password: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
-  sni: hk01.kfc-520.com
-  skip-cert-verify: true
-- name: DE - zhuhai.uk 02
-  type: http
-  server: 212.132.126.182
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 美国+CloudFlare节点_P_13
+  type: trojan
+  server: www.ignitelimit.com
   port: 443
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 05
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: IT - zhuhai.uk
   type: http
-  server: 138.199.35.196
-  port: 9002
-  tls: true
-  sni: 138.199.35.196
-  skip-cert-verify: true
-- name: RO - zhuhai.uk
-  type: http
-  server: 193.176.84.30
-  port: 9002
+  server: 94.177.163.156
+  port: 443
   tls: true
   skip-cert-verify: true
 - name: TW - zhuhai.uk
   type: anytls
-  server: 6ivh.pnuqcnp.cn
+  server: ac7548f3ebe045b39a90288ff1e97526.pnuqcnp.cn
   port: 443
   password: 9sK2mP8xQ7vL3nZ6
   udp: true
-  sni: 6ivh.pnuqcnp.cn
+  sni: ac7548f3ebe045b39a90288ff1e97526.pnuqcnp.cn
   skip-cert-verify: true
-- name: US - zhuhai.uk 06
-  type: http
-  server: fan.596189.xyz
-  port: 443
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-- name: LV - zhuhai.uk
-  type: hysteria2
-  server: 91.240.86.70
-  port: 24443
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-- name: DE - zhuhai.uk 04
-  type: http
-  server: fan.973511.xyz
-  port: 443
-  username: bnVsbDpudWxs
-  tls: true
-  skip-cert-verify: true
-- name: DE - zhuhai.uk 05
-  type: vless
-  server: 72.4.65.116
-  port: 443
-  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
-  tls: true
-  servername: assets-de2.pleiades.codes
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
-- name: KR - zhuhai.uk 02
+- name: KR - zhuhai.uk
   type: hysteria2
   server: 152.70.237.123
   port: 2053
   password: maintell
   sni: bing.com
   skip-cert-verify: true
-- name: SG - zhuhai.uk
+- name: US - zhuhai.uk
   type: hysteria2
-  server: 138.2.89.249
+  server: starlink-ft.251313.xyz
   port: 443
-  password: d042d150716709bb778cc73889cddb02
+  password: https://xship.2fa.cat
+  sni: xship.top
+  skip-cert-verify: true
+- name: DK - zhuhai.uk
+  type: http
+  server: 185.245.84.50
+  port: 9443
+  tls: true
+  skip-cert-verify: true
+- name: PL - zhuhai.uk
+  type: hysteria2
+  server: 45.192.12.93
+  port: 443
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+- name: FR - zhuhai.uk
+  type: hysteria2
+  server: 173.212.201.85
+  port: 443
+  password: gf1:gfhysteria2024
+  skip-cert-verify: true
+- name: US - zhuhai.uk 02
+  type: http
+  server: 50.184.176.222
+  port: 8090
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 03
+  type: http
+  server: 170.199.233.89
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: GB - zhuhai.uk
+  type: ss
+  server: 129.151.74.61
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: OKTYz7ZdkQjQ6JnY6Y2ORcov1unLRBQ7YMR0+MgKxfI=
+- name: RO - zhuhai.uk
+  type: http
+  server: 193.176.84.30
+  port: 9002
+  tls: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: TW - zhuhai.uk 03
+  type: http
+  server: 154.81.36.92
+  port: 8443
+  tls: true
+  skip-cert-verify: true
+- name: HK - zhuhai.uk
+  type: hysteria2
+  server: 31.57.248.176
+  port: 50160
+  password: b0917015b656b3dd2286b5633af0c5c1
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: DE - zhuhai.uk
+  type: http
+  server: 194.135.33.185
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 04
+  type: http
+  server: 162.244.227.36
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: HK - zhuhai.uk 02
+  type: hysteria2
+  server: 202.146.222.29
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: httpst.mewangcai2U0001F1E8U0001F1F3
+  skip-cert-verify: true
+- name: US - zhuhai.uk 05
+  type: http
+  server: 138.199.35.209
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: HK - zhuhai.uk 03
+  type: anytls
+  server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
+  port: 443
+  password: 9sK2mP8xQ7vL3nZ6
+  udp: true
+  sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
+  skip-cert-verify: true
+- name: GB - zhuhai.uk 02
+  type: ss
+  server: 129.151.80.251
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: cMKv9wK2P3mvKNsxykB6OP0u0hNqWNk5WHzVitu4C8k=
+- name: CH - zhuhai.uk
+  type: hysteria2
+  server: 152.67.75.161
+  port: 443
+  password: 3a702d4d1de4949005d8431220e040fb
   sni: www.bing.com
   skip-cert-verify: true
   obfs: salamander
-  obfs-password: 309502c4a8df10b46fb976d4a8c43f42
-- name: SG - zhuhai.uk 02
+  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
+- name: NL - zhuhai.uk
+  type: http
+  server: 89.150.35.94
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: JP - zhuhai.uk
+  type: vless
+  server: api.w2m.ink
+  port: 443
+  uuid: 8344360f-0349-4784-a19f-33fd92e89389
+  tls: true
+  servername: api.w2m.ink
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /v2
+    headers:
+      Host: api.w2m.ink
+- name: NL - zhuhai.uk 02
+  type: http
+  server: 84.17.47.149
+  port: 9002
+  tls: true
+  sni: 84.17.47.149
+  skip-cert-verify: true
+- name: TW - zhuhai.uk 04
+  type: anytls
+  server: s2ptpwsq.zf-mix.9999231.xyz
+  port: 1001
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: tw01.9999231.xyz
+  client-fingerprint: chrome
+- name: SG - zhuhai.uk
   type: hysteria2
-  server: s3.huhiuh.space
-  port: 18642
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  server: 138.2.73.238
+  port: 50160
+  password: f87376e17da040ed04c9665ce8972930
   sni: www.bing.com
   skip-cert-verify: true
 - name: ID - zhuhai.uk
@@ -298,6 +326,52 @@ proxies:
   port: 443
   tls: true
   skip-cert-verify: true
+- name: IN - zhuhai.uk
+  type: anytls
+  server: n5s3w3ue.zf-mix.9999231.xyz
+  port: 1029
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: in-wy.9999231.xyz
+  client-fingerprint: chrome
+- name: NL - zhuhai.uk 01
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  network: ws
+  tls: true
+  servername: tgmansion.site
+  client-fingerprint: firefox
+  ws-opts:
+    path: /vless-il
+    headers:
+      Host: tgmansion.site
+- name: HK - zhuhai.uk 06
+  type: vless
+  server: 85.149.211.28
+  port: 8443
+  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
+  udp: true
+  network: ws
+  tls: true
+  servername: hk.152568.xyz
+  client-fingerprint: edge
+  ws-opts:
+    path: /cdn/packages/runtime-core.tar.gz
+    headers:
+      Host: hk.152568.xyz
+- name: 🇨🇦CA加拿大丨yoyapai.com
+  type: trojan
+  server: 104.16.73.213
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
+  udp: true
 - name: 🇺🇸美国丨yoyapai.com
   type: vless
   server: dey.lnmarketplace.net
@@ -426,16 +500,6 @@ proxies:
     headers:
       Host: www.ignitelimit.com
   udp: true
-- name: 🇫🇷FR法國丨yoyapai.com
-  type: trojan
-  server: www.speedtest.org
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  ws-opts:
-    path: /assignment
-  udp: true
 - name: 🇨🇦CA加拿大丨yoyapai.com_7
   type: trojan
   server: 104.18.152.225
@@ -468,15 +532,17 @@ proxies:
   ws-opts:
     path: /assignment
   udp: true
-- name: 🇫🇷法国丨yoyapai.com_1
+- name: ❓未知丨yoyapai.com_1
   type: trojan
-  server: 104.18.22.63
+  server: 104.18.152.143
   port: 443
   password: humanity
   sni: www.ignitelimit.com
   skip-cert-verify: true
   ws-opts:
     path: /assignment
+    headers:
+      Host: www.ignitelimit.com
   udp: true
 - name: 🇨🇦CA加拿大丨yoyapai.com_8
   type: trojan
@@ -2175,9 +2241,9 @@ proxies:
   ws-opts:
     path: /assignment
   udp: true
-- name: US美国(mibei77.com 米贝节点分享)_6
+- name: CA加拿大(mibei77.com 米贝节点分享)
   type: trojan
-  server: 104.18.152.246
+  server: 104.16.174.71
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -2187,9 +2253,9 @@ proxies:
     headers:
       Host: www.ignitelimit.com
   udp: true
-- name: CA加拿大(mibei77.com 米贝节点分享)
+- name: US美国(mibei77.com 米贝节点分享)_7
   type: trojan
-  server: 104.16.174.71
+  server: 104.17.111.1
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -2296,16 +2362,6 @@ proxies:
   ws-opts:
     path: /assignment
   udp: true
-- name: US美国(mibei77.com 米贝节点分享)_16
-  type: trojan
-  server: 104.16.174.101
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  ws-opts:
-    path: /assignment
-  udp: true
 - name: US美国(mibei77.com 米贝节点分享)_17
   type: trojan
   server: 104.16.174.124
@@ -2328,21 +2384,19 @@ proxies:
   ws-opts:
     path: /assignment
   udp: true
-- name: US美国(mibei77.com 米贝节点分享)_20
+- name: US美国(mibei77.com 米贝节点分享)_22
   type: trojan
-  server: www.ignitelimit.com
+  server: 104.16.174.36
   port: 443
   password: humanity
   sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
   skip-cert-verify: true
   ws-opts:
     path: /assignment
   udp: true
-- name: US美国(mibei77.com 米贝节点分享)_22
+- name: US美国(mibei77.com 米贝节点分享)_23
   type: trojan
-  server: 104.16.174.36
+  server: 104.20.6.134
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -2387,18 +2441,6 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /assignment
-  udp: true
-- name: US美国(mibei77.com 米贝节点分享)_26
-  type: trojan
-  server: 104.17.111.3
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
   udp: true
 - name: US美国(mibei77.com 米贝节点分享)_27
   type: trojan
@@ -2468,18 +2510,6 @@ proxies:
     headers:
       Host: www.ignitelimit.com
   udp: true
-- name: US美国(mibei77.com 米贝节点分享)_41
-  type: trojan
-  server: 104.16.174.148
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-  udp: true
 - name: US美国(mibei77.com 米贝节点分享)_47
   type: trojan
   server: 104.18.152.133
@@ -2491,16 +2521,6 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-  udp: true
-- name: US美国(mibei77.com 米贝节点分享)_48
-  type: trojan
-  server: 104.18.152.152
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  ws-opts:
-    path: /assignment
   udp: true
 - name: US美国(mibei77.com 米贝节点分享)_50
   type: trojan
@@ -2570,6 +2590,16 @@ proxies:
     headers:
       Host: www.ignitelimit.com
   udp: true
+- name: US美国(mibei77.com 米贝节点分享)_65
+  type: trojan
+  server: 104.16.174.46
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
+  udp: true
 - name: US美国(mibei77.com 米贝节点分享)_69
   type: trojan
   server: 104.18.152.229
@@ -2602,16 +2632,6 @@ proxies:
   ws-opts:
     path: /assignment
   udp: true
-- name: US美国(mibei77.com 米贝节点分享)_81
-  type: trojan
-  server: 104.18.152.210
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  ws-opts:
-    path: /assignment
-  udp: true
 - name: US美国(mibei77.com 米贝节点分享)_82
   type: trojan
   server: 172.67.74.2
@@ -2624,17 +2644,15 @@ proxies:
     headers:
       Host: www.ignitelimit.com
   udp: true
-- name: CA加拿大(mibei77.com 米贝节点分享)_2
+- name: US美国(mibei77.com 米贝节点分享)_86
   type: trojan
-  server: 104.16.174.12
+  server: 104.18.152.233
   port: 443
   password: humanity
   sni: www.ignitelimit.com
   skip-cert-verify: true
   ws-opts:
     path: /assignment
-    headers:
-      Host: www.ignitelimit.com
   udp: true
 - name: US美国(mibei77.com 米贝节点分享)_88
   type: trojan
@@ -2712,26 +2730,6 @@ proxies:
   ws-opts:
     path: /assignment
   udp: true
-- name: FR法国(mibei77.com 米贝节点分享)_14
-  type: trojan
-  server: 104.18.152.97
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  ws-opts:
-    path: /assignment
-  udp: true
-- name: US美国(mibei77.com 米贝节点分享)_131
-  type: trojan
-  server: 104.16.174.6
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  ws-opts:
-    path: /assignment
-  udp: true
 - name: US美国(mibei77.com 米贝节点分享)_145
   type: trojan
   server: join-telegram-channel-tirexnet.trex.kdns.fr
@@ -2741,6 +2739,18 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /assignment
+  udp: true
+- name: US美国(mibei77.com 米贝节点分享)_147
+  type: trojan
+  server: 104.18.12.149
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
   udp: true
 - name: US美国(mibei77.com 米贝节点分享)_152
   type: trojan
@@ -3079,16 +3089,6 @@ proxies:
 - name: FR法国(mibei77.com 米贝节点分享)_17
   type: trojan
   server: 104.18.23.63
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  ws-opts:
-    path: /assignment
-  udp: true
-- name: FR法国(mibei77.com 米贝节点分享)_19
-  type: trojan
-  server: render.com
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -7777,40 +7777,50 @@ proxy-groups:
   - DIRECT
   - 美国+CloudFlare节点_P
   - 美国+CloudFlare节点_P_1
-  - 加拿大+V2CROSS.COM_P
   - 美国+CloudFlare节点_P_2
   - 美国+CloudFlare节点_P_3
   - 美国+CloudFlare节点_P_4
+  - 加拿大+V2CROSS.COM_P
   - 美国+CloudFlare节点_P_5
   - 美国+CloudFlare节点_P_6
   - 美国+CloudFlare节点_P_7
-  - 荷兰+V2CROSS.COM_P
   - 美国+CloudFlare节点_P_8
   - 美国+CloudFlare节点_P_9
   - 美国+CloudFlare节点_P_10
+  - 美国+加州_P
+  - 美国+CloudFlare节点_P_11
+  - 美国+CloudFlare节点_P_12
+  - 美国+CloudFlare节点_P_13
+  - IT - zhuhai.uk
+  - TW - zhuhai.uk
+  - KR - zhuhai.uk
   - US - zhuhai.uk
+  - DK - zhuhai.uk
+  - PL - zhuhai.uk
   - FR - zhuhai.uk
   - US - zhuhai.uk 02
-  - CH - zhuhai.uk
   - US - zhuhai.uk 03
-  - CH - zhuhai.uk 02
-  - DE - zhuhai.uk
-  - RU - zhuhai.uk
+  - GB - zhuhai.uk
+  - RO - zhuhai.uk
+  - TW - zhuhai.uk 03
   - HK - zhuhai.uk
+  - DE - zhuhai.uk
   - US - zhuhai.uk 04
   - HK - zhuhai.uk 02
-  - DE - zhuhai.uk 02
   - US - zhuhai.uk 05
-  - RO - zhuhai.uk
-  - TW - zhuhai.uk
-  - US - zhuhai.uk 06
-  - LV - zhuhai.uk
-  - DE - zhuhai.uk 04
-  - DE - zhuhai.uk 05
-  - KR - zhuhai.uk 02
+  - HK - zhuhai.uk 03
+  - GB - zhuhai.uk 02
+  - CH - zhuhai.uk
+  - NL - zhuhai.uk
+  - JP - zhuhai.uk
+  - NL - zhuhai.uk 02
+  - TW - zhuhai.uk 04
   - SG - zhuhai.uk
-  - SG - zhuhai.uk 02
   - ID - zhuhai.uk
+  - IN - zhuhai.uk
+  - NL - zhuhai.uk 01
+  - HK - zhuhai.uk 06
+  - 🇨🇦CA加拿大丨yoyapai.com
   - 🇺🇸美国丨yoyapai.com
   - ❓未知丨yoyapai.com
   - 🇺🇸US美国丨yoyapai.com
@@ -7822,19 +7832,9 @@ proxy-groups:
   - 🇺🇸US美國丨yoyapai.com_1
   - 🇨🇦CA加拿大丨yoyapai.com_3
   - 🇨🇦CA加拿大丨yoyapai.com_5
-  - 🇫🇷FR法國丨yoyapai.com
   - 🇨🇦CA加拿大丨yoyapai.com_7
   - 🇹🇷TR土耳其丨yoyapai.com
   - 🇫🇷FR法國丨yoyapai.com_1
-  - 🇫🇷法国丨yoyapai.com_1
-  - 🇨🇦CA加拿大丨yoyapai.com_8
-  - 🇨🇦CA加拿大丨yoyapai.com_9
-  - 🇧🇷BR巴西圣保罗丨yoyapai.com
-  - 🇳🇴NO挪威丨yoyapai.com
-  - ❓未知丨yoyapai.com_3
-  - 🇺🇸US美國丨yoyapai.com_2
-  - 🇺🇸 US美國丨yoyapai.com
-  - 🇺🇸 US美國丨yoyapai.com_1
 - name: AUTO
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -7843,40 +7843,50 @@ proxy-groups:
   proxies:
   - 美国+CloudFlare节点_P
   - 美国+CloudFlare节点_P_1
-  - 加拿大+V2CROSS.COM_P
   - 美国+CloudFlare节点_P_2
   - 美国+CloudFlare节点_P_3
   - 美国+CloudFlare节点_P_4
+  - 加拿大+V2CROSS.COM_P
   - 美国+CloudFlare节点_P_5
   - 美国+CloudFlare节点_P_6
   - 美国+CloudFlare节点_P_7
-  - 荷兰+V2CROSS.COM_P
   - 美国+CloudFlare节点_P_8
   - 美国+CloudFlare节点_P_9
   - 美国+CloudFlare节点_P_10
+  - 美国+加州_P
+  - 美国+CloudFlare节点_P_11
+  - 美国+CloudFlare节点_P_12
+  - 美国+CloudFlare节点_P_13
+  - IT - zhuhai.uk
+  - TW - zhuhai.uk
+  - KR - zhuhai.uk
   - US - zhuhai.uk
+  - DK - zhuhai.uk
+  - PL - zhuhai.uk
   - FR - zhuhai.uk
   - US - zhuhai.uk 02
-  - CH - zhuhai.uk
   - US - zhuhai.uk 03
-  - CH - zhuhai.uk 02
-  - DE - zhuhai.uk
-  - RU - zhuhai.uk
+  - GB - zhuhai.uk
+  - RO - zhuhai.uk
+  - TW - zhuhai.uk 03
   - HK - zhuhai.uk
+  - DE - zhuhai.uk
   - US - zhuhai.uk 04
   - HK - zhuhai.uk 02
-  - DE - zhuhai.uk 02
   - US - zhuhai.uk 05
-  - RO - zhuhai.uk
-  - TW - zhuhai.uk
-  - US - zhuhai.uk 06
-  - LV - zhuhai.uk
-  - DE - zhuhai.uk 04
-  - DE - zhuhai.uk 05
-  - KR - zhuhai.uk 02
+  - HK - zhuhai.uk 03
+  - GB - zhuhai.uk 02
+  - CH - zhuhai.uk
+  - NL - zhuhai.uk
+  - JP - zhuhai.uk
+  - NL - zhuhai.uk 02
+  - TW - zhuhai.uk 04
   - SG - zhuhai.uk
-  - SG - zhuhai.uk 02
   - ID - zhuhai.uk
+  - IN - zhuhai.uk
+  - NL - zhuhai.uk 01
+  - HK - zhuhai.uk 06
+  - 🇨🇦CA加拿大丨yoyapai.com
   - 🇺🇸美国丨yoyapai.com
   - ❓未知丨yoyapai.com
   - 🇺🇸US美国丨yoyapai.com
@@ -7888,11 +7898,10 @@ proxy-groups:
   - 🇺🇸US美國丨yoyapai.com_1
   - 🇨🇦CA加拿大丨yoyapai.com_3
   - 🇨🇦CA加拿大丨yoyapai.com_5
-  - 🇫🇷FR法國丨yoyapai.com
   - 🇨🇦CA加拿大丨yoyapai.com_7
   - 🇹🇷TR土耳其丨yoyapai.com
   - 🇫🇷FR法國丨yoyapai.com_1
-  - 🇫🇷法国丨yoyapai.com_1
+  - ❓未知丨yoyapai.com_1
   - 🇨🇦CA加拿大丨yoyapai.com_8
   - 🇨🇦CA加拿大丨yoyapai.com_9
   - 🇧🇷BR巴西圣保罗丨yoyapai.com
@@ -8022,8 +8031,8 @@ proxy-groups:
   - 🇩🇪DE德国丨yoyapai.com_15
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)_1
-  - US美国(mibei77.com 米贝节点分享)_6
   - CA加拿大(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)_7
   - US美国(mibei77.com 米贝节点分享)_8
   - US美国(mibei77.com 米贝节点分享)_9
   - US美国(mibei77.com 米贝节点分享)_10
@@ -8033,36 +8042,32 @@ proxy-groups:
   - FR法国(mibei77.com 米贝节点分享)_1
   - CA加拿大(mibei77.com 米贝节点分享)_1
   - US美国(mibei77.com 米贝节点分享)_15
-  - US美国(mibei77.com 米贝节点分享)_16
   - US美国(mibei77.com 米贝节点分享)_17
   - US美国(mibei77.com 米贝节点分享)_19
-  - US美国(mibei77.com 米贝节点分享)_20
   - US美国(mibei77.com 米贝节点分享)_22
+  - US美国(mibei77.com 米贝节点分享)_23
   - US美国(mibei77.com 米贝节点分享)_24
   - FR法国(mibei77.com 米贝节点分享)_3
   - US美国(mibei77.com 米贝节点分享)_25
-  - US美国(mibei77.com 米贝节点分享)_26
   - US美国(mibei77.com 米贝节点分享)_27
   - US美国(mibei77.com 米贝节点分享)_28
   - US美国(mibei77.com 米贝节点分享)_31
   - US美国(mibei77.com 米贝节点分享)_32
   - US美国(mibei77.com 米贝节点分享)_37
   - US美国(mibei77.com 米贝节点分享)_38
-  - US美国(mibei77.com 米贝节点分享)_41
   - US美国(mibei77.com 米贝节点分享)_47
-  - US美国(mibei77.com 米贝节点分享)_48
   - US美国(mibei77.com 米贝节点分享)_50
   - US美国(mibei77.com 米贝节点分享)_53
   - US美国(mibei77.com 米贝节点分享)_57
   - US美国(mibei77.com 米贝节点分享)_58
   - US美国(mibei77.com 米贝节点分享)_60
   - US美国(mibei77.com 米贝节点分享)_63
+  - US美国(mibei77.com 米贝节点分享)_65
   - US美国(mibei77.com 米贝节点分享)_69
   - US美国(mibei77.com 米贝节点分享)_72
   - US美国(mibei77.com 米贝节点分享)_77
-  - US美国(mibei77.com 米贝节点分享)_81
   - US美国(mibei77.com 米贝节点分享)_82
-  - CA加拿大(mibei77.com 米贝节点分享)_2
+  - US美国(mibei77.com 米贝节点分享)_86
   - US美国(mibei77.com 米贝节点分享)_88
   - US美国(mibei77.com 米贝节点分享)_91
   - US美国(mibei77.com 米贝节点分享)_99
@@ -8070,9 +8075,8 @@ proxy-groups:
   - US美国(mibei77.com 米贝节点分享)_102
   - US美国(mibei77.com 米贝节点分享)_113
   - US美国(mibei77.com 米贝节点分享)_118
-  - FR法国(mibei77.com 米贝节点分享)_14
-  - US美国(mibei77.com 米贝节点分享)_131
   - US美国(mibei77.com 米贝节点分享)_145
+  - US美国(mibei77.com 米贝节点分享)_147
   - US美国(mibei77.com 米贝节点分享)_152
   - 爱沙尼亚(mibei77.com 米贝节点分享)
   - CA加拿大(mibei77.com 米贝节点分享)_5
@@ -8098,7 +8102,6 @@ proxy-groups:
   - 西班牙(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)_181
   - FR法国(mibei77.com 米贝节点分享)_17
-  - FR法国(mibei77.com 米贝节点分享)_19
   - 比利时(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)_191
   - FR法国(mibei77.com 米贝节点分享)_20
