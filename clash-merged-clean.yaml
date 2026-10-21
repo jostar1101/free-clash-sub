@@ -5,6 +5,36 @@ log-level: info
 proxies:
 - name: 美国+CloudFlare节点_P
   type: vless
+  server: 162.159.135.234
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  sni: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 印度+V2CROSS.COM_P
+  type: vless
+  server: 103.71.22.158
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  sni: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 新西兰+V2CROSS.COM_P
+  type: ss
+  server: 202.50.253.63
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 美国+CloudFlare节点_P_1
+  type: vless
   server: 104.17.147.22
   port: 443
   uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
@@ -15,33 +45,27 @@ proxies:
     path: /
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: 美国+CloudFlare节点_P_1
+- name: 新西兰+V2CROSS.COM_P_1
+  type: ss
+  server: 202.50.253.27
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 美国+V2CROSS.COM_P_1
   type: vless
-  server: 104.21.91.244
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  network: ws
-  tls: true
-  sni: lucasjow.us.ci
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed
-    headers:
-      Host: lucasjow.us.ci
-- name: 亚太地区+V2CROSS.COM_P
-  type: vless
-  server: 103.161.178.205
+  server: 162.35.127.65
   port: 443
   uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   network: ws
   tls: true
   sni: snip.edgeoneai.cc.cd
   ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443fp=chrome
+    path: /fp=chrome
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: 柬埔寨+V2CROSS.COM_P
+- name: 日本+软银网络_P
   type: vless
-  server: 103.242.15.87
+  server: 60.130.209.253
   port: 443
   uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   network: ws
@@ -60,114 +84,12 @@ proxies:
   tls: true
   sni: snip.edgeoneai.cc.cd
   ws-opts:
-    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560#Telegram---bored_vpn
+    path: /
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: 俄罗斯+V2CROSS.COM_P
+- name: 美国+加利福尼亚州洛杉矶Vultr数据中心_P
   type: vless
-  server: 195.133.92.228
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  sni: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 澳大利亚+V2CROSS.COM_P
-  type: vless
-  server: 117.55.232.3
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  sni: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 美国+CloudFlare节点_P_3
-  type: vless
-  server: 172.67.118.45
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  sni: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip#TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 法国+V2CROSS.COM_P
-  type: vless
-  server: 139.100.226.187
-  port: 8443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  sni: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 美国+V2CROSS.COM_P
-  type: vless
-  server: 162.35.127.65
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  sni: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 新西兰+V2CROSS.COM_P
-  type: ss
-  server: 202.50.253.90
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 美国+V2CROSS.COM_P_1
-  type: vless
-  server: 45.61.149.205
-  port: 8443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  sni: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 欧盟+V2CROSS.COM_P
-  type: vless
-  server: 45.95.0.43
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  sni: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 美国+CloudFlare节点_P_4
-  type: vless
-  server: 162.159.135.234
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  sni: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 阿塞拜疆+V2CROSS.COM_P
-  type: vless
-  server: 94.20.154.66
+  server: 207.246.105.197
   port: 443
   uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   network: ws
@@ -178,163 +100,240 @@ proxies:
     headers:
       Host: snip.edgeoneai.cc.cd
 - name: 美国+V2CROSS.COM_P_2
-  type: ss
-  server: 154.36.158.197
-  port: 8388
-  cipher: aes-256-gcm
-  password: BeaUf9c0AEWH40Pu
-- name: FI - zhuhai.uk
   type: vless
-  server: 144.31.34.146
-  port: 2096
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  server: 216.195.195.205
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
   tls: true
-  servername: fi1.merky.one
-  skip-cert-verify: true
-  client-fingerprint: chrome
+  sni: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fp=unsafe
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 澳大利亚+V2CROSS.COM_P
+  type: vless
+  server: 203.88.117.227
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  sni: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 香港+新网络有限公司_P
+  type: vless
+  server: 103.39.78.118
+  port: 8443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  sni: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 美国 CloudFlare节点_P
+  type: vmess
+  server: us5-1.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  tls: true
+  sni: server4.9966338.xyz
   network: ws
   ws-opts:
-    path: /mky-ws-4f19c8a7
+    path: /androirfdsreoightrjh?ed=2560
     headers:
-      Host: fi1.merky.one
-- name: RO - zhuhai.uk
-  type: http
-  server: 135.136.1.2
-  port: 9443
+      Host: server4.9966338.xyz
+- name: 北美地区+V2CROSS.COM_P
+  type: vless
+  server: 104.152.48.248
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
   tls: true
-  skip-cert-verify: true
-- name: GB - zhuhai.uk
+  sni: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 波兰+V2CROSS.COM_P
+  type: vless
+  server: 141.98.41.20
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  sni: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: fp=unsafe
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 越南+V2CROSS.COM_P
+  type: vless
+  server: 103.199.19.132
+  port: 8443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  sni: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 美国加利福尼亚州洛杉矶+V2CROSS.COM_P
+  type: vless
+  server: 45.157.233.109
+  port: 2087
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  sni: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 柬埔寨+V2CROSS.COM_P
+  type: vless
+  server: 103.242.15.87
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  sni: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: ID - zhuhai.uk
   type: http
-  server: 37.120.233.18
+  server: 103.86.117.202
   port: 443
   tls: true
   skip-cert-verify: true
 - name: US - zhuhai.uk
   type: http
-  server: 137.175.22.40
-  port: 443
+  server: 138.199.35.198
+  port: 9002
   tls: true
   skip-cert-verify: true
-- name: ID - zhuhai.uk
-  type: http
-  server: kimberlymilano.icu
-  port: 443
-  username: bnVsbDpudWxs
-  tls: true
-- name: RU - zhuhai.uk
+- name: CH - zhuhai.uk
   type: socks5
-  server: 94.102.122.42
-  port: 1080
+  server: 202.4.117.245
+  port: 9090
+- name: HK - zhuhai.uk
+  type: anytls
+  server: svip.skycon808.com
+  port: 24318
+  password: 87c6ad7b-e450-44a8-8088-bc2234d43de1
+  udp: true
+  sni: hk08.jdddyy01.cc
+  skip-cert-verify: true
 - name: US - zhuhai.uk 02
   type: http
-  server: 207.5.30.9
+  server: webdrone.club
   port: 443
   tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 03
-  type: socks5
-  server: 45.61.188.134
-  port: 44499
-- name: US - zhuhai.uk 04
-  type: http
-  server: 137.175.22.52
-  port: 443
-  tls: true
-  skip-cert-verify: true
+  sni: webdrone.club
 - name: BG - zhuhai.uk
   type: http
   server: 185.94.192.210
   port: 443
   tls: true
   skip-cert-verify: true
+- name: US - zhuhai.uk 03
+  type: http
+  server: carolinafreigh.fun
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 04
+  type: http
+  server: 138.199.35.217
+  port: 9002
+  tls: true
+  skip-cert-verify: true
 - name: US - zhuhai.uk 05
   type: http
-  server: 184.188.139.2
-  port: 8090
+  server: 138.199.35.196
+  port: 9002
   tls: true
+  sni: 138.199.35.196
   skip-cert-verify: true
 - name: US - zhuhai.uk 06
   type: http
-  server: 138.199.35.201
-  port: 9002
+  server: 129.212.181.253
+  port: 8443
   tls: true
-  sni: 138.199.35.201
   skip-cert-verify: true
-- name: RO - zhuhai.uk 02
+- name: US - zhuhai.uk 07
+  type: socks5
+  server: 45.61.188.134
+  port: 44499
+- name: NL - zhuhai.uk
   type: http
-  server: 193.176.84.26
+  server: 84.17.47.148
   port: 9002
   username: 'null'
   password: 'null'
   tls: true
   skip-cert-verify: true
-- name: US - zhuhai.uk 07
+- name: US - zhuhai.uk 08
   type: http
-  server: zebpay.site
-  port: 443
-  username: bnVsbDpudWxs
-  tls: true
-- name: BR - zhuhai.uk
-  type: http
-  server: 134.65.17.77
-  port: 443
+  server: 184.188.139.2
+  port: 8090
   tls: true
   skip-cert-verify: true
-- name: RO - zhuhai.uk 03
+- name: RO - zhuhai.uk
   type: http
-  server: 193.176.84.38
+  server: 193.176.84.35
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: US - zhuhai.uk 08
-  type: http
-  server: 12.221.146.147
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: HK - zhuhai.uk
-  type: anytls
-  server: 654968169.df6h451rh.xin
-  port: 443
-  password: 0324fbc29561
-  udp: true
-  sni: images.ctfassets.net
-  skip-cert-verify: true
-- name: HR - zhuhai.uk
-  type: http
-  server: 154.47.29.174
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: DE - zhuhai.uk
-  type: http
-  server: 167.172.172.190
-  port: 443
-  username: testuser1
-  password: e4b72b531a2d10900519
-  tls: true
-  skip-cert-verify: true
-- name: DE - zhuhai.uk 02
-  type: http
-  server: 79.127.156.177
-  port: 9443
-  tls: true
-  skip-cert-verify: true
-- name: RO - zhuhai.uk 04
-  type: http
-  server: 169.150.199.1
-  port: 9443
-  tls: true
-  skip-cert-verify: true
-- name: NL - zhuhai.uk
-  type: socks5
-  server: 202.4.119.226
-  port: 9090
 - name: US - zhuhai.uk 09
   type: http
-  server: goedkoopgeluid.icu
+  server: 138.199.35.202
+  port: 9002
+  username: 'null'
+  password: None
+  tls: true
+  skip-cert-verify: true
+- name: NL - zhuhai.uk 02
+  type: http
+  server: 5.255.118.82
   port: 443
   tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 11
+  type: http
+  server: 138.199.35.214
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: IT - zhuhai.uk
+  type: ss
+  server: 202.50.253.90
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: TW - zhuhai.uk
+  type: http
+  server: twmoon1-cdn-route.couldflare-cdn.com
+  port: 1443
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+  password: exaxgqkKkd0TAMrCxeonWg==
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 12
+  type: http
+  server: 38.28.185.152
+  port: 443
+  tls: true
+  skip-cert-verify: true
 - name: JP - zhuhai.uk
   type: socks5
   server: 101.36.104.46
@@ -7930,45 +7929,43 @@ proxy-groups:
   - AUTO
   - DIRECT
   - 美国+CloudFlare节点_P
-  - 美国+CloudFlare节点_P_1
-  - 亚太地区+V2CROSS.COM_P
-  - 柬埔寨+V2CROSS.COM_P
-  - 美国+CloudFlare节点_P_2
-  - 俄罗斯+V2CROSS.COM_P
-  - 澳大利亚+V2CROSS.COM_P
-  - 美国+CloudFlare节点_P_3
-  - 法国+V2CROSS.COM_P
-  - 美国+V2CROSS.COM_P
+  - 印度+V2CROSS.COM_P
   - 新西兰+V2CROSS.COM_P
+  - 美国+CloudFlare节点_P_1
+  - 新西兰+V2CROSS.COM_P_1
   - 美国+V2CROSS.COM_P_1
-  - 欧盟+V2CROSS.COM_P
-  - 美国+CloudFlare节点_P_4
-  - 阿塞拜疆+V2CROSS.COM_P
+  - 日本+软银网络_P
+  - 美国+CloudFlare节点_P_2
+  - 美国+加利福尼亚州洛杉矶Vultr数据中心_P
   - 美国+V2CROSS.COM_P_2
-  - FI - zhuhai.uk
-  - RO - zhuhai.uk
-  - GB - zhuhai.uk
-  - US - zhuhai.uk
+  - 澳大利亚+V2CROSS.COM_P
+  - 香港+新网络有限公司_P
+  - 美国 CloudFlare节点_P
+  - 北美地区+V2CROSS.COM_P
+  - 波兰+V2CROSS.COM_P
+  - 越南+V2CROSS.COM_P
+  - 美国加利福尼亚州洛杉矶+V2CROSS.COM_P
+  - 柬埔寨+V2CROSS.COM_P
   - ID - zhuhai.uk
-  - RU - zhuhai.uk
+  - US - zhuhai.uk
+  - CH - zhuhai.uk
+  - HK - zhuhai.uk
   - US - zhuhai.uk 02
+  - BG - zhuhai.uk
   - US - zhuhai.uk 03
   - US - zhuhai.uk 04
-  - BG - zhuhai.uk
   - US - zhuhai.uk 05
   - US - zhuhai.uk 06
-  - RO - zhuhai.uk 02
   - US - zhuhai.uk 07
-  - BR - zhuhai.uk
-  - RO - zhuhai.uk 03
-  - US - zhuhai.uk 08
-  - HK - zhuhai.uk
-  - HR - zhuhai.uk
-  - DE - zhuhai.uk
-  - DE - zhuhai.uk 02
-  - RO - zhuhai.uk 04
   - NL - zhuhai.uk
+  - US - zhuhai.uk 08
+  - RO - zhuhai.uk
   - US - zhuhai.uk 09
+  - NL - zhuhai.uk 02
+  - US - zhuhai.uk 11
+  - IT - zhuhai.uk
+  - TW - zhuhai.uk
+  - US - zhuhai.uk 12
   - JP - zhuhai.uk
   - JP - zhuhai.uk 02
   - KR - zhuhai.uk
@@ -7989,6 +7986,8 @@ proxy-groups:
   - 🇨🇦CA加拿大丨yoyapai.com_6
   - 🇨🇦CA加拿大丨yoyapai.com_7
   - 🇹🇷TR土耳其丨yoyapai.com
+  - 🇫🇷FR法國丨yoyapai.com_1
+  - ❓未知丨yoyapai.com_1
 - name: AUTO
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -7996,45 +7995,43 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 美国+CloudFlare节点_P
-  - 美国+CloudFlare节点_P_1
-  - 亚太地区+V2CROSS.COM_P
-  - 柬埔寨+V2CROSS.COM_P
-  - 美国+CloudFlare节点_P_2
-  - 俄罗斯+V2CROSS.COM_P
-  - 澳大利亚+V2CROSS.COM_P
-  - 美国+CloudFlare节点_P_3
-  - 法国+V2CROSS.COM_P
-  - 美国+V2CROSS.COM_P
+  - 印度+V2CROSS.COM_P
   - 新西兰+V2CROSS.COM_P
+  - 美国+CloudFlare节点_P_1
+  - 新西兰+V2CROSS.COM_P_1
   - 美国+V2CROSS.COM_P_1
-  - 欧盟+V2CROSS.COM_P
-  - 美国+CloudFlare节点_P_4
-  - 阿塞拜疆+V2CROSS.COM_P
+  - 日本+软银网络_P
+  - 美国+CloudFlare节点_P_2
+  - 美国+加利福尼亚州洛杉矶Vultr数据中心_P
   - 美国+V2CROSS.COM_P_2
-  - FI - zhuhai.uk
-  - RO - zhuhai.uk
-  - GB - zhuhai.uk
-  - US - zhuhai.uk
+  - 澳大利亚+V2CROSS.COM_P
+  - 香港+新网络有限公司_P
+  - 美国 CloudFlare节点_P
+  - 北美地区+V2CROSS.COM_P
+  - 波兰+V2CROSS.COM_P
+  - 越南+V2CROSS.COM_P
+  - 美国加利福尼亚州洛杉矶+V2CROSS.COM_P
+  - 柬埔寨+V2CROSS.COM_P
   - ID - zhuhai.uk
-  - RU - zhuhai.uk
+  - US - zhuhai.uk
+  - CH - zhuhai.uk
+  - HK - zhuhai.uk
   - US - zhuhai.uk 02
+  - BG - zhuhai.uk
   - US - zhuhai.uk 03
   - US - zhuhai.uk 04
-  - BG - zhuhai.uk
   - US - zhuhai.uk 05
   - US - zhuhai.uk 06
-  - RO - zhuhai.uk 02
   - US - zhuhai.uk 07
-  - BR - zhuhai.uk
-  - RO - zhuhai.uk 03
-  - US - zhuhai.uk 08
-  - HK - zhuhai.uk
-  - HR - zhuhai.uk
-  - DE - zhuhai.uk
-  - DE - zhuhai.uk 02
-  - RO - zhuhai.uk 04
   - NL - zhuhai.uk
+  - US - zhuhai.uk 08
+  - RO - zhuhai.uk
   - US - zhuhai.uk 09
+  - NL - zhuhai.uk 02
+  - US - zhuhai.uk 11
+  - IT - zhuhai.uk
+  - TW - zhuhai.uk
+  - US - zhuhai.uk 12
   - JP - zhuhai.uk
   - JP - zhuhai.uk 02
   - KR - zhuhai.uk
