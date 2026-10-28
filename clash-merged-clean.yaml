@@ -3,377 +3,178 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 新西兰+V2CROSS.COM_P
-  type: ss
-  server: 202.50.253.90
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 新西兰+V2CROSS.COM_P_1
-  type: ss
-  server: 202.50.253.63
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 美国+CloudFlare节点_P
+  type: trojan
+  server: 104.25.108.234
+  port: 443
+  password: humanity
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 美国+CloudFlare节点_P_1
+  type: vless
+  server: ld.235231.xyz
+  port: 443
+  uuid: 65d3f9b3-d289-4a8e-9c87-90bba156de30
+  network: ws
+  tls: true
+  sni: ld.235231.xyz
+  ws-opts:
+    path: /
 - name: 美国 CloudFlare节点_P
   type: vmess
-  server: www.ubuntuupdates.com
+  server: www.gptcloudai.com
   port: 443
-  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
   alterId: 0
   cipher: auto
   tls: true
-  sni: www.ubuntuupdates.com
+  sni: www.gptcloudai.com
   network: ws
   ws-opts:
     path: /truth
     headers:
-      Host: www.ubuntuupdates.com
-- name: 美国+V2CROSS.COM_P_2
-  type: trojan
-  server: 45.128.76.242
+      Host: www.gptcloudai.com
+- name: 美国+CloudFlare节点_P_2
+  type: vless
+  server: 104.21.221.158
   port: 443
-  password: humanity
-  sni: www.trusteeforward.com
+  uuid: d342d11e-d224-4463-b982-532309285094
+  network: ws
+  tls: true
+  sni: ccc.010304.xyz
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: HK - zhuhai.uk
+  type: vmess
+  server: euu1yAlfmcqvLJEx.v.3dns.vip
+  port: 443
+  uuid: d237ab38-1974-4b36-94a3-0665ce8587b9
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: euu1yAlfmcqvLJEx.v.3dns.vip
   network: ws
   ws-opts:
-    path: /assignment
-- name: 新西兰+V2CROSS.COM_P_2
-  type: ss
-  server: 202.50.253.36
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    path: /ws-vmess
+    headers:
+      Host: euu1yAlfmcqvLJEx.v.3dns.vip
 - name: US - zhuhai.uk
+  type: socks5
+  server: 45.61.188.134
+  port: 44499
+- name: TW - zhuhai.uk
+  type: anytls
+  server: 684616s4.df6h451rh.xin
+  port: 443
+  password: 0324fbc29561
+  udp: true
+  sni: px.ads.linkedin.com
+  skip-cert-verify: true
+- name: US - zhuhai.uk 02
   type: vless
   server: saas.sin.fan
-  port: 2096
+  port: 443
   uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
   tls: true
-  servername: vp13.1145678.xyz
+  servername: vp19.1145678.xyz
+  skip-cert-verify: true
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /index/content
+    path: /images/classify/dh
     headers:
-      Host: vp13.1145678.xyz
-- name: SG - zhuhai.uk
-  type: vmess
-  server: F5rot0Sdq2OdLpAs.v.3dns.vip
+      Host: vp19.1145678.xyz
+- name: TW - zhuhai.uk 03
+  type: vless
+  server: 59.125.69.23
   port: 443
-  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
-  alterId: 0
-  cipher: auto
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
   tls: true
-  servername: F5rot0Sdq2OdLpAs.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: F5rot0Sdq2OdLpAs.v.3dns.vip
-- name: HK - zhuhai.uk
-  type: vmess
-  server: PNqUEIiBHTnJWiBG.v.3dns.vip
-  port: 443
-  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: PNqUEIiBHTnJWiBG.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: PNqUEIiBHTnJWiBG.v.3dns.vip
-- name: US - zhuhai.uk 02
-  type: http
-  server: carolinafreigh.fun
-  port: 443
-  tls: true
-  sni: carolinafreigh.fun
+  servername: ty986gfazs.cainiaohub.xyz
   skip-cert-verify: true
-- name: KR - zhuhai.uk
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
+- name: HK - zhuhai.uk 02
+  type: socks5
+  server: 61.142.113.42
+  port: 6666
+- name: JP - zhuhai.uk 02
+  type: http
+  server: fan.571589.xyz
+  port: 443
+  username: bnVsbDpudWxs
+  tls: true
+- name: ID - zhuhai.uk
   type: vmess
-  server: Z2ItHKfX1Hkxe8uS.v.3dns.vip
+  server: 9d3bQSFxJk72LuXg.v.3dns.vip
   port: 443
   uuid: b664cc36-4896-454b-bb9c-1377c76176de
   alterId: 0
   cipher: auto
   tls: true
-  servername: Z2ItHKfX1Hkxe8uS.v.3dns.vip
+  servername: 9d3bQSFxJk72LuXg.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: Z2ItHKfX1Hkxe8uS.v.3dns.vip
-- name: GB - zhuhai.uk
+      Host: 9d3bQSFxJk72LuXg.v.3dns.vip
+- name: DE - zhuhai.uk
+  type: socks5
+  server: 202.4.123.220
+  port: 9090
+- name: AL - zhuhai.uk
   type: http
-  server: 37.120.233.18
+  server: 31.171.155.210
+  port: 9443
+  tls: true
+  skip-cert-verify: true
+- name: DE - zhuhai.uk 02
+  type: http
+  server: 185.44.107.166
   port: 443
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 04
+  type: http
+  server: 24.225.10.211
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: FR - zhuhai.uk
+  type: http
+  server: 83.206.1.225
+  port: 8090
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 05
+  type: socks5
+  server: 202.4.117.245
+  port: 9090
+- name: NL - zhuhai.uk
+  type: http
+  server: 84.17.47.150
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 06
+  type: http
+  server: 54.190.176.228
+  port: 8443
   tls: true
   skip-cert-verify: true
 - name: KR - zhuhai.uk 02
-  type: vmess
-  server: lvZU46bfP1BbhvTu.v.3dns.vip
-  port: 443
-  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: lvZU46bfP1BbhvTu.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: lvZU46bfP1BbhvTu.v.3dns.vip
-- name: US - zhuhai.uk 03
-  type: vmess
-  server: zzlf7uPGQKXUENiI.v.3dns.vip
-  port: 443
-  uuid: d237ab38-1974-4b36-94a3-0665ce8587b9
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: zzlf7uPGQKXUENiI.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: zzlf7uPGQKXUENiI.v.3dns.vip
-- name: KR - zhuhai.uk 03
-  type: vmess
-  server: 96f1iiRGsbn6ahrp.v.3dns.vip
-  port: 443
-  uuid: 0b80814e-7b96-4ec2-bbe2-fd17435e33b4
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: 96f1iiRGsbn6ahrp.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 96f1iiRGsbn6ahrp.v.3dns.vip
-- name: SG - zhuhai.uk 02
-  type: vmess
-  server: xJEaPAGjKcLjkTGH.v.3dns.vip
-  port: 443
-  uuid: 0b80814e-7b96-4ec2-bbe2-fd17435e33b4
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xJEaPAGjKcLjkTGH.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: xJEaPAGjKcLjkTGH.v.3dns.vip
-- name: SG - zhuhai.uk 03
-  type: vmess
-  server: WTemo8ZrndxoRkRD.v.3dns.vip
-  port: 443
-  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: WTemo8ZrndxoRkRD.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: WTemo8ZrndxoRkRD.v.3dns.vip
-- name: JP - zhuhai.uk
-  type: vmess
-  server: cIhSCyS8r3pJDskp.v.3dns.vip
-  port: 443
-  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: cIhSCyS8r3pJDskp.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: cIhSCyS8r3pJDskp.v.3dns.vip
-- name: SG - zhuhai.uk 04
-  type: vmess
-  server: 7qiVFC1L3ETmsSCq.v.3dns.vip
-  port: 443
-  uuid: d237ab38-1974-4b36-94a3-0665ce8587b9
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: 7qiVFC1L3ETmsSCq.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 7qiVFC1L3ETmsSCq.v.3dns.vip
-- name: TW - zhuhai.uk
-  type: anytls
-  server: er8u54dh.df6h451rh.xin
-  port: 443
-  password: 0324fbc29561
-  udp: true
-  skip-cert-verify: true
-- name: ID - zhuhai.uk
-  type: vmess
-  server: tasCePjs5K8Cmo8x.v.3dns.vip
-  port: 443
-  uuid: d237ab38-1974-4b36-94a3-0665ce8587b9
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: tasCePjs5K8Cmo8x.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: tasCePjs5K8Cmo8x.v.3dns.vip
-- name: JP - zhuhai.uk 02
-  type: vmess
-  server: AvpB4AiRNcfxx6xn.v.3dns.vip
-  port: 443
-  uuid: d237ab38-1974-4b36-94a3-0665ce8587b9
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: AvpB4AiRNcfxx6xn.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: AvpB4AiRNcfxx6xn.v.3dns.vip
-- name: JP - zhuhai.uk 03
-  type: vmess
-  server: YBWk8ZwA4RaMQOy3.v.3dns.vip
-  port: 443
-  uuid: d237ab38-1974-4b36-94a3-0665ce8587b9
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: YBWk8ZwA4RaMQOy3.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: YBWk8ZwA4RaMQOy3.v.3dns.vip
-- name: JP - zhuhai.uk 04
-  type: vmess
-  server: 141.11.138.137
-  port: 443
-  uuid: 284c8008-5a85-4451-a8d1-b79c62f74d32
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: gathered-fat-gsm-weekend.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: /vmess-argo
-    headers:
-      Host: gathered-fat-gsm-weekend.trycloudflare.com
-- name: ID - zhuhai.uk 02
-  type: vmess
-  server: kZxO447OGccM03M0.v.3dns.vip
-  port: 443
-  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: kZxO447OGccM03M0.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: kZxO447OGccM03M0.v.3dns.vip
-- name: KR - zhuhai.uk 04
-  type: vmess
-  server: cSfehDrYPYKh3Hsz.v.3dns.vip
-  port: 443
-  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: cSfehDrYPYKh3Hsz.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: cSfehDrYPYKh3Hsz.v.3dns.vip
-- name: US - zhuhai.uk 04
-  type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  tls: true
-  servername: vp13.1145678.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /posts/season
-    headers:
-      Host: vp13.1145678.xyz
-- name: US - zhuhai.uk 05
-  type: vmess
-  server: Xv0YlCRafZlUWTB8.v.3dns.vip
-  port: 443
-  uuid: d237ab38-1974-4b36-94a3-0665ce8587b9
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: Xv0YlCRafZlUWTB8.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: Xv0YlCRafZlUWTB8.v.3dns.vip
-- name: HK - zhuhai.uk 02
-  type: vmess
-  server: BHNyqcLYRsKcneII.v.3dns.vip
-  port: 443
-  uuid: 0b80814e-7b96-4ec2-bbe2-fd17435e33b4
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: BHNyqcLYRsKcneII.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: BHNyqcLYRsKcneII.v.3dns.vip
-- name: HK - zhuhai.uk 03
-  type: http
-  server: 119.28.24.235
-  port: 3128
-  tls: true
-  skip-cert-verify: true
-- name: HK - zhuhai.uk 04
   type: socks5
-  server: 123.58.219.171
-  port: 10808
-- name: JP - zhuhai.uk 05
-  type: http
-  server: fan.571589.xyz
-  port: 443
-  username: 'null'
-  password: 'null'
-  tls: true
-  sni: fan.571589.xyz
-- name: KR - zhuhai.uk 05
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  network: ws
-  ws-opts:
-    path: /
-- name: SG - zhuhai.uk 06
-  type: socks5
-  server: 47.236.168.243
-  port: 1080
-  username: '8888'
-  password: '8888'
+  server: 121.169.46.116
+  port: 1090
+  username: Og%3D%3D
 - name: 🇨🇦CA加拿大丨yoyapai.com
   type: trojan
   server: 104.16.73.213
@@ -7949,39 +7750,27 @@ proxy-groups:
   proxies:
   - AUTO
   - DIRECT
-  - 新西兰+V2CROSS.COM_P
-  - 新西兰+V2CROSS.COM_P_1
+  - 美国+CloudFlare节点_P
+  - 美国+CloudFlare节点_P_1
   - 美国 CloudFlare节点_P
-  - 美国+V2CROSS.COM_P_2
-  - 新西兰+V2CROSS.COM_P_2
-  - US - zhuhai.uk
-  - SG - zhuhai.uk
+  - 美国+CloudFlare节点_P_2
   - HK - zhuhai.uk
-  - US - zhuhai.uk 02
-  - KR - zhuhai.uk
-  - GB - zhuhai.uk
-  - KR - zhuhai.uk 02
-  - US - zhuhai.uk 03
-  - KR - zhuhai.uk 03
-  - SG - zhuhai.uk 02
-  - SG - zhuhai.uk 03
-  - JP - zhuhai.uk
-  - SG - zhuhai.uk 04
+  - US - zhuhai.uk
   - TW - zhuhai.uk
-  - ID - zhuhai.uk
-  - JP - zhuhai.uk 02
-  - JP - zhuhai.uk 03
-  - JP - zhuhai.uk 04
-  - ID - zhuhai.uk 02
-  - KR - zhuhai.uk 04
-  - US - zhuhai.uk 04
-  - US - zhuhai.uk 05
+  - US - zhuhai.uk 02
+  - TW - zhuhai.uk 03
   - HK - zhuhai.uk 02
-  - HK - zhuhai.uk 03
-  - HK - zhuhai.uk 04
-  - JP - zhuhai.uk 05
-  - KR - zhuhai.uk 05
-  - SG - zhuhai.uk 06
+  - JP - zhuhai.uk 02
+  - ID - zhuhai.uk
+  - DE - zhuhai.uk
+  - AL - zhuhai.uk
+  - DE - zhuhai.uk 02
+  - US - zhuhai.uk 04
+  - FR - zhuhai.uk
+  - US - zhuhai.uk 05
+  - NL - zhuhai.uk
+  - US - zhuhai.uk 06
+  - KR - zhuhai.uk 02
   - 🇨🇦CA加拿大丨yoyapai.com
   - 🇺🇸美国丨yoyapai.com
   - ❓未知丨yoyapai.com
@@ -8009,45 +7798,45 @@ proxy-groups:
   - 🇺🇸US美國丨yoyapai.com_2
   - 🇺🇸 US美國丨yoyapai.com
   - 🇺🇸 US美國丨yoyapai.com_1
+  - 🇷🇺 RU俄羅斯丨yoyapai.com
+  - 🇺🇸US美國丨yoyapai.com_3
+  - 🇺🇸US美國丨yoyapai.com_4
+  - 🇺🇸US美國丨yoyapai.com_5
+  - 🇺🇸US美國丨yoyapai.com_6
+  - 🇺🇸US美國丨yoyapai.com_7
+  - 🇺🇸US美國丨yoyapai.com_8
+  - FR法國丨yoyapai.com
+  - FR法國丨yoyapai.com_1
+  - FR法國丨yoyapai.com_2
+  - FR法國丨yoyapai.com_3
+  - FR法國丨yoyapai.com_4
 - name: AUTO
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 新西兰+V2CROSS.COM_P
-  - 新西兰+V2CROSS.COM_P_1
+  - 美国+CloudFlare节点_P
+  - 美国+CloudFlare节点_P_1
   - 美国 CloudFlare节点_P
-  - 美国+V2CROSS.COM_P_2
-  - 新西兰+V2CROSS.COM_P_2
-  - US - zhuhai.uk
-  - SG - zhuhai.uk
+  - 美国+CloudFlare节点_P_2
   - HK - zhuhai.uk
-  - US - zhuhai.uk 02
-  - KR - zhuhai.uk
-  - GB - zhuhai.uk
-  - KR - zhuhai.uk 02
-  - US - zhuhai.uk 03
-  - KR - zhuhai.uk 03
-  - SG - zhuhai.uk 02
-  - SG - zhuhai.uk 03
-  - JP - zhuhai.uk
-  - SG - zhuhai.uk 04
+  - US - zhuhai.uk
   - TW - zhuhai.uk
-  - ID - zhuhai.uk
-  - JP - zhuhai.uk 02
-  - JP - zhuhai.uk 03
-  - JP - zhuhai.uk 04
-  - ID - zhuhai.uk 02
-  - KR - zhuhai.uk 04
-  - US - zhuhai.uk 04
-  - US - zhuhai.uk 05
+  - US - zhuhai.uk 02
+  - TW - zhuhai.uk 03
   - HK - zhuhai.uk 02
-  - HK - zhuhai.uk 03
-  - HK - zhuhai.uk 04
-  - JP - zhuhai.uk 05
-  - KR - zhuhai.uk 05
-  - SG - zhuhai.uk 06
+  - JP - zhuhai.uk 02
+  - ID - zhuhai.uk
+  - DE - zhuhai.uk
+  - AL - zhuhai.uk
+  - DE - zhuhai.uk 02
+  - US - zhuhai.uk 04
+  - FR - zhuhai.uk
+  - US - zhuhai.uk 05
+  - NL - zhuhai.uk
+  - US - zhuhai.uk 06
+  - KR - zhuhai.uk 02
   - 🇨🇦CA加拿大丨yoyapai.com
   - 🇺🇸美国丨yoyapai.com
   - ❓未知丨yoyapai.com
