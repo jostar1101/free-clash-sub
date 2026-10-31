@@ -5,10 +5,44 @@ log-level: info
 proxies:
 - name: 新西兰+V2CROSS.COM_P
   type: ss
-  server: 202.50.253.81
+  server: 202.50.253.36
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 美国+CloudFlare节点_P
+  type: trojan
+  server: 104.18.72.213
+  port: 443
+  password: humanity
+  sni: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 北京市+聚龙无限信息技术有限公司_P
+  type: vless
+  server: jp.sofast.live
+  port: 52683
+  uuid: 399b6b23-cc40-4831-a494-61948e2df133
+  network: tcp
+- name: 美国+CloudFlare节点_P_1
+  type: trojan
+  server: 172.67.203.46
+  port: 443
+  password: humanity
+  sni: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 美国+CloudFlare节点_P_2
+  type: vless
+  server: 104.17.154.123
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  network: ws
+  tls: true
+  sni: ccc.010304.xyz
+  ws-opts:
+    path: ''
 - name: 美国+V2CROSS.COM_P
   type: vless
   server: 208.84.100.209
@@ -16,106 +50,139 @@ proxies:
   uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
   network: ws
   ws-opts:
-    path: ''
-- name: 俄罗斯+V2CROSS.COM_P
-  type: vless
-  server: 217.19.122.156
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  network: ws
-  tls: true
-  sni: z1q3pv4g78.rucdncomp.pro
-  ws-opts:
-    path: /useraction/events/b892639b7195/
+    path: /
 - name: 新西兰+V2CROSS.COM_P_1
   type: ss
-  server: 202.50.253.36
+  server: 202.50.253.18
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 新西兰+V2CROSS.COM_P_2
-  type: ss
-  server: 202.50.253.27
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 美国+CloudFlare节点_P
+- name: 美国+CloudFlare节点_P_3
   type: vless
-  server: 172.64.153.153
+  server: 104.16.122.227
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   network: ws
   tls: true
   sni: ccc.010304.xyz
   ws-opts:
-    path: /
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
     headers:
       Host: ccc.010304.xyz
-- name: 新西兰+V2CROSS.COM_P_3
+- name: 美国+V2CROSS.COM_P_1
+  type: vless
+  server: 199.232.78.160
+  port: 443
+  uuid: XpnTeam-68
+  network: ws
+  tls: true
+  sni: ssl.fastly.com
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+- name: 瑞士+V2CROSS.COM_P
+  type: vless
+  server: 195.141.65.98
+  port: 443
+  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
+  network: ws
+  tls: true
+  sni: 148-253-210-191.sslip.io
+  ws-opts:
+    path: /test-ws
+    headers:
+      Host: 148-253-210-191.sslip.io
+- name: 新西兰+V2CROSS.COM_P_2
   type: ss
-  server: 202.50.253.72
+  server: 202.50.253.54
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 北京市+聚龙无限信息技术有限公司_P
-  type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
-  network: tcp
-- name: IE - zhuhai.uk
-  type: http
-  server: 34.249.214.108
-  port: 443
-  tls: true
-  sni: 34.249.214.108
-  skip-cert-verify: true
 - name: US - zhuhai.uk
   type: http
-  server: purposebydesig.club
+  server: crosscards.site
   port: 443
+  username: 'null'
+  password: None
   tls: true
-  skip-cert-verify: true
 - name: US - zhuhai.uk 02
   type: http
-  server: 12.202.180.10
+  server: goedkoopgeluid.icu
   port: 443
+  username: 'null'
+  password: None
   tls: true
   skip-cert-verify: true
-- name: NL - zhuhai.uk
+- name: FR - zhuhai.uk
   type: http
-  server: 84.17.47.123
-  port: 9002
-  tls: true
-  skip-cert-verify: true
-- name: IT - zhuhai.uk
-  type: http
-  server: 185.183.105.130
-  port: 443
+  server: 83.206.1.225
+  port: 8090
   tls: true
   skip-cert-verify: true
 - name: US - zhuhai.uk 03
   type: http
-  server: 137.175.22.89
+  server: kimberlymilano.icu
+  port: 443
+  username: Ok5vbmU=
+  tls: true
+- name: IL - zhuhai.uk
+  type: http
+  server: 169.150.248.17
   port: 443
   tls: true
   skip-cert-verify: true
-- name: IT - zhuhai.uk 02
-  type: ss
-  server: 202.50.253.90
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: US - zhuhai.uk 04
   type: http
-  server: 129.153.93.183
+  server: carolinafreigh.fun
   port: 443
+  tls: true
+- name: RO - zhuhai.uk
+  type: http
+  server: 193.176.84.18
+  port: 9002
   tls: true
   skip-cert-verify: true
 - name: US - zhuhai.uk 05
   type: http
-  server: 121.127.34.82
+  server: 66.153.187.90
+  port: 8090
+  tls: true
+  skip-cert-verify: true
+- name: JP - zhuhai.uk
+  type: http
+  server: fan.571589.xyz
   port: 443
+  username: 'null'
+  password: 'null'
+  tls: true
+  skip-cert-verify: true
+- name: FR - zhuhai.uk 02
+  type: socks5
+  server: 202.4.116.146
+  port: 9090
+- name: RU - zhuhai.uk
+  type: http
+  server: 87.242.85.187
+  port: 8443
+  tls: true
+  skip-cert-verify: true
+- name: LV - zhuhai.uk
+  type: http
+  server: 185.219.159.15
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: IE - zhuhai.uk
+  type: http
+  server: 149.88.96.12
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: BG - zhuhai.uk
+  type: http
+  server: 169.150.237.1
+  port: 9443
   tls: true
   skip-cert-verify: true
 - name: HK - zhuhai.uk
@@ -125,95 +192,82 @@ proxies:
   password: 0324fbc29561
   udp: true
   sni: images.ctfassets.net
-  skip-cert-verify: true
-- name: GB - zhuhai.uk
-  type: http
-  server: 212.102.63.31
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 06
-  type: http
-  server: 45.145.72.122
-  port: 8443
-  tls: true
-  skip-cert-verify: true
-- name: FR - zhuhai.uk
-  type: hysteria2
-  server: 2001:bc8:32d7:17b::3
-  port: 22000
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: TW - zhuhai.uk
-  type: anytls
-  server: er8u54dh.df6h451rh.xin
-  port: 443
-  password: 0324fbc29561
-  udp: true
-  sni: px.ads.linkedin.com
+  alpn:
+  - http/1.1
   skip-cert-verify: true
   client-fingerprint: chrome
-- name: US - zhuhai.uk 07
-  type: socks5
-  server: 104.168.249.36
-  port: 1080
-  username: test123
-  password: test123
-- name: DE - zhuhai.uk
+- name: NL - zhuhai.uk
   type: http
-  server: 116.202.172.99
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: NL - zhuhai.uk 02
-  type: http
-  server: 185.93.106.214
+  server: 89.150.35.94
   port: 443
   username: 'null'
   password: 'null'
   tls: true
   skip-cert-verify: true
-- name: US - zhuhai.uk 08
+- name: RO - zhuhai.uk 02
   type: http
-  server: 96.5.129.85
-  port: 443
+  server: 193.176.84.24
+  port: 9002
   tls: true
+  sni: www.bing.com
   skip-cert-verify: true
-- name: NL - zhuhai.uk 03
+- name: US - zhuhai.uk 06
   type: http
-  server: 185.238.170.10
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 09
-  type: http
-  server: 173.42.49.102
-  port: 8090
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 10
-  type: http
-  server: 45.150.164.18
+  server: 54.190.176.228
   port: 8443
+  username: 'null'
+  password: 'null'
   tls: true
-  sni: 45.150.164.18
   skip-cert-verify: true
-- name: JP - zhuhai.uk
-  type: http
-  server: fan.571589.xyz
+- name: TW - zhuhai.uk
+  type: anytls
+  server: 684616s4.df6h451rh.xin
   port: 443
+  password: 0324fbc29561
+  udp: true
+  sni: px.ads.linkedin.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  client-fingerprint: chrome
+- name: AU - zhuhai.uk
+  type: http
+  server: 159.13.44.228
+  port: 443
+  username: 'null'
+  password: None
   tls: true
-  sni: fan.571589.xyz
+  skip-cert-verify: true
+- name: FR - zhuhai.uk 03
+  type: http
+  server: 82.65.162.76
+  port: 443
+  username: 'null'
+  password: 'null'
+  tls: true
+  skip-cert-verify: true
+- name: DE - zhuhai.uk
+  type: http
+  server: fan.973511.xyz
+  port: 443
+  username: 'null'
+  password: 'null'
+  tls: true
   skip-cert-verify: true
 - name: KR - zhuhai.uk
   type: socks5
   server: 121.169.46.116
   port: 1090
-  username: VDJjbE0wUWxNMFE2VDJjbE0wUWxNMFE9Og==
-- name: IN - zhuhai.uk 02
+  username: T2clM0QlM0Q6
+- name: IN - zhuhai.uk
   type: http
   server: 110.173.188.221
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: ID - zhuhai.uk
+  type: http
+  server: 178.248.73.58
   port: 443
   tls: true
   skip-cert-verify: true
@@ -7793,37 +7847,41 @@ proxy-groups:
   - AUTO
   - DIRECT
   - 新西兰+V2CROSS.COM_P
-  - 美国+V2CROSS.COM_P
-  - 俄罗斯+V2CROSS.COM_P
-  - 新西兰+V2CROSS.COM_P_1
-  - 新西兰+V2CROSS.COM_P_2
   - 美国+CloudFlare节点_P
-  - 新西兰+V2CROSS.COM_P_3
   - 北京市+聚龙无限信息技术有限公司_P
-  - IE - zhuhai.uk
+  - 美国+CloudFlare节点_P_1
+  - 美国+CloudFlare节点_P_2
+  - 美国+V2CROSS.COM_P
+  - 新西兰+V2CROSS.COM_P_1
+  - 美国+CloudFlare节点_P_3
+  - 美国+V2CROSS.COM_P_1
+  - 瑞士+V2CROSS.COM_P
+  - 新西兰+V2CROSS.COM_P_2
   - US - zhuhai.uk
   - US - zhuhai.uk 02
-  - NL - zhuhai.uk
-  - IT - zhuhai.uk
-  - US - zhuhai.uk 03
-  - IT - zhuhai.uk 02
-  - US - zhuhai.uk 04
-  - US - zhuhai.uk 05
-  - HK - zhuhai.uk
-  - GB - zhuhai.uk
-  - US - zhuhai.uk 06
   - FR - zhuhai.uk
-  - TW - zhuhai.uk
-  - US - zhuhai.uk 07
-  - DE - zhuhai.uk
-  - NL - zhuhai.uk 02
-  - US - zhuhai.uk 08
-  - NL - zhuhai.uk 03
-  - US - zhuhai.uk 09
-  - US - zhuhai.uk 10
+  - US - zhuhai.uk 03
+  - IL - zhuhai.uk
+  - US - zhuhai.uk 04
+  - RO - zhuhai.uk
+  - US - zhuhai.uk 05
   - JP - zhuhai.uk
+  - FR - zhuhai.uk 02
+  - RU - zhuhai.uk
+  - LV - zhuhai.uk
+  - IE - zhuhai.uk
+  - BG - zhuhai.uk
+  - HK - zhuhai.uk
+  - NL - zhuhai.uk
+  - RO - zhuhai.uk 02
+  - US - zhuhai.uk 06
+  - TW - zhuhai.uk
+  - AU - zhuhai.uk
+  - FR - zhuhai.uk 03
+  - DE - zhuhai.uk
   - KR - zhuhai.uk
-  - IN - zhuhai.uk 02
+  - IN - zhuhai.uk
+  - ID - zhuhai.uk
   - 🇨🇦CA加拿大丨yoyapai.com
   - 🇺🇸美国丨yoyapai.com
   - ❓未知丨yoyapai.com
@@ -7848,10 +7906,6 @@ proxy-groups:
   - 🇧🇷BR巴西圣保罗丨yoyapai.com
   - 🇳🇴NO挪威丨yoyapai.com
   - ❓未知丨yoyapai.com_3
-  - 🇺🇸US美國丨yoyapai.com_2
-  - 🇺🇸 US美國丨yoyapai.com
-  - 🇺🇸 US美國丨yoyapai.com_1
-  - 🇷🇺 RU俄羅斯丨yoyapai.com
 - name: AUTO
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -7859,37 +7913,41 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 新西兰+V2CROSS.COM_P
-  - 美国+V2CROSS.COM_P
-  - 俄罗斯+V2CROSS.COM_P
-  - 新西兰+V2CROSS.COM_P_1
-  - 新西兰+V2CROSS.COM_P_2
   - 美国+CloudFlare节点_P
-  - 新西兰+V2CROSS.COM_P_3
   - 北京市+聚龙无限信息技术有限公司_P
-  - IE - zhuhai.uk
+  - 美国+CloudFlare节点_P_1
+  - 美国+CloudFlare节点_P_2
+  - 美国+V2CROSS.COM_P
+  - 新西兰+V2CROSS.COM_P_1
+  - 美国+CloudFlare节点_P_3
+  - 美国+V2CROSS.COM_P_1
+  - 瑞士+V2CROSS.COM_P
+  - 新西兰+V2CROSS.COM_P_2
   - US - zhuhai.uk
   - US - zhuhai.uk 02
-  - NL - zhuhai.uk
-  - IT - zhuhai.uk
-  - US - zhuhai.uk 03
-  - IT - zhuhai.uk 02
-  - US - zhuhai.uk 04
-  - US - zhuhai.uk 05
-  - HK - zhuhai.uk
-  - GB - zhuhai.uk
-  - US - zhuhai.uk 06
   - FR - zhuhai.uk
-  - TW - zhuhai.uk
-  - US - zhuhai.uk 07
-  - DE - zhuhai.uk
-  - NL - zhuhai.uk 02
-  - US - zhuhai.uk 08
-  - NL - zhuhai.uk 03
-  - US - zhuhai.uk 09
-  - US - zhuhai.uk 10
+  - US - zhuhai.uk 03
+  - IL - zhuhai.uk
+  - US - zhuhai.uk 04
+  - RO - zhuhai.uk
+  - US - zhuhai.uk 05
   - JP - zhuhai.uk
+  - FR - zhuhai.uk 02
+  - RU - zhuhai.uk
+  - LV - zhuhai.uk
+  - IE - zhuhai.uk
+  - BG - zhuhai.uk
+  - HK - zhuhai.uk
+  - NL - zhuhai.uk
+  - RO - zhuhai.uk 02
+  - US - zhuhai.uk 06
+  - TW - zhuhai.uk
+  - AU - zhuhai.uk
+  - FR - zhuhai.uk 03
+  - DE - zhuhai.uk
   - KR - zhuhai.uk
-  - IN - zhuhai.uk 02
+  - IN - zhuhai.uk
+  - ID - zhuhai.uk
   - 🇨🇦CA加拿大丨yoyapai.com
   - 🇺🇸美国丨yoyapai.com
   - ❓未知丨yoyapai.com
